@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="386" height="398" viewBox="0 0 386 398">
+  <defs>
+    <rect id="a" width="239" height="21" rx="2"/>
+    <rect id="b" width="24" height="21" y="279" rx="2"/>
+    <rect id="c" width="51" height="21" y="217" rx="2"/>
+    <rect id="d" width="33" height="21" y="248" rx="2"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="385" height="398" fill="#FCFCFC"/>
+    <text fill="#2B2D31" font-family="SpaceMono-Bold, Space Mono" font-size="20" font-weight="bold" letter-spacing="3">
+      <tspan x="19" y="32">COLOR</tspan>
+    </text>
+    <g transform="translate(53 69)">
+      <g fill="#76797D" font-family="Karla-Regular, Karla" font-size="14" transform="translate(0 2)">
+        <text>
+          <tspan x="2.672" y="13">#FAFBFC</tspan>
+        </text>
+        <text>
+          <tspan x=".362" y="137">#336699</tspan>
+        </text>
+        <text>
+          <tspan x="4.072" y="75">#76797D</tspan>
+        </text>
+        <text>
+          <tspan x="1.272" y="199">#2F3234</tspan>
+        </text>
+        <text>
+          <tspan x="5.206" y="261">#FFFFFF</tspan>
+        </text>
+        <text>
+          <tspan x="1.566" y="44">#2570B6</tspan>
+        </text>
+        <text>
+          <tspan x="10.96" y="168">#212121</tspan>
+        </text>
+        <text>
+          <tspan x="1.104" y="106">#F8A436</tspan>
+        </text>
+        <text>
+          <tspan x="2.308" y="230">#F3F6F8</tspan>
+        </text>
+        <text>
+          <tspan x=".754" y="292">#E6E9EB</tspan>
+        </text>
+      </g>
+      <g transform="translate(69)">
+        <rect width="159" height="21" y="31" fill="#2570B6" rx="2"/>
+        <rect width="78" height="21" y="93" fill="#F8A436" rx="2"/>
+        <use fill="#FAFBFC" xlink:href="#a"/>
+        <rect width="238" height="20" x=".5" y=".5" stroke="#212121" rx="2"/>
+        <use fill="#E6E9EB" xlink:href="#b"/>
+        <rect width="23" height="20" x=".5" y="279.5" stroke="#212121" rx="2"/>
+        <use fill="#F3F6F8" xlink:href="#c"/>
+        <rect width="50" height="20" x=".5" y="217.5" stroke="#212121" rx="2"/>
+        <use fill="#FFFFFF" xlink:href="#d"/>
+        <rect width="32" height="20" x=".5" y="248.5" stroke="#212121" rx="2"/>
+        <rect width="60" height="21" y="155" fill="#212121" rx="2"/>
+        <rect width="60" height="21" y="186" fill="#2F3234" rx="2"/>
+        <rect width="112" height="21" y="62" fill="#76797D" rx="2"/>
+        <rect width="66" height="21" y="124" fill="#336699" rx="2"/>
+      </g>
+    </g>
+    <path stroke="#2B2D31" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" d="M22.5,46.5 L384.965171,46.5"/>
+  </g>
+</svg>
