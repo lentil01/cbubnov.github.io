@@ -29,7 +29,7 @@
       <rect width="14" height="14" x="36" y="62" fill="#696D72" rx="3"/>
       <rect width="14" height="14" x="54" y="62" fill="#79A5CD" rx="3"/>
       <text fill="#76797D" font-family="Karla-Regular, Karla" font-size="14">
-        <tspan x="0" y="13">Karla</tspan>
+        <tspan x="0" y="13">Karla Regular</tspan>
       </text>
       <text fill="#76797D" font-family="Karla-Regular, Karla" font-size="14">
         <tspan x="0" y="34">Body text and quotes</tspan> <tspan x="0" y="51">32px, 20px, 16px, 14px</tspan>
@@ -41,7 +41,7 @@
       <use fill="#FCFCFC" xlink:href="#c"/>
       <rect width="13" height="13" x="36.5" y="66.5" stroke="#2F3234" rx="3"/>
       <text fill="#2F3234" font-family="Karla-Bold, Karla" font-size="20" font-weight="bold">
-        <tspan x="0" y="18">KARLA</tspan>
+        <tspan x="0" y="18">KARLA BOLD</tspan>
       </text>
       <text fill="#76797D" font-family="Karla-Regular, Karla" font-size="14">
         <tspan x="0" y="38">Secondary headings and buttons</tspan> <tspan x="0" y="55">48px, 18px, 15px, 14px</tspan>
