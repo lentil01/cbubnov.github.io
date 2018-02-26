@@ -62,11 +62,53 @@ a:hover {
   }
 }
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.box
+{
+height: 150px;
+width:  150px;
+border: 1px solid #747473;
+background-color: #F9F8F7;
+text-align:center;
+border-radius: 4px;
+padding: 100px;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.box-text {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 h1 {
   color: #595958;
   font-size: 18px;
   letter-spacing: 1px;
   font-style: italic;
+}
+h2 {
+  color: #595958;
+  font-size: 14px;
+  letter-spacing: .3px;
+  /* line-height: 0px; */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h3 {
+  /* color: #595958; */
+  /* text-decoration: none; */
+  display: inline;
+  font-size: 14px;
 }
 
 
