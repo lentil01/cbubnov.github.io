@@ -9,28 +9,42 @@ html {
 }
 
 @font-face {
-  font-family: HKGrotesk;
+  font-family: HKGrotesk-Regular;
+  src: url("fonts/HKGrotesk-Regular.woff") format('woff'), url("fonts/HKGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: BluuNext-Bold;
+  src: url("fonts/bluunext-bold-webfont.woff") format('woff');
+}
+
+
+@font-face {
+  font-family: HKGrotesk-Medium;
+  src: url("fonts/HKGrotesk-Medium.woff") format('woff'), url("fonts/HKGrotesk-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: HKGrotesk-Bold;
   src: url("fonts/HKGrotesk-Bold.woff") format('woff'), url("fonts/HKGrotesk-Bold.otf") format("opentype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: HKGrotesk;
-  src: url("fonts/HKGrotesk-Medium.woff") format('woff');
-  font-weight: medium;
+  font-family: HKGrotesk-Italic;
+  src: url("fonts/HKGrotesk-Italic.woff") format('woff'), url("fonts/HKGrotesk-Italic.otf") format("opentype");
 }
 
 @font-face {
-  font-family: HKGrotesk;
-  src: url("fonts/HKGrotesk-Italic.woff") format('woff');
-  font-style: italic;
+  font-family: HKGrotesk-Light;
+  src: url("fonts/HKGrotesk-Light.woff") format('woff'), , url("fonts/HKGrotesk-Light.otf") format("opentype");
 }
 
 body {
-    font-family: HKGrotesk;
+    font-family: HKGrotesk-Regular;
     font-weight: normal;
-    background-color: #F9F8F7;
-    color: #595958;
+    background-color: #F9F9FA;
+    color: #4B4A4A;
     margin: 0px 30px 0px 30px;
     display: flex;
     flex-direction: column;
@@ -45,31 +59,47 @@ a {
   display: inline;
 }
 
+a:hover {
+  color: #282726;
+  text-decoration: underline;
+}
 
 
 p {
   margin: 0;
 }
 
+
+
 h1 {
-  color: #595958;
+  color: #4B4A4A;
   font-size: 18px;
   letter-spacing: 1px;
+  /* line-height: 20px; */
   font-style: italic;
 }
 h2 {
-  color: #595958;
+  font-family: BluuNext-Bold;
+  color: #282726;
   font-size: 14px;
   letter-spacing: .3px;
-  /* line-height: 0px; */
-  font-weight: bold;
   text-transform: uppercase;
+}
+
+h2 span {
+  margin: 0;
+  font-family: HKGrotesk-Regular;
+  font-weight: normal;
+  color: #4B4A4A;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 h3 {
   position: relative;
-  text-align: left;
-  padding-left: 2em;
+  text-align: center;
+  /* padding-left: 2em; */
   color: #595958;
   font-size: 1.5em;
   /* font-family: Space Mono, sans-serif; */
@@ -102,16 +132,34 @@ h3:before {
   left: 0;
 }
 
+h4 {
+  font-family: HKGrotesk-Medium;
+  color: ##797979;
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: BluuNext-Bold;
+  color: #282726;
+  font-size: 68px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-
-a:hover {
-  color: #747473;
-  text-decoration: none;
+h6 {
+  font-family: BluuNext-Bold;
+  color: #282726;
+  font-size: 68px;
+  letter-spacing: -0.05em;
+  /* text-align: center; */
+  text-transform: uppercase;
 }
 
 .about {
   padding: 0rem 2rem 0rem 2rem;
-  font-family: HKGrotesk;
+  font-family: HKGrotesk-Regular;
   margin: auto;
 }
 
@@ -125,19 +173,22 @@ a:hover {
   display: block;
   width: 100%;
   height: auto;
+  /* border-radius: 4px; */
 }
 
 .box {
 max-height: 150px;
-border: 1px solid #747473;
+/* border: 1px solid #747473; */
 border-radius: 4px;
 position: relative;
 overflow: hidden;
-background: #F9F8F7;
+background: #EDEFF1;
+}
+.box:hover {
+    background: #F9F9FA;
 }
 
 .box-padding {
-/* padding-top: 100px; */
 padding-bottom: 20px;
 }
 
@@ -153,8 +204,10 @@ padding-top: 100%;
     left: 10px;
     bottom: 0;
     right: 10px;
-    color: #595958;
+    color: #4B4A4A;
+    font-family: HKGrotesk-Light;
 }
+
 .box-text div {
    display: table;
    width: 100%;
@@ -166,14 +219,16 @@ padding-top: 100%;
     vertical-align: middle;
     color: #595958;
 }
+/* .box-text span:hover {
+    background: #F9F9FA;
+} */
 
 .box-active {
 max-height: 150px;
-/* border: 1px solid #747473; */
 border-radius: 4px;
 position: relative;
 overflow: hidden;
-background: #595958;
+background: #4B4A4A;
 }
 
 .box-active:before {
@@ -188,7 +243,8 @@ padding-top: 100%;
   left: 10px;
   bottom: 0;
   right: 10px;
-  color: #F9F8F7;
+  color: #fff;
+  font-family: HKGrotesk-Light;
 }
 .box-text-active div {
    display: table;
@@ -206,10 +262,14 @@ padding-top: 100%;
   font-size: 14px;
   letter-spacing: .3px;
   /* line-height: 0px; */
-  font-weight: bold;
+  /* font-weight: bold; */
   text-transform: uppercase;
 }
 
+.about-link {
+  color: #4B4A4A;
+  font-weight: bold;
+}
 
 .footer {
   bottom: 0;
@@ -227,9 +287,11 @@ padding-top: 100%;
 }
 
 .footer-item {
+  font-family: HKGrotesk-Regular;
   padding-left: 0rem;
   padding-right: 1rem;
   color: #949391;
+  letter-spacing: .07em;
 }
 
 @media (max-width: 767px) {
@@ -243,6 +305,8 @@ padding-top: 100%;
   padding-left: 0rem;
   padding-right: 1rem;
   color: #949391;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 h2 .project {
@@ -256,6 +320,34 @@ h2 .project {
 .project-padding-top {
   padding-top: 2rem;
 }
+
+@media (max-width: 991px) {
+  .project-padding-top {
+    padding-top: 2rem;
+  }
+}
+
+.project-padding-middle {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+  .project-padding-middle {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.project-padding-bottom {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+  .project-padding-bottom {
+    padding-bottom: 2rem;
+  }
+}
+
 .project-center {
   margin: auto;
 }
@@ -296,4 +388,23 @@ h2 .project {
 
 .navbar-toggler-icon:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 35 27' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath width='35' height='27' fill='#ffffff' d='M1,4 L34,4 L34,1 L1,1 L1,4 Z M0,5 L0,0 L35,0 L35,5 L0,5 Z M0,16 L0,11 L35,11 L35,16 L0,16 Z M1,26 L34,26 L34,23 L1,23 L1,26 Z M0,27 L0,22 L35,22 L35,27 L0,27 Z'/%3E%3C/svg%3E")
+}
+
+
+.hero {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media (min-width: 767px) {
+  .hero {
+    padding-top: 20em;
+  }
+}
+
+.caption p {
+  font-size: 12px;
+  padding-top: 1em;
+  color: #74787B;
+  text-align: center;
 }
