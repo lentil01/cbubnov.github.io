@@ -15,7 +15,7 @@ html {
 
 @font-face {
   font-family: BluuNext-Bold;
-  src: url("fonts/bluunext-bold-webfont.woff") format('woff');
+  src: url("fonts/bluunext-bold-webfont.woff") format('woff'), url("fonts/BluuNext-Bold.otf") format("opentype");
 }
 
 @font-face {
@@ -146,6 +146,19 @@ h5 {
   text-transform: uppercase;
 }
 
+@media (max-width: 675px) {
+  h5 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 440px) {
+  h5 {
+    font-size: 34px;
+  }
+}
+
+
 h6 {
   font-family: BluuNext-Bold;
   color: #282726;
@@ -223,7 +236,6 @@ h6 {
   font-family: HKGrotesk-Light;
 }
 
-
 .box-text div {
   display: table;
   width: 100%;
@@ -236,12 +248,6 @@ h6 {
   vertical-align: middle;
   color: #595958;
 }
-/* .box-text:hover {
-  display: none;
-}
-.box-text:hover:after {
-  display: none;
-} */
 
 .box-text:hover span {
     display: none;
