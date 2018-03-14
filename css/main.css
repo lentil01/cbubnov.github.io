@@ -36,7 +36,7 @@ html {
 
 @font-face {
   font-family: HKGrotesk-Light;
-  src: url("fonts/HKGrotesk-Light.woff") format('woff'), , url("fonts/HKGrotesk-Light.otf") format("opentype");
+  src: url("fonts/HKGrotesk-Light.woff") format('woff'), url("fonts/HKGrotesk-Light.otf") format("opentype");
 }
 
 body {
@@ -235,13 +235,13 @@ h6 {
 }
 
 .box-text {
+  font-family: HKGrotesk-Light;
   position: absolute;
   top: 0;
   left: 10px;
   bottom: 0;
   right: 10px;
   color: #4B4A4A;
-  font-family: HKGrotesk-Light;
 }
 
 .box-text div {
@@ -339,6 +339,8 @@ h6 {
   padding-right: 1rem;
   color: #949391;
   letter-spacing: .07em;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 @media (max-width: 767px) {
@@ -346,14 +348,6 @@ h6 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-.footer-item {
-  padding-left: 0rem;
-  padding-right: 1rem;
-  color: #949391;
-  text-transform: uppercase;
-  font-size: 12px;
 }
 
 h2 .project {
