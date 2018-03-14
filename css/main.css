@@ -212,10 +212,17 @@ h6 {
   display: block;
 }
 
-/* .box:hover {
-    background: #F9F9FA;
-    } */
+@media (max-width: 512px) {
+  .box:hover {
+      background: #F9F9FA;
+      }
+}
 
+@media (max-width: 512px) {
+  .box:hover img {
+      display: none;
+      }
+}
 .box-padding {
   padding-bottom: 20px;
 }
@@ -251,6 +258,12 @@ h6 {
 
 .box-text:hover span {
     display: none;
+}
+
+@media (max-width: 512px) {
+  .box-text:hover span {
+      display: table-cell;
+  }
 }
 
 .box-active {
@@ -376,6 +389,19 @@ h2 .project {
   padding-bottom: 2rem;
 }
 
+.project-padding-left {
+  padding-left: 1rem;
+}
+
+.project-padding-right {
+  padding-right: 1rem;
+}
+
+.project-padding-horiz {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 @media (max-width: 991px) {
   .project-padding-bottom {
     padding-bottom: 2rem;
@@ -440,4 +466,10 @@ h2 .project {
   padding-top: 1em;
   color: #74787B;
   text-align: center;
+}
+
+@media (max-width: 512px) {
+  .caption p {
+    font-size: 14px;
+  }
 }
