@@ -110,7 +110,7 @@ h3 {
 }
 
 h3 span {
-  background: #F9F8F7;
+  background: #F9F9FA;
   padding: 0 15px 0 15px;
   position: relative;
   z-index: 1;
@@ -301,11 +301,11 @@ h6 {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  color: #F9F8F7;
+  color: #F9F9FA;
 }
 
 .box-text-active h2 {
-  color: #F9F8F7;
+  color: #F9F9FA;
   font-size: 14px;
   letter-spacing: .3px;
   /* line-height: 0px; */
@@ -478,7 +478,7 @@ h2 .project {
 .button {
     font-family: Space Mono;
     text-transform: uppercase;
-    background-color: #F9F8F7;
+    background-color: #F9F9FA;
     border: 1px solid #4B4A4A;
     border-radius: 4px;
     color: #4B4A4A;
@@ -496,7 +496,7 @@ h2 .project {
     background-color: #4B4A4A;
     border: 1px solid #4B4A4A;
     border-radius: 4px;
-    color: #F9F8F7;
+    color: #F9F9FA;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
