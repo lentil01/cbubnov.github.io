@@ -94,14 +94,15 @@ h2 span {
 }
 
 h3 {
+  font-family: Space Mono, sans-serif;
+  /* font-weight: bold; */
+  text-transform: uppercase;
   position: relative;
   text-align: center;
   /* padding-left: 2em; */
   color: #595958;
   font-size: 1.5em;
-  /* font-family: Space Mono, sans-serif; */
-  /* font-weight: bold; */
-  /* text-transform: uppercase; */
+
   letter-spacing: 1px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
@@ -333,7 +334,7 @@ h6 {
 }
 
 .footer-item {
-  font-family: HKGrotesk-Regular;
+  font-family: Space Mono;
   padding-left: 0rem;
   padding-right: 1rem;
   color: #949391;
@@ -472,4 +473,34 @@ h2 .project {
   .caption p {
     font-size: 14px;
   }
+}
+
+.button {
+    font-family: Space Mono;
+    text-transform: uppercase;
+    background-color: #F9F8F7;
+    border: 1px solid #4B4A4A;
+    border-radius: 4px;
+    color: #4B4A4A;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+}
+
+.button:hover {
+  font-weight: bold;
+
+    background-color: #4B4A4A;
+    border: 1px solid #4B4A4A;
+    border-radius: 4px;
+    color: #F9F8F7;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
 }
