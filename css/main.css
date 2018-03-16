@@ -169,6 +169,18 @@ h6 {
   text-transform: uppercase;
 }
 
+@media (max-width: 675px) {
+  h6 {
+    font-size: 100px;
+  }
+}
+
+/* @media (max-width: 440px) {
+  h6 {
+    font-size: 34px;
+  }
+} */
+
 .about {
   padding: 0rem 2rem 0rem 2rem;
   font-family: HKGrotesk-Regular;
@@ -225,7 +237,13 @@ h6 {
       }
 }
 .box-padding {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 992px) {
+  .box-padding {
+    padding-bottom: 10px;
+  }
 }
 
 .box:before {
@@ -238,9 +256,11 @@ h6 {
   font-family: HKGrotesk-Light;
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 0;
   bottom: 0;
-  right: 10px;
+  right: 0;
+  padding-right: 10px;
+  padding-left: 10px;
   color: #4B4A4A;
 }
 
@@ -343,19 +363,19 @@ h6 {
   font-size: 12px;
 }
 
+@media (max-width: 767px) {
+  .footer-item {
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
+  }
+}
+
 .description {
   font-family: Space Mono;
   color: #949391;
   letter-spacing: .07em;
   text-transform: uppercase;
   font-size: 12px;
-}
-
-@media (max-width: 767px) {
-  .footer-item {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }
 
 h2 .project {
