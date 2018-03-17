@@ -199,6 +199,8 @@ h6 {
   height: auto;
 }
 
+
+/* BOX ATTRIBUTES */
 .box {
   max-height: 150px;
   border-radius: 4px;
@@ -292,7 +294,7 @@ h6 {
   border-radius: 4px;
   position: relative;
   overflow: hidden;
-  background: #4B4A4A;
+  background: #282726;
 }
 
 .box-active:before {
@@ -333,6 +335,90 @@ h6 {
   text-transform: uppercase;
 }
 
+.box-footer {
+  max-height: 150px;
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #353433;
+}
+
+.box-footer img {
+  min-height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  display: none;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:0;
+}
+
+.box-footer:hover img {
+  display: block;
+}
+
+
+@media (max-width: 512px) {
+  .box-footer:hover {
+      background: #282726;
+      }
+}
+
+@media (max-width: 512px) {
+  .box-footer:hover img {
+      display: none;
+      }
+}
+
+.box-footer:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.box-footer-text {
+  font-family: HKGrotesk-Light;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.box-footer-text h2 {
+  color: #F9F9FA;
+}
+
+.box-footer-text div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.box-footer-text span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #F9F9FA;
+}
+
+.box-footer-text:hover span {
+    display: none;
+}
+
+@media (max-width: 512px) {
+  .box-footer-text:hover span {
+      display: table-cell;
+  }
+}
+
 .about-link {
   color: #4B4A4A;
   font-weight: bold;
@@ -370,6 +456,28 @@ h6 {
   }
 }
 
+.footer-nav {
+  color: #949391;
+  text-decoration: none;
+}
+.footer-nav:hover {
+  color: #595958;
+  text-decoration: none;
+}
+
+.footer-background {
+  background-color:#282726;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /*
+
+  top: 0;
+  bottom: 0; */
+  /* width: 100%; */
+}
+
 .description {
   font-family: Space Mono;
   color: #949391;
@@ -387,7 +495,7 @@ h2 .project {
 }
 
 .project-padding-top {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 @media (max-width: 991px) {
