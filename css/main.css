@@ -439,7 +439,7 @@ h6 {
   }
 }
 
-.footer-item {
+.hero-item {
   font-family: Space Mono;
   padding-left: 0rem;
   padding-right: 1rem;
@@ -450,9 +450,33 @@ h6 {
 }
 
 @media (max-width: 767px) {
-  .footer-item {
+  .hero-item {
     /* padding-left: 1rem; */
     padding-right: 1rem;
+  }
+}
+
+.footer-item {
+  font-family: Space Mono;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  color: #949391;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .footer-item {
+    /* padding-left: 1rem; */
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .footer-item {
+    /* padding-left: 1rem; */
+    padding-right: 0rem;
   }
 }
 
