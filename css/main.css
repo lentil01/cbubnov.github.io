@@ -290,25 +290,6 @@ h6 {
   }
 }
 
-/* @media (max-width: 512px) {
-  .box-padding {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-} */
-
-/* .box-padding-mobile {
-  padding-left: 0em;
-  padding-right: 0em;
-} */
-
-/* @media (max-width: 512px) {
-  .box-padding-mobile {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-} */
-
 .thumb-padding {
   padding-bottom: 30px;
 }
@@ -318,8 +299,6 @@ h6 {
     padding-bottom: 60px;
   }
 }
-
-
 
 .box:before {
   content: "";
