@@ -94,10 +94,6 @@ function enable_scroll_mobile(){
   document.removeEventListener('touchmove',preventDefault, false);
 }
 
-
-
-
-
 // HIDE NAV WHEN IN LIGHTBOX
 
 function hide_nav() {
