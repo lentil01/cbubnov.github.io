@@ -195,10 +195,10 @@ h5 {
 h6 {
   font-family: BluuNext-Bold;
   color: #282726;
-  font-size: 250px;
+  font-size: 64px;
   letter-spacing: -0.05em;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 @media (max-width: 675px) {
@@ -629,6 +629,10 @@ h6 {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+.center-text {
+  text-align: center;
 }
 
 h2 .project {
