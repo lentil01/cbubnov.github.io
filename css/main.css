@@ -41,6 +41,12 @@ html {
     url("fonts/IBMPlexSans/IBMPlexSans-Light.otf") format("opentype");
 }
 
+@font-face {
+  font-family: IBMPlexMono-Regular;
+  src: url("fonts/IBMPlexMono/IBMPlexMono-Regular.woff") format("woff"),
+    url("fonts/IBMPlexMono/IBMPlexMono-Regular.otf") format("opentype");
+}
+
 body {
   font-family: IBMPlexSans-Regular;
   font-weight: normal;
@@ -381,8 +387,6 @@ h6 {
   color: #f9f9fa;
   font-size: 16px;
   letter-spacing: 0.3px;
-  /* line-height: 0px; */
-  /* font-weight: bold; */
   text-transform: uppercase;
 }
 
@@ -505,7 +509,7 @@ h6 {
 }
 
 .hero-item {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: IBMPlexMono-Regular, monospace;
   padding-left: 0rem;
   padding-right: 1rem;
   color: #868886;
@@ -521,7 +525,7 @@ h6 {
 }
 
 .link-dark {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: IBMPlexMono-Regular, monospace;
   padding-left: 0rem;
   padding-right: 1rem;
   color: #868886;
@@ -541,7 +545,7 @@ h6 {
 }
 
 .link-prominent {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: IBMPlexMono-Regular, monospace;
   font-weight: 600;
   padding-left: 0rem;
   padding-right: 1rem;
@@ -558,7 +562,7 @@ h6 {
 }
 
 .footer-item {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: IBMPlexMono-Regular, monospace;
   padding-left: 0rem;
   padding-right: 0rem;
   color: #949391;
@@ -620,7 +624,7 @@ h6 {
 }
 
 .description {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: IBMPlexMono-Regular, monospace;
   color: #949391;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -708,7 +712,7 @@ h2 .project {
 }
 
 .caption p {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: IBMPlexMono-Regular, monospace;
   font-style: italic;
   font-weight: normal;
   font-size: 13px;
@@ -718,7 +722,7 @@ h2 .project {
 }
 
 .caption-left p {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: IBMPlexMono-Regular, monospace;
   font-style: italic;
   font-weight: medium;
   font-size: 13px;
@@ -734,7 +738,7 @@ h2 .project {
 }
 
 .button {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: IBMPlexMono-Regular, monospace;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   background-color: #373a38;
