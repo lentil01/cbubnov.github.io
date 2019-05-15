@@ -22,10 +22,8 @@ body {
   overflow: auto;
 }
 
-@media (max-width: 675px) {
-  body {
-    margin: 0 30px;
-  }
+.container {
+  max-width: 100%;
 }
 
 a {
@@ -325,28 +323,28 @@ h3 {
   width: 100%;
   overflow: hidden;
   background: #313432;
-}
 
-.box-footer h2 {
-  font-size: 16px;
-}
+  h2 {
+    font-size: 16px;
+  }
 
-.box-footer img {
-  min-height: 150px;
-  width: 100%;
-  border-radius: 3px;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
+  img {
+    min-height: 150px;
+    width: 100%;
+    border-radius: 3px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
 
-.box-footer:hover img {
-  display: block;
-  background: #282a29;
+  &:hover img {
+    display: block;
+    background: #282a29;
+  }
 }
 
 @media (max-width: 512px) {
@@ -424,7 +422,7 @@ h3 {
 
 @media (max-width: 767px) {
   .footer {
-    padding: 01rem 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -470,7 +468,7 @@ h3 {
 .link-prominent {
   font-family: IBMPlexMono-Regular, monospace;
   font-weight: 600;
-  padding-left: 0rem;
+  padding-left: 0;
   padding-right: 1rem;
   color: #4b4a4a;
   letter-spacing: 0.07em;
@@ -486,8 +484,8 @@ h3 {
 
 .footer-item {
   font-family: IBMPlexMono-Regular, monospace;
-  padding-left: 0rem;
-  padding-right: 0rem;
+  padding-left: 0;
+  padding-right: 0;
   color: #949391;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -500,13 +498,13 @@ h3 {
 
 @media (max-width: 767px) {
   .footer-item {
-    padding-right: 0rem;
+    padding-right: 0;
   }
 }
 
 @media (max-width: 512px) {
   .footer-item {
-    padding-right: 0rem;
+    padding-right: 0;
   }
 }
 
@@ -525,23 +523,24 @@ h3 {
 
 .top-logo {
   font-family: IBMPlexSans-Light;
+
+  &-light {
+    color: $bg-color;
+  }
 }
 
 .footer-nav {
   font-family: IBMPlexSans-Light;
   color: #949391;
   text-decoration: none;
-}
-
-.footer-nav:hover {
-  color: #595958;
-  text-decoration: none;
+  &:hover {
+    color: #595958;
+    text-decoration: none;
+  }
 }
 
 .footer-background {
   background-color: #282a29;
-  // margin-left: -60px;
-  // margin-right: -60px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -689,5 +688,15 @@ h2 .project {
 @media (max-width: 768px) {
   .project-section-padding-bottom {
     padding-top: 1.5rem;
+  }
+}
+
+.project-ending-button {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .project-ending-button {
+    text-align: left;
   }
 }

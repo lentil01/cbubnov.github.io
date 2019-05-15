@@ -1,10 +1,8 @@
-.button-dark {
+.button {
   font-family: IBMPlexMono-Regular, monospace;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background-color: #373a38;
   border-radius: 3px;
-  color: $bg-color;
   padding: 12px 28px 10px;
   text-align: center;
   text-decoration: none;
@@ -12,19 +10,25 @@
   font-size: 16px;
   margin: auto;
 
-  &:hover {
-    background-color: #4f5351;
+  &-dark {
+    background-color: #373a38;
     color: $bg-color;
-    text-decoration: none;
+
+    &:hover {
+      background-color: #4f5351;
+      color: $bg-color;
+      text-decoration: none;
+    }
   }
-}
 
-.ending-button {
-  text-align: right;
-}
+  &-light {
+    background-color: $bg-color;
+    color: #373a38;
 
-@media (max-width: 768px) {
-  .ending-button {
-    text-align: left;
+    &:hover {
+      background-color: #ededf1;
+      color: #373a38;
+      text-decoration: none;
+    }
   }
 }
