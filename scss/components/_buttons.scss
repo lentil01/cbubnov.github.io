@@ -1,0 +1,30 @@
+.button-dark {
+  font-family: IBMPlexMono-Regular, monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #373a38;
+  border-radius: 3px;
+  color: $bg-color;
+  padding: 12px 28px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+
+  &:hover {
+    background-color: #4f5351;
+    color: $bg-color;
+    text-decoration: none;
+  }
+}
+
+.ending-button {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .ending-button {
+    text-align: left;
+  }
+}

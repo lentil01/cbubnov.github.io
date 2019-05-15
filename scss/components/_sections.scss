@@ -14,7 +14,7 @@ body {
   font-family: IBMPlexSans-Regular;
   background-color: $bg-color;
   color: #4b4a4a;
-  margin: 0 60px;
+  // margin: 0 60px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -103,7 +103,7 @@ h3 {
   letter-spacing: 1px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  margin: 0px -60px;
+  // margin: 0px -60px;
 
   span {
     background: $bg-color;
@@ -540,8 +540,8 @@ h3 {
 
 .footer-background {
   background-color: #282a29;
-  margin-left: -60px;
-  margin-right: -60px;
+  // margin-left: -60px;
+  // margin-right: -60px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -564,10 +564,30 @@ h2 .project {
 
 .project-padding {
   padding: 1rem;
-}
+  &-top {
+    padding-top: 1rem;
+  }
+  &-middle {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &-bottom {
+    padding-bottom: 2rem;
 
-.project-padding-top {
-  padding-top: 1rem;
+    &-hero {
+      padding-bottom: 3rem;
+    }
+  }
+  &-left {
+    padding-left: 1rem;
+  }
+  &-right {
+    padding-right: 1rem;
+  }
+  &-horiz {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -576,36 +596,11 @@ h2 .project {
   }
 }
 
-.project-padding-middle {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 @media (max-width: 991px) {
   .project-padding-middle {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-}
-
-.project-padding-bottom {
-  padding-bottom: 2rem;
-}
-.project-padding-bottom-hero {
-  padding-bottom: 3rem;
-}
-
-.project-padding-left {
-  padding-left: 1rem;
-}
-
-.project-padding-right {
-  padding-right: 1rem;
-}
-
-.project-padding-horiz {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 @media (max-width: 991px) {
@@ -618,8 +613,21 @@ h2 .project {
   margin: auto;
 }
 
-.project-info {
-  padding: 1rem 4rem;
+.project {
+  &-info {
+    padding: 1rem 4rem;
+  }
+  &-hero {
+    padding: 1rem 4rem;
+
+    &-tags {
+      color: $bg-color;
+    }
+
+    &-title {
+      color: $bg-color;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -662,43 +670,6 @@ h2 .project {
   .caption-left span {
     display: none;
   }
-}
-
-.button {
-  font-family: IBMPlexMono-Regular, monospace;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  background-color: #373a38;
-  border-radius: 3px;
-  color: $bg-color;
-  padding: 12px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
-}
-
-.ending-button {
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .ending-button {
-    text-align: left;
-  }
-}
-
-.button:hover {
-  background-color: #4f5351;
-  border-radius: 3px;
-  color: $bg-color;
-  padding: 12px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
 }
 
 .project-section-padding {
