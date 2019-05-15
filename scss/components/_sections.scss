@@ -621,10 +621,43 @@ h2 .project {
     padding: 1rem 4rem;
   }
   &-hero {
-    padding: 1rem 4rem;
+    padding: 1rem 4rem 3rem 4rem;
+
+    &-sections {
+      // border-left: 1px solid $bg-color;
+      // margin-left: 1rem;
+      padding-left: 1rem;
+
+      &-section {
+        font-family: IBMPlexMono-Regular, monospace;
+        letter-spacing: 0.07em;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+
+        &-light {
+          color: $bg-color;
+        }
+      }
+    }
 
     &-tags {
-      color: $bg-color;
+      font-family: IBMPlexMono-Regular, monospace;
+      letter-spacing: 0.07em;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding-top: 6rem;
+
+      &-light {
+        color: $bg-color;
+      }
+      &-dark {
+        color: $heading-color;
+      }
     }
 
     &-title {
