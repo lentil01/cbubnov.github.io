@@ -38,8 +38,12 @@ a {
 }
 
 p {
-  margin: 0;
+  margin: auto;
   line-height: 1.3em;
+}
+
+.principles-text-center {
+  text-align: center;
 }
 
 .mobile-padding p {
