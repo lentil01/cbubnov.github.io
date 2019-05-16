@@ -47,9 +47,9 @@ h5 {
   font-family: BluuNext-Bold;
   color: $heading-color;
   font-size: 48px;
-  letter-spacing: -0.03em;
+  // letter-spacing: -0.03em;
   line-height: 1.15em;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 @media (max-width: 675px) {
@@ -75,5 +75,36 @@ h6 {
 @media (max-width: 675px) {
   h6 {
     font-size: 100px;
+  }
+}
+
+h3 {
+  font-family: BluuNext-Bold, serif;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 4rem;
+  color: $heading-color;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  // margin: 0px -60px;
+
+  span {
+    background: $bg-color;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    background: #d7dcda;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
   }
 }

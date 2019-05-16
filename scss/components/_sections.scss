@@ -54,9 +54,17 @@ h1 {
   color: #4b4a4a;
   font-size: 22px;
   letter-spacing: 1px;
-  font-style: italic;
+  // font-style: italic;
   a:hover {
     text-decoration: none;
+  }
+  span {
+    margin: 0;
+    font-family: IBMPlexSans-Regular;
+    color: #4b4a4a;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.5em;
   }
 }
 
@@ -92,37 +100,6 @@ h2 {
     text-transform: none;
     font-size: 16px;
     line-height: 1.5em;
-  }
-}
-
-h3 {
-  font-family: BluuNext-Bold, serif;
-  text-transform: uppercase;
-  position: relative;
-  padding-left: 4rem;
-  color: $heading-color;
-  font-size: 1.5em;
-  letter-spacing: 1px;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  // margin: 0px -60px;
-
-  span {
-    background: $bg-color;
-    padding: 0 15px;
-    position: relative;
-    z-index: 1;
-  }
-
-  &:before {
-    background: #d7dcda;
-    content: "";
-    display: block;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    left: 0;
   }
 }
 
@@ -525,16 +502,29 @@ h3 {
   }
 }
 
-.top-logo {
-  font-family: IBMPlexSans-Light;
+.logo {
+  font-family: BluuNext-Bold, serif;
 
   &-light {
     color: $bg-color;
+
+    &:hover {
+      color: $green;
+    }
+  }
+  &-dark {
+    color: $heading-color;
+    &:hover {
+      color: $green;
+    }
+  }
+  &-primary {
+    color: $green;
   }
 }
 
 .footer-nav {
-  font-family: IBMPlexSans-Light;
+  // font-family: IBMPlexSans-Light;
   color: #949391;
   text-decoration: none;
   &:hover {
