@@ -45,6 +45,19 @@
     }
   }
 
+  &-light-outline {
+    border: 1.5px solid $bg-color;
+    border-radius: 3px;
+    color: $bg-color;
+
+    &:hover {
+      color: $bg-color;
+      background: $yellow;
+      border-color: $yellow;
+      text-decoration: none;
+    }
+  }
+
   &-transparent-light {
     background-color: none;
     color: $bg-color;
