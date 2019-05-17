@@ -18,6 +18,13 @@
 }
 
 @font-face {
+  font-family: IBMPlexSans-SemiBold;
+  src: url("fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff") format("woff"),
+    url("fonts/IBMPlexSans/IBMPlexSans-SemiBold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: IBMPlexSans-Italic;
   src: url("fonts/IBMPlexSans/IBMPlexSans-Italic.woff") format("woff"),
     url("fonts/IBMPlexSans/IBMPlexSans-Italic.otf") format("opentype");
