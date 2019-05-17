@@ -369,7 +369,12 @@ p {
 }
 
 .about-link {
-  font-family: IBMPlexSans-SemiBold;
+  // font-family: IBMPlexSans-SemiBold;
+  // text-decoration: underline;
+  &:hover {
+    color: $bg-color;
+    text-decoration: none;
+  }
 }
 
 .footer {
@@ -414,6 +419,12 @@ p {
   }
   &-right {
     text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-item {
+    display: none;
   }
 }
 
@@ -506,6 +517,16 @@ p {
   color: $heading-color;
 }
 
+.photo-container {
+  // position: fixed;
+  max-width: 80%;
+  padding-top: 2rem;
+  // margin-left: 100px;
+  // margin-right: 100px;
+  // width: 120%;
+  // padding: 0 -10px;
+}
+
 .logo {
   font-family: BluuNext-Bold, serif;
   text-decoration: none;
@@ -515,12 +536,14 @@ p {
 
     &:hover {
       color: $green;
+      text-decoration: none;
     }
   }
   &-dark {
     color: $heading-color;
     &:hover {
       color: $green;
+      text-decoration: none;
     }
   }
   &-primary {

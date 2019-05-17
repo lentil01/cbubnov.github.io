@@ -23,6 +23,14 @@
     }
   }
 
+  &-transparent {
+    padding: 6px 18px 2px;
+
+    &:first-child {
+      margin-left: -18px;
+    }
+  }
+
   &-dark {
     background-color: #373a38;
     color: $bg-color;
@@ -51,9 +59,9 @@
     color: $bg-color;
 
     &:hover {
-      color: $bg-color;
-      background: $yellow;
-      border-color: $yellow;
+      color: $yellow;
+      background: $bg-color;
+      // border-color: $yellow;
       text-decoration: none;
     }
   }
