@@ -57,12 +57,19 @@
     border: 1.5px solid $bg-color;
     border-radius: 3px;
     color: $bg-color;
+    transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
 
     &:hover {
       color: $yellow;
       background: $bg-color;
-      // border-color: $yellow;
       text-decoration: none;
+      transition: background-color 0.25s ease;
+      -webkit-transition: background-color 0.25s ease;
+      -moz-transition: background-color 0.25s ease;
+      -o-transition: background-color 0.25s ease;
     }
   }
 

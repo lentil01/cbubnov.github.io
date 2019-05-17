@@ -9,14 +9,18 @@
 }
 
 #photos img {
-  width: 100% !important;
-  height: auto;
+  // width: 100% !important;
+  // height: auto;
+  width: auto;
+  max-height: 100vh;
+  // height: 100%;
+  margin: auto;
   max-width: 100% !important;
-  padding: 10px;
+  // padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: RGBA(255, 255, 255, 0);
+  background-color: RGBA(255, 255, 255, 0.01);
 }
 
 @media (max-width: 1200px) {
@@ -68,16 +72,24 @@
   background-color: #151414;
 }
 
-.modal-content {
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
   margin: auto;
-  display: block;
-  width: auto;
-  padding: 30px;
-  max-width: 600px;
-  max-height: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+}
+
+.modal-content {
+  // margin: auto;
+  // display: block;
+  // width: auto;
+  // padding: 30px;
+  // max-width: 600px;
+  // max-height: 100%;
+  // position: relative;
+  // top: 50%;
+  // transform: translateY(-50%);
+  display: grid;
+  height: 100%;
 }
 
 .close {
@@ -95,10 +107,12 @@
 
 .mySlides {
   display: none;
-}
 
-.mySlides img {
-  width: 100%;
+  img {
+    width: 100%;
+    padding: 30px;
+    background-color: #151414 !important;
+  }
 }
 
 .cursor {
@@ -106,6 +120,56 @@
   opacity: 1;
 }
 
-.hover-shadow:hover {
-  opacity: 0.9;
+.img-holder {
+  background: $bg-color;
+}
+
+#img-loop {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  z-index: -1;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.photo-padding {
+  padding: 10px;
+}
+
+.photo-box {
+  // width: 210px;
+  // height: 210px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+  // padding: 10px;
+
+  &:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+  }
+}
+
+.hover-shadow {
+  // transition: opacity 0.5s ease-in-out;
+  // -webkit-transition: opacity 0.5s ease-in-out;
+  // -moz-transition: opacity 0.5s ease-in-out;
+  // -o-transition: opacity 0.5s ease-in-out;
+  // -ms-transition: opacity 0.5s ease-in-out;
+  // transition: transform 0.5s ease;
+  // -webkit-transition: transform 05s ease;
+  // -moz-transition: transform 0.5s ease;
+  // -o-transition: transform 0.5s ease;
+  // -ms-transition: transform 0.5s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
