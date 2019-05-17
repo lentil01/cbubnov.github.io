@@ -164,7 +164,7 @@ p {
   }
 }
 .box-padding {
-  padding-bottom: 0px;
+  padding: 10px;
 }
 
 @media (max-width: 992px) {
@@ -425,7 +425,19 @@ p {
     }
   }
   &-dark {
-    color: #868886;
+    color: $heading-color;
+
+    &:hover {
+      // background-color: $g30;
+      color: $heading-color;
+    }
+    &-selected {
+      text-decoration: underline;
+      color: $yellow;
+      &:hover {
+        color: $yellow;
+      }
+    }
   }
   &-right {
     text-align: right;
