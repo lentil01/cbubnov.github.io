@@ -23,12 +23,12 @@ button {
 }
 
 .draw {
-  transition: color 0.25s;
+  transition: color 0.25s ease-in-out;
 
   &::before,
   &::after {
     // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
-    border: 2px solid transparent;
+    border: 1.5px solid transparent;
     width: 0;
     height: 0;
   }
@@ -46,7 +46,7 @@ button {
   }
 
   &:hover {
-    color: $cyan;
+    color: $bg-color;
   }
 
   // Hover styles
@@ -57,14 +57,14 @@ button {
   }
 
   &:hover::before {
-    border-top-color: $cyan;
-    border-right-color: $cyan;
+    border-top-color: $bg-color;
+    border-right-color: $bg-color;
     transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
   }
 
   &:hover::after {
-    border-bottom-color: $cyan; // Make borders visible
-    border-left-color: $cyan;
+    border-bottom-color: $bg-color; // Make borders visible
+    border-left-color: $bg-color;
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
       height 0.25s ease-out 0.75s;
   }
@@ -91,7 +91,7 @@ button {
   &:hover::after {
     border-bottom-color: $bg-color;
     border-left-color: $bg-color;
-    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+    transition: height 0.25s ease-in-out, width 0.25s ease-in-out 0.25s;
   }
 }
 
