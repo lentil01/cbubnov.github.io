@@ -6,6 +6,8 @@ button {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
 
   &::before,
   &::after {
@@ -106,8 +108,10 @@ button {
   margin: auto;
 
   &-icon {
-    padding: 6px 18px 2px;
-    font-size: 28px;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    // font-size: 28px;
   }
   &-transparent-icon {
     padding: 6px 18px 2px;
@@ -171,8 +175,9 @@ button {
   &-transparent-light-draw {
     background-color: none;
     color: $bg-color;
+
     &:first-child {
-      margin-left: -28px;
+      margin-left: -18px;
     }
 
     &:hover {

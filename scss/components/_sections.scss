@@ -330,7 +330,7 @@ p {
 }
 
 .box-footer-text {
-  font-family: IBMPlexSans-Light;
+  font-family: IBMPlexSans-Regular;
   position: absolute;
   top: 0;
   left: 0;
@@ -511,6 +511,16 @@ p {
   }
 }
 
+.tools-used {
+  font-family: IBMPlexMono-Regular, monospace;
+  padding-left: 0;
+  padding-right: 0;
+  color: #949391;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
 .footer-item {
   font-family: IBMPlexMono-Regular, monospace;
   padding-left: 0;
@@ -523,6 +533,7 @@ p {
 
 .footer-item:hover {
   color: #a4a5a2;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
