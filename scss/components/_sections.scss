@@ -412,9 +412,13 @@ p {
 }
 
 .photo-nav {
-  padding: 1rem 10px 3rem 10px;
-  // position: fixed;
-  // z-index: 1000;
+  padding: 2rem 10px 1rem 10px;
+  position: fixed;
+  top: 0;
+  // left: 0;
+  z-index: 1000;
+  max-width: 80%;
+  background: $bg-color;
 }
 
 .hero-item {
@@ -555,6 +559,7 @@ p {
 
 .photo-container {
   max-width: 80%;
+  padding-top: 4rem;
 }
 
 .fadein {
