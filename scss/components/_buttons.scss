@@ -133,11 +133,19 @@ button {
   &-dark {
     background-color: #373a38;
     color: $bg-color;
+    transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
 
     &:hover {
       background-color: #4f5351;
       color: $bg-color;
       text-decoration: none;
+      transition: background-color 0.25s ease;
+      -webkit-transition: background-color 0.25s ease;
+      -moz-transition: background-color 0.25s ease;
+      -o-transition: background-color 0.25s ease;
     }
   }
 
