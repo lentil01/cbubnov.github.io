@@ -37,12 +37,12 @@ body {
 
 a {
   color: #595958;
-  // text-decoration: none;
+  text-decoration: none;
   display: inline;
 
   &:hover {
     color: $g30;
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 }
 
@@ -424,14 +424,18 @@ p {
 .hero-item {
   font-family: IBMPlexMono-Italic, monospace;
   padding-left: 0;
-  padding-right: 1rem;
+  // padding-right: 1rem;
+  margin-right: 1rem;
+
   letter-spacing: 0.04em;
   // text-transform: uppercase;
   font-size: 14px;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom ease-in-out 0.2s;
 
   &:last-child {
-    padding-right: 0;
+    margin-right: 0;
   }
 
   &-light {
@@ -440,6 +444,9 @@ p {
     &:hover {
       // background-color: $g30;
       color: $bg-color;
+      border-color: $bg-color;
+
+      // border-color: red;
     }
   }
   &-dark {
@@ -448,12 +455,16 @@ p {
     &:hover {
       // background-color: $g30;
       color: $heading-color;
+      border-color: $heading-color;
     }
     &-selected {
-      text-decoration: underline;
+      // text-decoration: underline;
       color: $yellow;
+      border-color: $yellow;
+
       &:hover {
         color: $yellow;
+        border-color: $yellow;
       }
     }
   }
