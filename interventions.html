@@ -10,11 +10,27 @@
   <meta property="og:image" content="https://chrisbubnov.com/img/rich-preview.png" />
   <meta property="og:title" content="chris bubnov, designer" />
   <meta property="og:description" content="the site of" />
-  <title>interventions</title>
+  <!-- <title>interventions</title> -->
   <link rel="icon" href="img/favicon-interventions.png">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link type="text/css" href="css/main.css" rel="stylesheet">
 </head>
+
+<script language="JavaScript">
+    var space = " ";
+    var speed = "150";
+    var pos = 0;
+    var foo = document.createTextNode("\u00A0");
+    var msg ="~ interventions ~ a design conference";
+    function Scroll()
+    {
+    document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+    pos++;
+    if (pos > msg.length) pos = 0;
+    window.setTimeout("Scroll()", speed);
+    }
+    Scroll();
+</script>
 
 <body class="fadein">
   <!-- Page Content -->
@@ -102,7 +118,7 @@
       <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
           <div class="project-padding col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
-            <h2>This type of project<span> was a first for <a href="https://web.northeastern.edu/scout/" class="about-link text-dark">Scout</a> and all members involved. We spent a lot of time brainstorming ideas, names, concepts, and visual directions. Our soul searching turned into rapid-fire visuals, keeping in mind the question: How does design intervene in the world, for better or worse?</span></h2>
+            <h2>This type of project<span> was a first for <a href="https://web.northeastern.edu/scout/" class="about-link about-link-dark">Scout</a> and all members involved. We spent a lot of time brainstorming ideas, names, concepts, and visual directions. Our soul searching turned into rapid-fire visuals, keeping in mind the question: How does design intervene in the world, for better or worse?</span></h2>
           </div>
         </div>
       </div>
@@ -258,7 +274,7 @@
           <div class="caption-left col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
           </div>
           <div class="caption-left col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
-            <p><span>↑ </span>For a more detailed look at the Interventions identity, check out our <a class="about-link text-dark" href="img/interventions/Brand Guidelines.pdf" target="_blank">brand guidelines.</a></p>
+            <p><span>↑ </span>For a more detailed look at the Interventions identity, check out our <a class="about-link about-link-dark" href="img/interventions/Brand Guidelines.pdf" target="_blank">brand guidelines.</a></p>
           </div>
         </div>
       </div>
@@ -325,7 +341,7 @@
       <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
           <div class="project-padding col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
-            <h2>We put up<span> an introductory website and planned for its various states - before, during, and after the conference. You can doodle on the site with your cursor <a class="about-link text-dark" href="http://interventions.design" target="_blank">(try it!)</a> and buy tickets.</span></h2>
+            <h2>We put up<span> an introductory website and planned for its various states - before, during, and after the conference. You can doodle on the site with your cursor <a class="about-link about-link-dark" href="http://interventions.design" target="_blank">(try it!)</a> and buy tickets.</span></h2>
           </div>
         </div>
       </div>

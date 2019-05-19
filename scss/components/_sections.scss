@@ -386,10 +386,36 @@ p {
 .about-link {
   // font-family: IBMPlexSans-SemiBold;
   // text-decoration: underline;
-  &:hover {
-    color: $bg-color;
-    text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &-dark {
+    color: $heading-color;
+    border-color: $heading-color;
+
+    &:hover {
+      color: $heading-color;
+      border-color: transparent;
+      text-decoration: none;
+    }
   }
+
+  &-light {
+    color: $bg-color;
+    border-color: $bg-color;
+
+    &:hover {
+      color: $bg-color;
+      border-color: transparent;
+      text-decoration: none;
+    }
+  }
+
+  // &:hover {
+  //   // color: $bg-color;
+  //   border-color: $heading-color;
+  //   text-decoration: none;
+  // }
 }
 
 .footer {
