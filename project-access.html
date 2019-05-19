@@ -3,7 +3,6 @@
 
 <head>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i" rel="stylesheet"> -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website" />
@@ -11,15 +10,31 @@
   <meta property="og:image" content="https://chrisbubnov.com/img/rich-preview.png" />
   <meta property="og:title" content="chris bubnov, designer" />
   <meta property="og:description" content="the site of" />
-  <title>project access</title>
+  <!-- <title>project access</title> -->
   <link rel="icon" href="img/favicon-project-access.png">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link type="text/css" href="css/main.css" rel="stylesheet">
 </head>
 
+<script language="JavaScript">
+    var space = " ";
+    var speed = "150";
+    var pos = 0;
+    var foo = document.createTextNode("\u00A0");
+    var msg ="~ project access ~ education for all";
+    function Scroll()
+    {
+    document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+    pos++;
+    if (pos > msg.length) pos = 0;
+    window.setTimeout("Scroll()", speed);
+    }
+    Scroll();
+</script>
+
 <body>
   <!-- Navigation -->
-  <div class="project-info row">
+  <!-- <div class="project-info row">
     <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="row">
         <div class="project-center project-padding col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
@@ -27,12 +42,65 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Page Content -->
   <div class="container">
-    <br><br>
     <!-- Summary Header -->
+
+    <div class="project-hero row" style="background-image: url('img/tulip/hero-bg.png')">
+
+      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="project-center project-padding row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div  class="col-xl-4 col-lg-4 col-md-3">
+            <h1><a class="logo logo-light" href="index.html">Chris Bubnov</a></h1>
+          </div>
+          <div class=" col-xl-8 col-lg-8 col-md-9 hero-item-right">
+            <a class="hero-item hero-item-light" href="design.html">design</a>
+            <a class="hero-item hero-item-light" href="photography.html">photo</a>
+            <a class="hero-item hero-item-light" href="https://dribbble.com/chrisdega" target="_blank">dribbble</a>
+            <a class="hero-item hero-item-light" href="https://github.com/lentil01" target="_blank">github</a>
+            <a class="hero-item hero-item-light" href="resume.pdf" target="_blank">résumé</a>
+            <a class="hero-item hero-item-light" href="mailto:loverly@protonmail.com?subject=Hello!">hi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="project-center project-padding col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a class="button-transparent-light-draw" href="interventions.html"><button class="button text-light draw meet">prev</button></a>
+            <div class="button text-light">//</div>
+            <a class="button-transparent-light-draw" href="project-access.html"><button class="button text-light draw meet">next</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="project-center project-padding col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="project-hero-tags project-hero-tags-light">project management / identity / web / collateral</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+        <h5 class="project project-padding project-center project-hero-title">Leveling the playing field of top-tier university admissions</h5>
+        <br>
+      </div>
+      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
+          </div>
+          <div class="project-hero-sections col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p>
+                <a class="project-hero-sections-section project-hero-sections-section-light" href="tulip.html#website">1 | Website<span>  ↓</span></a>
+              </p>
+              <p>
+                <a class="project-hero-sections-section project-hero-sections-section-light" href="tulip.html#product">2 | Product<span>  ↓</span></a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div class="project-info row">

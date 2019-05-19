@@ -11,11 +11,27 @@
   <meta property="og:image" content="https://chrisbubnov.com/img/rich-preview.png" />
   <meta property="og:title" content="chris bubnov, designer" />
   <meta property="og:description" content="the site of" />
-  <title>tulip</title>
+  <!-- <title>tulip</title> -->
   <link rel="icon" href="img/favicon-tulip.png">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link type="text/css" href="css/main.css" rel="stylesheet">
 </head>
+
+<script language="JavaScript">
+    var space = " ";
+    var speed = "150";
+    var pos = 0;
+    var foo = document.createTextNode("\u00A0");
+    var msg ="~ tulip ~ comprehensive manufacturing";
+    function Scroll()
+    {
+    document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+    pos++;
+    if (pos > msg.length) pos = 0;
+    window.setTimeout("Scroll()", speed);
+    }
+    Scroll();
+</script>
 
 <body class="fadein">
   <!-- Page Content -->
@@ -28,7 +44,11 @@
       <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="project-center project-padding row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div  class="col-xl-4 col-lg-4 col-md-3">
-            <h1><a class="logo logo-light" href="index.html">Chris Bubnov</a></h1>
+            <h1>
+              <a class="logo logo-light" href="index.html">
+              Chris Bubnov
+            </a>
+          </h1>
           </div>
           <div class=" col-xl-8 col-lg-8 col-md-9 hero-item-right">
             <a class="hero-item hero-item-light" href="design.html">design</a>
@@ -66,8 +86,12 @@
           <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
           </div>
           <div class="project-hero-sections col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <p class="project-hero-sections-section project-hero-sections-section-light">1 | Website</p>
-            <p class="project-hero-sections-section project-hero-sections-section-light">2 | Product</p>
+              <p>
+                <a class="project-hero-sections-section project-hero-sections-section-light" href="tulip.html#website">1 | Website<span>  ↓</span></a>
+              </p>
+              <p>
+                <a class="project-hero-sections-section project-hero-sections-section-light" href="tulip.html#product">2 | Product<span>  ↓</span></a>
+              </p>
           </div>
         </div>
       </div>
@@ -87,7 +111,7 @@
     <!-- WEBSITE SECTION -->
     <br>
     <div class="project-section-padding">
-      <h3><span>Website</span></h3>
+      <h3 id="website"><span>Website</span></h3>
     </div>
     <br><br><br><br>
 
@@ -114,7 +138,6 @@
           <div class="caption-left col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
           </div>
           <div class="caption-left col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
-            <!-- <p><span>↑ </span>Banner advertisements for use on outdoor apparel, generic, and gymnastics sites, respectively.</p> -->
           </div>
         </div>
       </div>
@@ -234,7 +257,7 @@
 
     <!-- PRODUCT SECTION -->
     <br><br><br><br>
-    <h3><span>Product</span></h3>
+    <h3 id="product"><span>Product</span></h3>
     <br><br><br><br>
 
     <div class="project-info row">
