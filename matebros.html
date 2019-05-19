@@ -4,7 +4,7 @@
 <head>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i" rel="stylesheet"> -->
-  <title>maté bros</title>
+  <!-- <title>maté bros</title> -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website" />
@@ -17,9 +17,25 @@
   <link type="text/css" href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<script language="JavaScript">
+  var space = " ";
+  var speed = "150";
+  var pos = 0;
+  var foo = document.createTextNode("\u00A0");
+  var msg ="~ maté bros ~ natural energy beverage";
+  function Scroll()
+  {
+  document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+  pos++;
+  if (pos > msg.length) pos = 0;
+  window.setTimeout("Scroll()", speed);
+  }
+  Scroll();
+</script>
+
+<body class="fadein">
   <!-- Navigation -->
-  <div class="project-info row">
+  <!-- <div class="project-info row">
     <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="row">
         <div class="project-center project-padding col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
@@ -27,13 +43,67 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Page Content -->
   <div class="container">
-    <br><br>
     <!-- Summary Header -->
-    <div class="project-info row">
+
+    <div class="project-hero row" style="background-image: url('img/matebros/hero-bg.png')">
+
+      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="project-center project-padding row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div  class="col-xl-4 col-lg-4 col-md-3">
+            <h1><a class="logo logo-light" href="index.html">Chris Bubnov</a></h1>
+          </div>
+          <div class=" col-xl-8 col-lg-8 col-md-9 hero-item-right">
+            <a class="hero-item hero-item-light" href="design.html">design</a>
+            <a class="hero-item hero-item-light" href="photography.html">photo</a>
+            <a class="hero-item hero-item-light" href="https://dribbble.com/chrisdega" target="_blank">dribbble</a>
+            <a class="hero-item hero-item-light" href="https://github.com/lentil01" target="_blank">github</a>
+            <a class="hero-item hero-item-light" href="resume.pdf" target="_blank">résumé</a>
+            <a class="hero-item hero-item-light" href="mailto:loverly@protonmail.com?subject=Hello!">hi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="project-center project-padding col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a class="button-transparent-light-draw" href="interventions.html"><button class="button text-light draw meet">prev</button></a>
+            <div class="button text-light">//</div>
+            <a class="button-transparent-light-draw" href="project-access.html"><button class="button text-light draw meet">next</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="project-center project-padding col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="project-hero-tags project-hero-tags-light">creative direction / marketing / packaging</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+        <h5 class="project project-padding project-center project-hero-title">Using Natural Energy and Culture to Empower a Lifestyle</h5>
+        <br>
+      </div>
+      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
+          </div>
+          <div class="project-hero-sections col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p>
+                <a class="project-hero-sections-section project-hero-sections-section-light" href="matebros.html#marketing">1 | Marketing<span>  ↓</span></a>
+              </p>
+              <p>
+                <a class="project-hero-sections-section project-hero-sections-section-light" href="matebros.html#packaging">2 | Packaging<span>  ↓</span></a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="project-info row">
       <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
           <div class="project-center project-padding col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
@@ -42,7 +112,7 @@
         </div>
       </div>
       <div class="project-center col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
-        <h5 class="project project-center">Using Natural Energy and Culture to empower a lifestyle</h5>
+        <h5 class="project project-center">Using Natural Energy and Culture to Empower a Lifestyle</h5>
         <br>
       </div>
 
@@ -63,12 +133,24 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <br><br>
+    <div class="project-center project-info col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="row">
+        <div class="project-padding col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
+        </div>
+        <div class="project-padding col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+          <h2>Maté Bros makes<span> energy tea from Yerba Mate, a plant native to South America. I loved working with this startup to iteratively define their market, copy, and style thought advertisements and marketing collateral. It was interesting to leverage a co-founder of the company's olympian status, Sam Mikulak, through advertising and social media endorsements.</span></h2>
+
+          </div>
+      </div>
     </div>
 
     <!-- Marketing Section -->
-    <br><br><br><br><br>
+    <br>
     <div class="project-section-padding">
-      <h3><span>Marketing</span></h3>
+      <h3 id="marketing"><span>Marketing</span></h3>
     </div>
     <br><br><br><br>
 
@@ -85,13 +167,13 @@
     <div class="project-info project-section-padding row">
       <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
-          <div class="project-padding-top col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-padding-top project-padding col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img src="img/matebros/marketing/horiz-ad-2.jpg" class="image project-padding-top">
           </div>
-          <div class="project-padding-top col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-padding-top project-padding col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img src="img/matebros/marketing/focus.jpg" class="image">
           </div>
-          <div class="project-padding-top col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-padding-top project-padding col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img src="img/matebros/marketing/horiz-ad-1.jpg" class="image">
           </div>
         </div>
@@ -119,7 +201,7 @@
       </div>
       <div class="project-padding-top col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
-          <div class="project-padding-top col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-padding-top project-padding col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img src="img/matebros/marketing/stand2.png" class="image">
           </div>
         </div>
@@ -130,10 +212,10 @@
     <div class="project-info project-section-padding row">
       <div class="project-padding-top col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
-          <div class="project-padding-top col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="project-padding-top project-padding col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <img src="img/matebros/marketing/banner-01.jpg" class="image">
           </div>
-          <div class="project-padding-top col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="project-padding-top project-padding col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <img src="img/matebros/marketing/banner-02.jpg" class="image">
           </div>
         </div>
@@ -149,9 +231,10 @@
       </div>
     </div>
 
+<!-- PACKAGING -->
 
     <br><br><br><br>
-    <h3><span>packaging</span></h3>
+    <h3 id="packaging"><span>packaging</span></h3>
     <br><br><br><br>
 
     <div class="project-info row">
@@ -167,13 +250,13 @@
     <div class="project-info project-section-padding row">
       <div class="project-padding-top col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
-          <div class="project-padding-top col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="project-padding-top project-padding col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <img src="img/matebros/packaging/IMG_1035.JPG" class="image">
           </div>
-          <div class="project-padding-top col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="project-padding-top project-padding col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <img src="img/matebros/packaging/IMG_1036.JPG" class="image">
           </div>
-          <div class="project-padding-top col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="project-padding-top project-padding col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <img src="img/matebros/packaging/IMG_1037.JPG" class="image">
           </div>
         </div>
@@ -201,10 +284,10 @@
       </div>
       <div class="project-padding-top col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
-          <div class="project-padding-top col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="project-padding-top project-padding col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <img src="img/matebros/packaging/6.jpg" class="image">
           </div>
-          <div class="project-padding-top col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="project-padding-top project-padding col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <img src="img/matebros/packaging/7.jpg" class="image">
           </div>
         </div>
@@ -214,10 +297,10 @@
     <div class="project-info project-section-padding project-section-padding-bottom row">
       <div class="project-padding-top col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
-          <div class="project-center project-padding-top col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="project-center project-padding project-padding-top col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <img src="img/matebros/packaging/can-final.jpg" class="image">
           </div>
-          <div class="project-center project-padding-top col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <div class="project-center project-padding project-padding-top col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-12">
             <img src="img/matebros/packaging/can-final-01.jpg" class="image">
           </div>
         </div>
@@ -236,10 +319,10 @@
   <div class="project-padding-top col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="row">
       <div class="project-center project-padding-top col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <p class="footer-item">tools used: pen & paper, illustrator, indesign, photoshop, sketch</p>
+        <p class="tools-used">tools used: pen & paper, illustrator, indesign, photoshop, sketch</p>
       </div>
       <div class="project-padding-top project-ending-button col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <a class="button button-dark" href="https://matebros.com" target="_blank">matebros.com</a>
+        <a class="button button-dark" href="https://matebros.com" target="_blank">matebros.com →</a>
       </div>
     </div>
   </div>
@@ -266,7 +349,7 @@
             <div class="box-footer-text">
               <div>
                 <span>
-                    <h2>Interventions</h2><p>a design conference</p>
+                  <h1 class="thumb-heading">Interventions</h1><p>a design conference</p>
                   </span>
               </div>
             </div>
@@ -281,7 +364,7 @@
             <div class="box-footer-text">
               <div>
                 <span>
-                    <h2>Tulip Interfaces</h2><p>comprehensive manufacturing</p>
+                  <h1 class="thumb-heading">Tulip Interfaces</h1><p>comprehensive manufacturing</p>
                   </span>
               </div>
             </div>
@@ -296,7 +379,7 @@
             <div class="box-footer-text">
               <div>
                 <span>
-                    <h2>Project Access</h2><p>higher education for all</p>
+                  <h1 class="thumb-heading">Project Access</h1><p>higher education for all</p>
                   </span>
               </div>
             </div>
@@ -310,7 +393,7 @@
             <div class="box-text-active">
               <div>
                 <span>
-                    <h2>Maté Bros</h2><p>the natural energy beverage</p>
+                    <h1 class="thumb-heading">Maté Bros</h1><p>the natural energy beverage</p>
                   </span>
               </div>
             </div>
@@ -327,7 +410,7 @@
           <a class="footer-item" href="mailto:loverly@protonmail.com?subject=Hello!">let's change things</a>
         </div>
         <div class="project-padding project-padding-top col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <h1><a class="footer-nav" href="index.html">chris bubnov</a></h1>
+          <h1><a class="footer-nav logo logo-light" href="index.html">Chris Bubnov</a></h1>
         </div>
       </div>
     </div>
