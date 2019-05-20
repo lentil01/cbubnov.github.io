@@ -490,7 +490,6 @@ p {
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom ease-in-out 0.2s;
-  font-style: italic;
 
   &:last-child {
     margin-right: 0;
@@ -537,7 +536,6 @@ p {
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom ease-in-out 0.2s;
-  font-style: italic;
 
   &:last-child {
     margin-right: 0;
@@ -1145,8 +1143,7 @@ h2 .project {
 }
 
 .caption p {
-  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-  font-style: italic;
+  font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   font-weight: normal;
   font-size: 13px;
   padding-top: 1em;
@@ -1155,8 +1152,7 @@ h2 .project {
 }
 
 .caption-left p {
-  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-  font-style: italic;
+  font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   font-weight: medium;
   font-size: 13px;
   padding-top: 1rem;
