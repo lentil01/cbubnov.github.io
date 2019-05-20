@@ -448,6 +448,58 @@ p {
   background: $bg-color;
 }
 
+@media (max-width: 767px) {
+  .home-summary {
+    font-size: 20px;
+  }
+}
+
+.home-link {
+  font-family: IBMPlexMono-Italic, monospace;
+  padding-left: 0;
+  margin-right: 1rem;
+  letter-spacing: 0.04em;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom ease-in-out 0.2s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-light {
+    color: $bg-color;
+
+    &:hover {
+      color: $bg-color;
+      border-color: $bg-color;
+    }
+  }
+  &-dark {
+    color: $heading-color;
+
+    &:hover {
+      // background-color: $g30;
+      color: $heading-color;
+      border-color: $heading-color;
+    }
+    &-selected {
+      // text-decoration: underline;
+      color: $yellow;
+      border-color: $yellow;
+
+      &:hover {
+        color: $yellow;
+        border-color: $yellow;
+      }
+    }
+  }
+  &-right {
+    text-align: right;
+  }
+}
+//
 .hero-item {
   font-family: IBMPlexMono-Italic, monospace;
   padding-left: 0;
@@ -557,6 +609,12 @@ p {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .tools-used {
+    text-align: center;
+  }
 }
 
 .footer-item {
@@ -984,6 +1042,19 @@ h2 .project {
   }
 }
 
+@media (max-width: 767px) {
+  .project-hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-hero-tags {
+    padding-top: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .project-info {
     padding: 1rem;
@@ -1053,5 +1124,12 @@ h2 .project {
 @media (max-width: 768px) {
   .project-ending-button {
     text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-ending-button {
+    margin: auto;
+    text-align: center;
   }
 }
