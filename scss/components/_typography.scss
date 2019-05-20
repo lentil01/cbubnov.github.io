@@ -1,55 +1,48 @@
 @font-face {
-  font-family: IBMPlexSans-Regular;
+  font-family: "IBMPlexSans-Regular";
   src: url("fonts/IBMPlexSans/IBMPlexSans-Regular.woff") format("woff"),
     url("fonts/IBMPlexSans/IBMPlexSans-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: BluuNext-Bold;
+  font-family: "BluuNext-Bold";
   src: url("fonts/bluunext-bold-webfont.woff") format("woff"),
     url("fonts/BluuNext-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: IBMPlexSans-Bold;
-  src: url("fonts/IBMPlexSans/IBMPlexSans-Bold.woff") format("woff"),
-    url("fonts/IBMPlexSans/IBMPlexSans-Bold.otf") format("opentype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: IBMPlexSans-SemiBold;
+  font-family: "IBMPlexSans-SemiBold";
   src: url("fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff") format("woff"),
     url("fonts/IBMPlexSans/IBMPlexSans-SemiBold.otf") format("opentype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: IBMPlexSans-Italic;
+  font-family: "IBMPlexSans-Italic";
   src: url("fonts/IBMPlexSans/IBMPlexSans-Italic.woff") format("woff"),
     url("fonts/IBMPlexSans/IBMPlexSans-Italic.otf") format("opentype");
 }
 
 @font-face {
-  font-family: IBMPlexSans-Light;
+  font-family: "IBMPlexSans-Light";
   src: url("fonts/IBMPlexSans/IBMPlexSans-Light.woff") format("woff"),
     url("fonts/IBMPlexSans/IBMPlexSans-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: IBMPlexMono-Regular;
+  font-family: "IBMPlexMono-Regular";
   src: url("fonts/IBMPlexMono/IBMPlexMono-Regular.woff") format("woff"),
     url("fonts/IBMPlexMono/IBMPlexMono-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: IBMPlexMono-Italic;
+  font-family: "IBMPlexMono-Italic";
   src: url("fonts/IBMPlexMono/IBMPlexMono-Italic.woff") format("woff"),
     url("fonts/IBMPlexMono/IBMPlexMono-Italic.otf") format("opentype");
 }
 
 h4 {
-  font-family: IBMPlexSans-Medium;
+  font-family: "IBMPlexSans-SemiBold", "Arial Black", Arial, sans-serif;
   color: #797979;
   font-size: 16px;
   letter-spacing: 0.07em;
@@ -57,12 +50,10 @@ h4 {
 }
 
 h5 {
-  font-family: BluuNext-Bold;
+  font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: $heading-color;
   font-size: 48px;
-  // letter-spacing: -0.03em;
   line-height: 1.15em;
-  // text-transform: uppercase;
 }
 
 @media (max-width: 675px) {
@@ -78,7 +69,7 @@ h5 {
 }
 
 h6 {
-  font-family: BluuNext-Bold;
+  font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: $heading-color;
   font-size: 64px;
   letter-spacing: -0.05em;
@@ -92,7 +83,7 @@ h6 {
 }
 
 h3 {
-  font-family: BluuNext-Bold, serif;
+  font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   text-transform: uppercase;
   position: relative;
   padding-left: 4rem;
@@ -101,7 +92,6 @@ h3 {
   letter-spacing: 1px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  // margin: 0px -60px;
 
   span {
     background: $bg-color;
@@ -132,23 +122,22 @@ h1 {
   font-size: 22px;
 
   span {
+    font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     margin: 0;
-    font-family: IBMPlexSans-Regular;
     text-transform: none;
     line-height: 1.5em;
   }
 }
 
 h2 {
-  font-family: BluuNext-Bold;
+  font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: $heading-color;
   font-size: 16px;
   letter-spacing: 0.3px;
-  // text-transform: uppercase;
 
   span {
+    font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     margin: 0;
-    font-family: IBMPlexSans-Regular;
     color: #4b4a4a;
     text-transform: none;
     font-size: 16px;

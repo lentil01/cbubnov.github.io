@@ -12,10 +12,9 @@ html {
 }
 
 body {
-  font-family: IBMPlexSans-Regular;
+  font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
   background-color: $bg-color;
   color: #4b4a4a;
-  // margin: 0 60px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -24,11 +23,11 @@ body {
 }
 
 ::selection {
-  background: $yellow-highlight; /* WebKit/Blink Browsers */
+  background: $yellow-highlight;
   color: $bg-color;
 }
 ::-moz-selection {
-  background: $yellow-highlight; /* Gecko Browsers */
+  background: $yellow-highlight;
   color: $bg-color;
 }
 
@@ -43,12 +42,10 @@ a {
 
   &:hover {
     color: $g30;
-    // text-decoration: underline;
   }
 }
 
 p {
-  // margin: auto;
   line-height: 1.3em;
 }
 
@@ -61,7 +58,7 @@ p {
 }
 
 .spread-text {
-  font-family: BluuNext-Bold;
+  font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: #f9f9fa;
   font-size: 14px;
   letter-spacing: 0.3px;
@@ -180,7 +177,7 @@ p {
 }
 
 .thumb-heading {
-  font-family: BluuNext-Bold;
+  font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
 }
 
 .thumb-padding {
@@ -200,7 +197,7 @@ p {
 }
 
 .box-text {
-  font-family: IBMPlexSans-Regular;
+  font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -331,7 +328,7 @@ p {
 }
 
 .box-footer-text {
-  font-family: IBMPlexSans-Regular;
+  font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -384,8 +381,6 @@ p {
 }
 
 .about-link {
-  // font-family: IBMPlexSans-SemiBold;
-  // text-decoration: underline;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s ease-in-out, color 0.2s ease-in-out;
 
@@ -487,7 +482,7 @@ p {
 }
 
 .home-link {
-  font-family: IBMPlexMono-Italic, monospace;
+  font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   padding-left: 0;
   margin-right: 1rem;
   letter-spacing: 0.04em;
@@ -495,6 +490,7 @@ p {
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom ease-in-out 0.2s;
+  font-style: italic;
 
   &:last-child {
     margin-right: 0;
@@ -533,17 +529,15 @@ p {
 }
 //
 .hero-item {
-  font-family: IBMPlexMono-Italic, monospace;
+  font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   padding-left: 0;
-  // padding-right: 1rem;
   margin-right: 1rem;
-
   letter-spacing: 0.04em;
-  // text-transform: uppercase;
   font-size: 14px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom ease-in-out 0.2s;
+  font-style: italic;
 
   &:last-child {
     margin-right: 0;
@@ -597,7 +591,7 @@ p {
 }
 
 .link-dark {
-  font-family: IBMPlexMono-Regular, monospace;
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   padding-left: 0;
   padding-right: 1rem;
   color: #868886;
@@ -957,7 +951,7 @@ p {
 }
 
 .description {
-  font-family: IBMPlexMono-Regular, monospace;
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   color: #949391;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -1042,12 +1036,10 @@ h2 .project {
     padding: 1rem 4rem 3rem 4rem;
 
     &-sections {
-      // border-left: 1px solid $bg-color;
-      // margin-left: 1rem;
       padding-left: 1rem;
 
       &-section {
-        font-family: IBMPlexMono-Regular, monospace;
+        font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
         letter-spacing: 0.07em;
         font-size: 14px;
         text-transform: uppercase;
@@ -1078,7 +1070,7 @@ h2 .project {
     }
 
     &-tags {
-      font-family: IBMPlexMono-Regular, monospace;
+      font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
       letter-spacing: 0.07em;
       font-size: 12px;
       text-transform: uppercase;
@@ -1153,7 +1145,7 @@ h2 .project {
 }
 
 .caption p {
-  font-family: IBMPlexMono-Regular, monospace;
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   font-style: italic;
   font-weight: normal;
   font-size: 13px;
@@ -1163,7 +1155,7 @@ h2 .project {
 }
 
 .caption-left p {
-  font-family: IBMPlexMono-Regular, monospace;
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   font-style: italic;
   font-weight: medium;
   font-size: 13px;
