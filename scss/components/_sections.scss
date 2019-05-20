@@ -438,6 +438,14 @@ p {
   bottom: 2rem;
 }
 
+@media (max-width: 400px) {
+  .home-links {
+    padding-top: 3rem;
+    position: relative;
+    display: inline-block;
+  }
+}
+
 .photo-nav {
   padding: 2rem 10px 1rem 10px;
   position: fixed;
@@ -448,9 +456,9 @@ p {
   background: $bg-color;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   .home-summary {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
