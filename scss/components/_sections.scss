@@ -1091,10 +1091,17 @@ h2 .project {
   }
 }
 
+@media (max-width: 400px) {
+  .project-hero-sections {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .project-hero {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
