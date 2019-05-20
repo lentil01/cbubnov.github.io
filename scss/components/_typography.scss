@@ -122,20 +122,19 @@ h3 {
   }
 }
 
+@media (max-width: 512px) {
+  h3 {
+    padding-left: 17px;
+  }
+}
+
 h1 {
-  // color: $heading-color;
   font-size: 22px;
-  // letter-spacing: 1px;
-  // font-style: italic;
-  // a:hover {
-  //   text-decoration: none;
-  // }
+
   span {
     margin: 0;
     font-family: IBMPlexSans-Regular;
-    // color: #4b4a4a;
     text-transform: none;
-    // font-size: 16px;
     line-height: 1.5em;
   }
 }
