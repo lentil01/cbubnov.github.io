@@ -1006,6 +1006,13 @@ h2 .project {
   }
 }
 
+@media (max-width: 400px) {
+  .project-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 991px) {
   .project-padding-middle {
     padding-top: 1rem;
@@ -1091,6 +1098,17 @@ h2 .project {
   }
 }
 
+@media (max-width: 768px) {
+  .project-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .prev-next {
+    display: none;
+  }
+}
 @media (max-width: 400px) {
   .project-hero-sections {
     display: none;
@@ -1099,8 +1117,8 @@ h2 .project {
 
 @media (max-width: 767px) {
   .project-hero {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 1rem;
   }
 }
@@ -1114,6 +1132,13 @@ h2 .project {
 @media (max-width: 768px) {
   .project-info {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-info {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
