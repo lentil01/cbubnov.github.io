@@ -115,6 +115,15 @@
   }
 }
 
+@media (max-width: 400px) {
+  .mySlides {
+    // position: relative;
+    img {
+      padding: 0;
+    }
+  }
+}
+
 .cursor {
   cursor: pointer;
   opacity: 1;
@@ -141,14 +150,28 @@
   padding: 10px;
 }
 
+@media (max-width: 400px) {
+  .photo-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .photo-box {
   // width: 210px;
   // height: 210px;
   overflow: hidden;
+  mask-image: radial-gradient(circle, white, black);
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
   // padding: 10px;
 
-  &:hover img {
+  // &:hover img {
+
+  // }
+}
+
+@media (min-width: 400px) {
+  .photo-box:hover img {
     transform: scale(0.9);
     -webkit-transform: scale(1.04);
     -moz-transform: scale(1.04);

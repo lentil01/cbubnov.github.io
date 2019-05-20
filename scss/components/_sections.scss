@@ -440,9 +440,25 @@ p {
 
 @media (max-width: 400px) {
   .home-links {
-    padding-top: 3rem;
+    margin-top: 2rem !important;
     position: relative;
-    display: inline-block;
+    display: flex;
+  }
+}
+
+.design-nav {
+  padding: 2rem 10px 1rem 10px;
+  position: fixed;
+  top: 0;
+  // left: 0;
+  z-index: 1000;
+  max-width: 80%;
+  background: $bg-color;
+}
+
+@media (max-width: 400px) {
+  .design-nav {
+    max-width: 100%;
   }
 }
 
@@ -454,6 +470,14 @@ p {
   z-index: 1000;
   max-width: 80%;
   background: $bg-color;
+}
+
+@media (max-width: 400px) {
+  .photo-nav {
+    position: sticky;
+    top: -4rem !important;
+    margin-top: -4rem !important;
+  }
 }
 
 @media (max-width: 400px) {
@@ -679,6 +703,23 @@ p {
 .photo-container {
   max-width: 80%;
   padding-top: 4rem;
+}
+
+@media (max-width: 400px) {
+  .photo-container {
+    max-width: 100%;
+  }
+}
+
+.design-container {
+  max-width: 80%;
+  padding-top: 4rem;
+}
+
+@media (max-width: 400px) {
+  .design-container {
+    max-width: 90%;
+  }
 }
 
 .fadein {
