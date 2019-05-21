@@ -37,8 +37,8 @@
 
 @font-face {
   font-family: "IBMPlexSans-Text";
-  src: url("fonts/IBMPlexMono/IBMPlexSans-Text.woff") format("woff"),
-    url("fonts/IBMPlexMono/IBMPlexSans-Text.otf") format("opentype");
+  src: url("fonts/IBMPlexSans/IBMPlexSans-Text.woff") format("woff"),
+    url("fonts/IBMPlexSans/IBMPlexSans-Text.otf") format("opentype");
 }
 
 @font-face {
@@ -132,6 +132,7 @@ h1 {
     margin: 0;
     text-transform: none;
     line-height: 1.5em;
+    color: $heading-color;
   }
 }
 

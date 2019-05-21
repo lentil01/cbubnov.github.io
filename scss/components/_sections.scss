@@ -121,16 +121,12 @@ p {
 }
 
 .box {
-  max-height: 150px;
+  max-height: 130px;
   border-radius: 3px;
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: #edeff1;
-  // transition: background-color 0.5s ease;
-  // -webkit-transition: background-color 0.5s ease;
-  // -moz-transition: background-color 0.5s ease;
-  // -o-transition: background-color 0.5s ease;
+  // background: #edeff1;
 }
 
 .box h2 {
@@ -141,7 +137,7 @@ p {
   min-height: 150px;
   width: 100%;
   border-radius: 3px;
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -151,7 +147,7 @@ p {
 }
 
 .box:hover img {
-  display: block;
+  display: none;
   background: $bg-color;
 }
 
@@ -206,6 +202,10 @@ p {
   padding-right: 10px;
   padding-left: 10px;
   color: #4b4a4a;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .box-text div {
@@ -215,14 +215,14 @@ p {
 }
 
 .box-text span {
-  display: table-cell;
   text-align: center;
   vertical-align: middle;
   color: #595958;
+  display: none;
 }
 
 .box-text:hover span {
-  display: none;
+  display: table-cell;
 }
 
 @media (max-width: 512px) {
@@ -395,6 +395,17 @@ p {
     }
   }
 
+  &-primary {
+    color: $yellow;
+    border-color: $yellow;
+
+    &:hover {
+      color: $yellow;
+      border-color: transparent;
+      text-decoration: none;
+    }
+  }
+
   &-light {
     color: $bg-color;
     border-color: $bg-color;
@@ -429,8 +440,22 @@ p {
 }
 
 .home-links {
-  position: fixed;
-  bottom: 2rem;
+  // position: fixed;
+  padding-top: 22px;
+  padding-bottom: 2rem;
+}
+
+.homeSummary {
+  font-size: 22px;
+  span {
+    color: $heading-color;
+  }
+}
+
+@media (max-width: 512px) {
+  .homeSummary {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 512px) {
@@ -887,6 +912,8 @@ p {
 
 .logo {
   font-family: BluuNext-Bold, serif;
+  line-height: 1.2em;
+  cursor: pointer;
   text-decoration: none;
   transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
