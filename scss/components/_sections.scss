@@ -945,6 +945,19 @@ p {
       -o-transition: color 0.25s ease;
     }
   }
+  &-home {
+    &:hover:after {
+      content: url("../img/hero-bg.png");
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: 100px !important;
+      // display: block;
+      z-index: -1;
+    }
+  }
+
+
   &-primary {
     color: $green;
 
@@ -957,6 +970,13 @@ p {
       -o-transition: color 0.25s ease;
     }
   }
+}
+
+@media (max-width: 512px) {
+  .logo-home {
+    &:hover:after {
+      content: "";
+    }  }
 }
 
 .footer-nav {
