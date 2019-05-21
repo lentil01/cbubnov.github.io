@@ -36,6 +36,12 @@
 }
 
 @font-face {
+  font-family: "IBMPlexMono-Text";
+  src: url("fonts/IBMPlexMono/IBMPlexMono-Text.woff") format("woff"),
+    url("fonts/IBMPlexMono/IBMPlexMono-Text.otf") format("opentype");
+}
+
+@font-face {
   font-family: "IBMPlexMono-Italic";
   src: url("fonts/IBMPlexMono/IBMPlexMono-Italic.woff") format("woff"),
     url("fonts/IBMPlexMono/IBMPlexMono-Italic.otf") format("opentype");
@@ -138,9 +144,17 @@ h2 {
   span {
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     margin: 0;
-    color: #4b4a4a;
+    // color: #4b4a4a;
     text-transform: none;
     font-size: 16px;
     line-height: 1.5em;
+  }
+}
+
+@media (max-width: 512px) {
+  h2 {
+    span {
+      font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+    }
   }
 }

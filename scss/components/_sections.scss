@@ -433,7 +433,7 @@ p {
   bottom: 2rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .home-links {
     margin-top: 2rem !important;
     position: relative;
@@ -451,7 +451,7 @@ p {
   background: $bg-color;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .design-nav {
     max-width: 100%;
   }
@@ -467,7 +467,7 @@ p {
   background: $bg-color;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .photo-nav {
     position: sticky;
     top: -4rem !important;
@@ -475,7 +475,7 @@ p {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .home-summary {
     font-size: 18px;
   }
@@ -697,7 +697,7 @@ p {
   padding-top: 4rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .photo-container {
     max-width: 100%;
   }
@@ -708,7 +708,7 @@ p {
   padding-top: 4rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .design-container {
     max-width: 90%;
   }
@@ -998,7 +998,7 @@ h2 .project {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .project-padding {
     padding-left: 0;
     padding-right: 0;
@@ -1094,12 +1094,12 @@ h2 .project {
     padding-right: 2rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .prev-next {
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .project-hero-sections {
     display: none;
   }
@@ -1125,7 +1125,7 @@ h2 .project {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .project-info {
     padding-left: 0;
     padding-right: 0;
@@ -1196,7 +1196,7 @@ h2 .project {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 512px) {
   .project-ending-button {
     margin: auto;
     text-align: center;
