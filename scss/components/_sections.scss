@@ -87,7 +87,7 @@ p {
 }
 
 .mobile-padding {
-  padding-left: 5px;
+  // padding-left: 5px;
 }
 
 // @media (min-width: 512px) {
@@ -99,20 +99,21 @@ p {
 @media (max-width: 512px) {
   .mobile-padding {
     padding-top: 50px;
+    // padding-bottom: 50px;
   }
 }
 
-@media (max-width: 768px) {
-  .mobile-padding {
-    padding-top: 200px;
-  }
-}
+// @media (max-width: 768px) {
+//   .mobile-padding {
+//     padding-top: 200px;
+//   }
+// }
 
-@media (max-width: 912px) {
-  .mobile-padding-top {
-    padding-top: 50px;
-  }
-}
+// @media (max-width: 912px) {
+//   .mobile-padding-top {
+//     padding-top: 50px;
+//   }
+// }
 
 .image {
   display: block;
@@ -122,7 +123,7 @@ p {
 
 .box {
   max-height: 130px;
-  border-radius: 3px;
+  border-radius: 6px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -280,7 +281,7 @@ p {
 
 .box-footer {
   max-height: 150px;
-  border-radius: 3px;
+  border-radius: 6px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -455,7 +456,7 @@ p {
 @media (max-width: 512px) {
   .homeSummary {
     font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -855,11 +856,11 @@ p {
 }
 
 .fadeinslow {
-  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1.5s; /* Firefox < 16 */
-  -ms-animation: fadein 1.5s; /* Internet Explorer */
-  -o-animation: fadein 1.5s; /* Opera < 12.1 */
-  animation: fadein 1.5s;
+  -webkit-animation: fadein 1.3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.3s; /* Firefox < 16 */
+  -ms-animation: fadein 1.3s; /* Internet Explorer */
+  -o-animation: fadein 1.3s; /* Opera < 12.1 */
+  animation: fadein 1.3s;
 }
 
 @keyframes fadeinslow {
