@@ -34,6 +34,11 @@
   src: url("fonts/IBMPlexMono/IBMPlexMono-Regular.woff") format("woff"),
     url("fonts/IBMPlexMono/IBMPlexMono-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: "IBMPlexMono-Text";
+  src: url("fonts/IBMPlexMono/IBMPlexMono-Text.woff") format("woff"),
+    url("fonts/IBMPlexMono/IBMPlexMono-Text.otf") format("opentype");
+}
 
 @font-face {
   font-family: "IBMPlexSans-Text";
@@ -120,7 +125,7 @@ h3 {
 
 @media (max-width: 512px) {
   h3 {
-    padding-left: 17px;
+    padding-left: 9px;
   }
 }
 
@@ -156,6 +161,7 @@ h2 {
   h2 {
     span {
       font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+      font-size: 17px;
     }
   }
 }

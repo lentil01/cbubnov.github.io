@@ -1139,8 +1139,8 @@ h2 .project {
 
 @media (max-width: 768px) {
   .project-text {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 @media (max-width: 512px) {
@@ -1156,9 +1156,15 @@ h2 .project {
 
 @media (max-width: 767px) {
   .project-hero {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .project-hero-tags {
+    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
   }
 }
 
