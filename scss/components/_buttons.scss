@@ -46,7 +46,7 @@ button {
   }
 
   &:hover {
-    color: $bg-color;
+    color: $heading-color;
   }
 
   // Hover styles
@@ -57,14 +57,14 @@ button {
   }
 
   &:hover::before {
-    border-top-color: $bg-color;
-    border-right-color: $bg-color;
+    border-top-color: $heading-color;
+    border-right-color: $heading-color;
     transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
   }
 
   &:hover::after {
-    border-bottom-color: $bg-color; // Make borders visible
-    border-left-color: $bg-color;
+    border-bottom-color: $heading-color; // Make borders visible
+    border-left-color: $heading-color;
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
       height 0.25s ease-out 0.75s;
   }
@@ -73,7 +73,7 @@ button {
 // Inherits from .draw
 .meet {
   &:hover {
-    color: $bg-color;
+    color: $heading-color;
   }
 
   // Start ::after in same position as ::before
@@ -84,13 +84,13 @@ button {
 
   // Change colors
   &:hover::before {
-    border-top-color: $bg-color;
-    border-right-color: $bg-color;
+    border-top-color: $heading-color;
+    border-right-color: $heading-color;
   }
 
   &:hover::after {
-    border-bottom-color: $bg-color;
-    border-left-color: $bg-color;
+    border-bottom-color: $heading-color;
+    border-left-color: $heading-color;
     transition: height 0.25s ease-in-out, width 0.25s ease-in-out 0.25s;
   }
 }
@@ -188,6 +188,19 @@ button {
 
     &:hover {
       color: $bg-color;
+      text-decoration: none;
+    }
+  }
+  &-transparent-dark-draw {
+    background-color: none;
+    color: $heading-color;
+
+    &:first-child {
+      margin-left: -18px;
+    }
+
+    &:hover {
+      color: $heading-color;
       text-decoration: none;
     }
   }

@@ -144,15 +144,14 @@ h1 {
 h2 {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: $heading-color;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.3px;
 
   span {
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     margin: 0;
-    // color: #4b4a4a;
     text-transform: none;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5em;
   }
 }

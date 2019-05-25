@@ -19,7 +19,9 @@ body {
   flex-direction: column;
   min-height: 100%;
   position: relative;
-  overflow: auto;
+  // overflow: auto;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -508,6 +510,9 @@ p {
   }
 }
 
+.project-summary {
+}
+
 .home-link {
   font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   padding-left: 0;
@@ -660,6 +665,7 @@ p {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 12px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -948,6 +954,8 @@ p {
     }
   }
   &-home {
+    // z-index: 0;
+
     &:hover:after {
       content: url("../img/hero-bg.png");
       position: absolute;
@@ -1014,7 +1022,7 @@ h2 .project {
 }
 
 .project-padding {
-  padding: 1rem;
+  // padding: 1rem;
   &-top {
     padding-top: 1rem;
   }
@@ -1075,31 +1083,192 @@ h2 .project {
   margin: 0;
 }
 
+.project-menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1003;
+  // margin-top: 16rem;
+  padding: 4rem 4rem 1rem 3rem;
+  overflow-x: hidden;
+  width: 350px;
+  margin-bottom: 35rem;
+
+  &-logo {
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  p {
+    position: relative;
+    padding-left: 2rem;
+
+    a {
+      background: #f9f9fa;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:before {
+      background: #d7dcda;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      left: 0;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .project-menu {
+    display: none;
+  }
+}
+
+// .project-hero-gradient {
+//   content: "";
+//   position: absolute;
+//   height: 246px;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   z-index: 1004;
+//   background: linear-gradient(
+//     180deg,
+//     transparent 0,
+//     rgba(0, 0, 0, 0.05) 22%,
+//     rgba(0, 0, 0, 0.17) 38%,
+//     rgba(0, 0, 0, 0.31) 49%,
+//     rgba(0, 0, 0, 0.65) 67%,
+//     rgba(0, 0, 0, 0.81) 77%,
+//     rgba(0, 0, 0, 0.91) 85%,
+//     rgba(0, 0, 0, 0.97) 97%,
+//     #000
+//   );
+//   pointer-events: none;
+// }
+
+.project-navigation {
+  width: 100%;
+  max-height: 100px;
+  position: absolute;
+  z-index: 4;
+  padding: 1rem 4rem;
+}
+
+.project-meat {
+  // margin-left: auto;
+  margin-top: -54rem;
+  margin-right: 0;
+  margin-left: 350px;
+}
+
+@media (max-width: 1100px) {
+  .project-meat {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+
 .project {
   &-info {
     padding: 1rem 4rem;
   }
-  &-hero {
-    padding: 1rem 4rem 3rem 4rem;
+  &-hero-image {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.9;
+  }
 
+  &-hero-imageSpacer {
+    background: rgba(0, 0, 0, 0.05);
+    height: 0;
+    position: relative;
+  }
+
+  &-hero-container {
+    position: relative;
+    width: 100%;
+    padding: 1rem 4rem;
+    background: #000;
+    height: 550px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 170px;
+      left: 0;
+      top: 0;
+      opacity: 0.3;
+      z-index: 1;
+      background: linear-gradient(
+        180deg,
+        rgba(37, 43, 53, 0.98) 0,
+        rgba(37, 43, 53, 0.92) 12%,
+        rgba(37, 43, 53, 0.83) 21%,
+        rgba(37, 43, 53, 0.7) 30%,
+        rgba(37, 43, 53, 0.36) 48%,
+        rgba(37, 43, 53, 0.25) 55%,
+        rgba(37, 43, 53, 0.16) 63%,
+        rgba(37, 43, 53, 0.05) 78%,
+        transparent
+      );
+      pointer-events: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 220px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(
+        180deg,
+        transparent 0,
+        rgba(37, 43, 53, 0.05) 22%,
+        rgba(37, 43, 53, 0.17) 38%,
+        rgba(37, 43, 53, 0.31) 49%,
+        rgba(37, 43, 53, 0.65) 67%,
+        rgba(37, 43, 53, 0.81) 77%,
+        rgba(37, 43, 53, 0.85) 85%,
+        rgba(37, 43, 53, 0.91) 91%,
+        #252b35
+      );
+      pointer-events: none;
+    }
+  }
+  &-hero {
     &-sections {
-      padding-left: 1rem;
+      margin-left: -2rem;
 
       &-section {
-        font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
+        font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
         letter-spacing: 0.07em;
         font-size: 14px;
         text-transform: uppercase;
         padding-bottom: 0.5rem;
         margin-bottom: 1rem;
         span {
-          // display: none;
           color: transparent;
           transition: all 0.4s ease-in-out;
         }
         &:hover {
           span {
-            color: $bg-color;
+            color: $heading-color;
           }
         }
 
@@ -1113,18 +1282,29 @@ h2 .project {
             color: $bg-color;
           }
         }
+        &-dark {
+          // color: $heading-color;
+          &:hover {
+            color: $heading-color;
+          }
+        }
       }
     }
 
     &-tags {
+      position: absolute;
+      bottom: 1rem;
+    }
+
+    &-tag {
       font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
       letter-spacing: 0.07em;
       font-size: 12px;
       text-transform: uppercase;
-      padding-top: 6rem;
+      z-index: 4;
 
       &-light {
-        color: $bg-color;
+        color: $n50;
       }
       &-dark {
         color: $heading-color;
@@ -1132,16 +1312,36 @@ h2 .project {
     }
 
     &-title {
+      position: absolute;
+      bottom: 4rem;
       color: $bg-color;
+      padding-top: 6rem;
+      z-index: 4;
     }
   }
 }
 
-@media (max-width: 768px) {
-  .project-text {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+@media (min-width: 1240px) {
+  .project-hero-container {
+    height: 550px;
   }
+}
+
+@media (max-width: 512px) {
+  .project-hero-container {
+    height: 550px;
+  }
+}
+
+// @media (max-width: 768px) {
+//   .project-text {
+//     padding-left: 1.5rem;
+//     padding-right: 1.5rem;
+//   }
+// }
+
+.prev-next {
+  padding-left: 1rem;
 }
 @media (max-width: 512px) {
   .prev-next {
@@ -1165,6 +1365,28 @@ h2 .project {
 @media (max-width: 512px) {
   .project-hero-tags {
     font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+    max-width: 310px;
+  }
+}
+@media (max-width: 512px) {
+  .project-hero-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 350px;
+  }
+}
+
+@media (max-width: 512px) {
+  .project-meat {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .project-navigation {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
