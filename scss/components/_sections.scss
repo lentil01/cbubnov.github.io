@@ -84,7 +84,7 @@ p {
 
 @media (max-width: 512px) {
   .about {
-    padding: 0 1rem;
+    padding: 1rem;
   }
 }
 
@@ -1313,7 +1313,7 @@ h2 .project {
       position: absolute;
       bottom: 4rem;
       color: $bg-color;
-      padding-top: 6rem;
+      // padding-top: 6rem;
       z-index: 4;
     }
   }
