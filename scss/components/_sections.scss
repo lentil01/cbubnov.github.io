@@ -999,7 +999,8 @@ p {
   }
 }
 
-.footer-background {
+.project-footer {
+  padding-top: 4rem;
   background-color: #282a29;
   padding-left: 30px;
   padding-right: 30px;
@@ -1140,7 +1141,7 @@ h2 .project {
   max-height: 100px;
   position: absolute;
   z-index: 4;
-  padding: 1rem 4rem;
+  padding: 2rem 4rem 0 4rem;
 }
 
 .project-meat {
@@ -1158,7 +1159,7 @@ h2 .project {
 
 .project {
   &-info {
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
   }
   &-hero-image {
     display: block;
@@ -1408,7 +1409,7 @@ h2 .project {
   font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   font-weight: medium;
   font-size: 13px;
-  padding-top: 1rem;
+  // padding-top: 1rem;
   line-height: 1.6em;
   color: #454c4a;
 }
