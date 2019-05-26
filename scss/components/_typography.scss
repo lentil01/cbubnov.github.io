@@ -97,7 +97,7 @@ h3 {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   text-transform: uppercase;
   position: relative;
-  padding-left: 4rem;
+  padding-left: 3rem;
   color: $heading-color;
   font-size: 1.5em;
   letter-spacing: 1px;
@@ -106,7 +106,7 @@ h3 {
 
   span {
     background: $bg-color;
-    padding: 0 15px;
+    padding: 0 1rem;
     position: relative;
     z-index: 1;
   }

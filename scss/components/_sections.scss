@@ -1022,15 +1022,22 @@ h2 .project {
   text-align: center;
 }
 
+.project-row-element {
+  padding: 1rem;
+}
+
 .project-padding {
   // padding: 1rem;
+
   &-top {
     padding-top: 1rem;
   }
+
   &-middle {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
   &-bottom {
     padding-bottom: 2rem;
 
@@ -1038,12 +1045,15 @@ h2 .project {
       padding-bottom: 3rem;
     }
   }
+
   &-left {
     padding-left: 1rem;
   }
+
   &-right {
     padding-right: 1rem;
   }
+
   &-horiz {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1057,9 +1067,8 @@ h2 .project {
 }
 
 @media (max-width: 512px) {
-  .project-padding {
-    padding-left: 0;
-    padding-right: 0;
+  .project-row-element {
+    padding: 0.75rem 0;
   }
 }
 
@@ -1089,7 +1098,6 @@ h2 .project {
   top: 0;
   left: 0;
   z-index: 1003;
-  // margin-top: 16rem;
   padding: 4rem 4rem 1rem 3rem;
   overflow-x: hidden;
   width: 350px;
@@ -1145,7 +1153,7 @@ h2 .project {
 }
 
 .project-meat {
-  margin-top: -54rem;
+  margin-top: -55rem;
   margin-right: 0;
   margin-left: 350px;
 }
@@ -1158,7 +1166,7 @@ h2 .project {
 }
 
 .project {
-  &-info {
+  &-row {
     padding: 1rem 3rem;
   }
   &-hero-image {
@@ -1271,6 +1279,7 @@ h2 .project {
     &-tags {
       position: absolute;
       bottom: 1rem;
+      z-index: 4;
     }
 
     &-tag {
@@ -1278,7 +1287,6 @@ h2 .project {
       letter-spacing: 0.07em;
       font-size: 12px;
       text-transform: uppercase;
-      z-index: 4;
 
       &-light {
         color: $n50;
@@ -1374,15 +1382,17 @@ h2 .project {
 }
 
 @media (max-width: 768px) {
-  .project-info {
+  .project-row {
     padding: 1rem;
   }
 }
 
 @media (max-width: 512px) {
-  .project-info {
+  .project-row {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -1396,32 +1406,65 @@ h2 .project {
   }
 }
 
-.caption p {
-  font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
-  font-weight: normal;
-  font-size: 13px;
-  padding-top: 1em;
-  line-height: 1.6em;
-  color: #454c4a;
+.subfooter {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  &-border {
+    border-top: 1px solid #d7dcda;
+    // border-bottom: 1px solid #d7dcda;
+  }
 }
 
-.caption-left p {
-  font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
-  font-weight: medium;
-  font-size: 13px;
-  // padding-top: 1rem;
-  line-height: 1.6em;
-  color: #454c4a;
+@media (min-width: 512px) {
+  .subfooter-border {
+    border-top-color: transparent;
+    // border-bottom-color: transparent;
+  }
 }
+@media (max-width: 512px) {
+  .subfooter-border {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .subfooter {
+    padding-top: 3rem;
+
+    padding-bottom: 4rem;
+  }
+}
+
+.caption {
+  &-left {
+  }
+  p {
+    font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #454c4a;
+  }
+}
+
+// .caption-left p {
+//   font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
+//   font-weight: medium;
+//   font-size: 13px;
+//   padding-top: 1rem;
+//   line-height: 1.6em;
+//   color: #454c4a;
+// }
 
 @media (min-width: 992px) {
-  .caption-left span {
+  .caption span {
     display: none;
   }
 }
 
 .project-section-padding {
-  padding-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .project-section-padding-bottom {
@@ -1430,7 +1473,8 @@ h2 .project {
 
 @media (max-width: 768px) {
   .project-section-padding {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
