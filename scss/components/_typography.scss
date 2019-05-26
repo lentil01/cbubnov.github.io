@@ -126,6 +126,13 @@ h3 {
 @media (max-width: 512px) {
   h3 {
     padding-left: 9px;
+    margin: 0 -1.5rem;
+  }
+}
+
+@media (max-width: 512px) {
+  h3:before {
+    // width: 110%;
   }
 }
 

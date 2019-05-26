@@ -1098,9 +1098,9 @@ h2 .project {
   top: 0;
   left: 0;
   z-index: 1003;
-  padding: 4rem 4rem 1rem 3rem;
+  padding: 4rem 2rem 1rem 3rem;
   overflow-x: hidden;
-  width: 350px;
+  width: 318px;
   margin-bottom: 35rem;
 
   &-logo {
@@ -1155,7 +1155,20 @@ h2 .project {
 .project-meat {
   margin-top: -55rem;
   margin-right: 0;
-  margin-left: 350px;
+  margin-left: 318px;
+}
+
+.project-meat-tulip {
+  margin-top: -52rem;
+  margin-right: 0;
+  margin-left: 318px;
+}
+
+@media (max-width: 1100px) {
+  .project-meat-tulip {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1363,6 +1376,13 @@ h2 .project {
 
 @media (max-width: 512px) {
   .project-meat {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .project-meat-tulip {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
