@@ -384,15 +384,16 @@ p {
 }
 
 .about-link {
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-bottom: 1.5px solid transparent;
+  transition: border-bottom 0.1s ease-in-out, color 0.1s ease-in-out;
+  font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
 
   &-dark {
     color: $heading-color;
     border-color: $heading-color;
 
     &:hover {
-      color: $heading-color;
+      color: $yellow;
       border-color: transparent;
       text-decoration: none;
     }
@@ -451,12 +452,14 @@ p {
 .homeSummary {
   position: sticky;
   padding-right: 2rem;
-
-  top: 106px;
+  top: 144px;
   left: 0;
   font-size: 22px;
-  span {
-    color: $heading-color;
+  color: $heading-color;
+
+  &-heading {
+    font-size: 32px;
+    padding-bottom: 1rem;
   }
 }
 
@@ -482,29 +485,59 @@ p {
 }
 
 .design-nav {
-  padding: 2rem 10px 1rem 10px;
-  position: fixed;
-  top: 0;
-  // left: 0;
+  padding: 2rem 4rem 1rem 4rem;
+  // right: 1rem;
   z-index: 1000;
-  max-width: 80%;
-  background: $bg-color;
+  // width: 100%;
+  // margin: auto;
+  &-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $bg-color;
+    z-index: 1000;
+  }
 }
 
 @media (max-width: 512px) {
   .design-nav {
+    // position: absolute;
     max-width: 100%;
+    background: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .design-nav-fixed {
+    position: relative;
+    background: none;
   }
 }
 
 .photo-nav {
-  padding: 2rem 10px 1rem 10px;
-  position: fixed;
-  top: 0;
-  // left: 0;
+  // padding: 2rem 10px 1rem 10px;
+  // position: fixed;
+  // top: 0;
+  // z-index: 1000;
+  // max-width: 80%;
+  // background: $bg-color;
+
+  padding: 2rem 4rem 1rem 4rem;
+  // right: 1rem;
   z-index: 1000;
-  max-width: 80%;
-  background: $bg-color;
+  // width: 100%;
+  // margin: auto;
+  &-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $bg-color;
+    z-index: 1000;
+  }
 }
 
 @media (max-width: 512px) {
@@ -602,12 +635,12 @@ p {
     }
     &-selected {
       // text-decoration: underline;
-      color: $yellow;
-      border-color: $yellow;
+      color: $heading-color;
+      border-color: $heading-color;
 
       &:hover {
-        color: $yellow;
-        border-color: $yellow;
+        color: $heading-color;
+        border-color: $heading-color;
       }
     }
   }
@@ -735,7 +768,7 @@ p {
 
 .photo-container {
   max-width: 80%;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 @media (max-width: 512px) {
@@ -1499,14 +1532,18 @@ h2 .project {
 
 .home {
   padding-top: 8rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 
   &-eye {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     // transition: filter 0.2s ease-in-out;
-
+  }
+  &-logoSymbol {
+    width: 36px;
+    height: 36px;
+    // transition: filter 0.2s ease-in-out;
   }
 
   &-projects {
@@ -1517,15 +1554,26 @@ h2 .project {
   }
 
   &-project {
-    padding-bottom: 2rem;
-    p {
-      transition: color 0.2s ease-in-out;
+    padding-bottom: 1rem;
+    border-top: 1px solid #e6e8e7;
+    padding-top: 1.5rem;
+
+    &-thumbnail {
+      border-radius: 3px;
+
+      &-padding {
+        padding-right: 1.5rem;
+      }
+    }
+    &:first-child {
+      border: none;
     }
 
+    transition: opacity 0.2s ease-in-out;
+
     &:hover {
-      p {
-        color: $yellow;
-      }
+      opacity: 0.8;
+      // background: $n20;
     }
   }
 
@@ -1541,9 +1589,10 @@ h2 .project {
   &-project-subtitle {
     color: $heading-color;
     padding-top: 1rem;
-    font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
-    letter-spacing: -0.03em;
-    font-size: 14px;
+    margin-bottom: 0;
+    // font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
+    // letter-spacing: -0.03em;
+    // font-size: 14px;
   }
 }
 
@@ -1555,6 +1604,7 @@ h2 .project {
 }
 @media (min-width: 512px) and (max-width: 992px) {
   .homeSummary {
+    padding-top: 2rem;
     padding-right: 0;
   }
 }
@@ -1563,6 +1613,7 @@ h2 .project {
   .home-projects {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -1575,7 +1626,22 @@ h2 .project {
     z-index: 0 !important;
   }
 }
+@media (min-width: 512px) and (max-width: 1200px) {
+  .home-project-thumbnail-padding {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 512px) {
+  .home-project-thumbnail-padding {
+    padding-bottom: 1rem;
+  }
+}
 
+@media (max-width: 1200px) {
+  .home-project-thumbnail-padding {
+    padding-right: 0rem;
+  }
+}
 @media (max-width: 512px) {
   .home {
     padding-top: 0;
