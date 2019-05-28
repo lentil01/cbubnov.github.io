@@ -77,10 +77,10 @@ p {
   }
 }
 
-.about {
-  padding: 0 2rem;
-  margin: auto;
-}
+// .about {
+//   padding: 0 2rem;
+//   margin: auto;
+// }
 
 @media (max-width: 512px) {
   .about {
@@ -449,6 +449,11 @@ p {
 }
 
 .homeSummary {
+  position: sticky;
+  padding-right: 2rem;
+
+  top: 106px;
+  left: 0;
   font-size: 22px;
   span {
     color: $heading-color;
@@ -458,6 +463,12 @@ p {
 @media (max-width: 512px) {
   .homeSummary {
     font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
+    top: 0;
     // font-size: 20px;
   }
 }
@@ -953,11 +964,15 @@ p {
   &-home {
     // z-index: 0;
 
+    &:hover {
+      color: $green !important;
+    }
+
     &:hover:after {
       content: url("../img/hero-bg.png");
       position: absolute;
       left: 0;
-      top: 0;
+      top: 18rem;
       max-width: 100px !important;
       // display: block;
       z-index: -1;
@@ -1480,6 +1495,100 @@ h2 .project {
 .project-section-padding {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.home {
+  padding-top: 8rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+
+  &-eye {
+    width: 30px;
+    height: 30px;
+    // transition: filter 0.2s ease-in-out;
+
+    &:hover {
+      // filter: invert(0.5) grayscale(100%) brightness(0.4);
+    }
+  }
+
+  &-projects {
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-left: 2rem;
+  }
+
+  &-project {
+    padding-bottom: 2rem;
+    p {
+      transition: color 0.2s ease-in-out;
+    }
+
+    &:hover {
+      p {
+        color: $yellow;
+      }
+    }
+  }
+
+  &-project-logo {
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    width: 160px;
+  }
+  &-project-subtitle {
+    color: $heading-color;
+    padding-top: 1rem;
+    font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
+    letter-spacing: -0.03em;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 992px) {
+  .home {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 512px) and (max-width: 992px) {
+  .homeSummary {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 512px) {
+  .home-projects {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 992px) {
+  .home-projects {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .home {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 512px) {
+  .home-eye {
+    display: none;
+  }
 }
 
 .project-section-padding-bottom {
