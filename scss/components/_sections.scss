@@ -975,7 +975,7 @@ p {
       top: 18rem;
       max-width: 100px !important;
       // display: block;
-      z-index: -1;
+      z-index: 1005 !important;
     }
   }
 
@@ -1571,9 +1571,11 @@ h2 .project {
 
 @media (min-width: 512px) and (max-width: 992px) {
   .home-projects {
+    position: relative;
     padding-left: 0;
     padding-right: 0;
     padding-top: 4rem;
+    z-index: 0 !important;
   }
 }
 
