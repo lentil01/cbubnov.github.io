@@ -716,23 +716,32 @@ p {
   }
 }
 
+.footer-bottom-section {
+  padding: 2rem 3rem 3rem 3rem;
+}
+
 .footer-item {
-  font-family: IBMPlexMono-Regular, monospace;
-  padding-left: 0;
-  padding-right: 0;
-  color: #949391;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  font-size: 12px;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom ease-in-out 0.2s, color ease-in-out 0.2s;
+  text-align: right;
+  a {
+    font-family: IBMPlexMono-Regular, monospace;
+    padding-left: 0;
+    padding-right: 0;
+    color: #949391;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom ease-in-out 0.2s, color ease-in-out 0.2s;
+  }
 }
 
 .footer-item:hover {
-  color: #a4a5a2;
-  border-color: #a4a5a2;
-  // text-decoration: none;
+  a {
+    color: #a4a5a2;
+    border-color: #a4a5a2;
+    // text-decoration: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -767,16 +776,18 @@ p {
   color: $heading-color;
 }
 
-.project-h2 {
+.project-subheading {
   font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   margin-left: 1rem;
-  padding: 0.5rem;
+  padding: 0 0.8rem 0.5rem 0;
   text-transform: uppercase;
-  // border: 1px solid $heading-color;
-  border-radius: 6px;
+  border-right: 1px solid #d7dcda;
+  border-bottom: 1px solid #d7dcda;
+
+  border-bottom-right-radius: 6px;
   width: max-content;
-  background: $heading-color;
-  color: $bg-color;
+  // background: $heading-color;
+  color: $heading-color;
 }
 
 .photo-container {
@@ -1240,6 +1251,19 @@ h2 .project {
 
 @media (max-width: 1100px) {
   .project-meat-tulip {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+
+.project-meat-eximchain {
+  margin-top: -53rem;
+  margin-right: 0;
+  margin-left: 318px;
+}
+
+@media (max-width: 1100px) {
+  .project-meat-eximchain {
     margin-top: 1rem;
     margin-left: 0;
   }
