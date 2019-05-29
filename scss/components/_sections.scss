@@ -1554,9 +1554,9 @@ h2 .project {
   }
 
   &-project {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     border-top: 1px solid #e6e8e7;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
 
     &-thumbnail {
       border-radius: 3px;
@@ -1567,6 +1567,7 @@ h2 .project {
     }
     &:first-child {
       border: none;
+      padding-top: 1rem;
     }
 
     transition: opacity 0.2s ease-in-out;
@@ -1578,21 +1579,20 @@ h2 .project {
   }
 
   &-project-logo {
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    width: 160px;
+    width: 30px;
+    padding-bottom: 0.5rem;
   }
   &-project-subtitle {
     color: $heading-color;
-    padding-top: 1rem;
+    // padding-top: 1rem;
     margin-bottom: 0;
     // font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
     // letter-spacing: -0.03em;
     // font-size: 14px;
+  }
+  &-project-title {
+    font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
+    color: $heading-color;
   }
 }
 
