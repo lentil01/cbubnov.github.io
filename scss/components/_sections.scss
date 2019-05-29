@@ -767,6 +767,18 @@ p {
   color: $heading-color;
 }
 
+.project-h2 {
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  // border: 1px solid $heading-color;
+  border-radius: 6px;
+  width: max-content;
+  background: $heading-color;
+  color: $bg-color;
+}
+
 .photo-container {
   max-width: 100%;
   padding-top: 6rem;
@@ -1580,7 +1592,7 @@ h2 .project {
     padding-top: 2rem;
 
     &-thumbnail {
-      border-radius: 3px;
+      border-radius: 6px;
 
       &-padding {
         padding-right: 1.5rem;
