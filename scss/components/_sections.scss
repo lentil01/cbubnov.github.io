@@ -768,9 +768,17 @@ p {
 }
 
 .photo-container {
-  max-width: 80%;
+  max-width: 100%;
   padding-top: 6rem;
+  padding-left: 54px;
+  padding-right: 54px;
 }
+
+// @media (min-width: 512px) and (max-width: 1200px) {
+//   .photo-container {
+//     max-width: 90%;
+//   }
+// }
 
 @media (max-width: 512px) {
   .photo-container {
