@@ -1005,12 +1005,14 @@ p {
       content: url("../img/hero-bg.png");
       position: absolute;
       left: 0;
-      top: 18rem;
+      top: 20rem;
       max-width: 100px !important;
       // display: block;
       z-index: 1005 !important;
     }
   }
+
+
 
   &-primary {
     color: $green;
@@ -1033,6 +1035,16 @@ p {
     }
   }
 }
+
+@media (min-width: 512px) and (max-width: 1200px) {
+  .logo-home {
+    &:hover:after {
+      top: 24rem;
+
+    }
+  }
+}
+
 
 .footer-nav {
   // font-family: IBMPlexSans-Light;
