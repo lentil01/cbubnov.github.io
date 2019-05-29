@@ -458,8 +458,9 @@ p {
   color: $heading-color;
 
   &-heading {
-    font-size: 32px;
+    font-size: 36px;
     padding-bottom: 1rem;
+    line-height: 1.4;
   }
 }
 
@@ -1012,8 +1013,6 @@ p {
     }
   }
 
-
-
   &-primary {
     color: $green;
 
@@ -1040,11 +1039,9 @@ p {
   .logo-home {
     &:hover:after {
       top: 24rem;
-
     }
   }
 }
-
 
 .footer-nav {
   // font-family: IBMPlexSans-Light;
@@ -1555,7 +1552,11 @@ h2 .project {
   &-logoSymbol {
     width: 36px;
     height: 36px;
-    // transition: filter 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &-projects {
