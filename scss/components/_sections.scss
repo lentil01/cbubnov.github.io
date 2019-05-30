@@ -1685,6 +1685,12 @@ h2 .project {
   }
 }
 
+@media (max-width: 512px) {
+  .home-project-title {
+    font-size: 19px;
+  }
+}
+
 @media (min-width: 512px) and (max-width: 992px) {
   .home-projects {
     position: relative;
