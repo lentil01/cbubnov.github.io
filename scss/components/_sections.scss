@@ -340,6 +340,9 @@ p {
   padding-right: 10px;
   padding-left: 10px;
   color: #d7dcda;
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .margin-right-xs {
@@ -626,6 +629,15 @@ p {
       // border-color: red;
     }
   }
+
+  &-footer {
+    color: #949391;
+
+    &:hover {
+      color: #949391;
+      border-color: #949391;
+    }
+  }
   &-dark {
     color: $heading-color;
 
@@ -721,27 +733,26 @@ p {
 }
 
 .footer-item {
+  font-family: IBMPlexMono-Regular, monospace;
+  padding-left: 0;
+  padding-right: 0;
+  color: #949391;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom ease-in-out 0.2s, color ease-in-out 0.2s;
+}
+
+.footer-links {
   text-align: right;
-  a {
-    font-family: IBMPlexMono-Regular, monospace;
-    padding-left: 0;
-    padding-right: 0;
-    color: #949391;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom ease-in-out 0.2s, color ease-in-out 0.2s;
-  }
 }
 
 .footer-item:hover {
-  a {
-    color: #a4a5a2;
-    border-color: #a4a5a2;
-    // text-decoration: none;
-  }
+  color: #a4a5a2;
+  border-color: #a4a5a2;
+  // text-decoration: none;
 }
 
 @media (max-width: 767px) {
