@@ -52,6 +52,12 @@
     url("fonts/IBMPlexMono/IBMPlexMono-Italic.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "IBMPlexMono-TextItalic";
+  src: url("fonts/IBMPlexMono/IBMPlexMono-TextItalic.woff") format("woff"),
+    url("fonts/IBMPlexMono/IBMPlexMono-TextItalic.otf") format("opentype");
+}
+
 h4 {
   font-family: "IBMPlexSans-SemiBold", "Arial Black", Arial, sans-serif;
   color: #797979;

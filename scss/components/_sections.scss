@@ -486,7 +486,10 @@ p {
     // margin-top: 2rem !important;
     position: relative;
     display: flex;
-    padding: 1.5rem !important;
+    // padding: 1.5rem !important;
+    padding-top: 1.5rem;
+
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -596,7 +599,14 @@ p {
     text-align: right;
   }
 }
-//
+
+@media (max-width: 512px) {
+  .home-link {
+    font-family: "IBMPlexMono-TextItalic", "Courier New", Courier, monospace;
+    font-size: 16px;
+  }
+}
+
 .hero-item {
   font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   padding-left: 0;
