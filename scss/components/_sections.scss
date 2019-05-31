@@ -448,8 +448,8 @@ p {
 
 .home-links {
   // position: fixed;
-  padding-top: 22px;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  // padding-bottom: 2rem;
 }
 
 .homeSummary {
@@ -464,6 +464,7 @@ p {
     font-size: 36px;
     padding-bottom: 1rem;
     line-height: 1.4;
+    font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   }
 }
 
@@ -474,7 +475,7 @@ p {
     padding-top: 1.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0;
     top: 0;
     // font-size: 20px;
   }
@@ -482,9 +483,10 @@ p {
 
 @media (max-width: 512px) {
   .home-links {
-    margin-top: 2rem !important;
+    // margin-top: 2rem !important;
     position: relative;
     display: flex;
+    padding: 1.5rem !important;
   }
 }
 
@@ -522,18 +524,9 @@ p {
 }
 
 .photo-nav {
-  // padding: 2rem 10px 1rem 10px;
-  // position: fixed;
-  // top: 0;
-  // z-index: 1000;
-  // max-width: 80%;
-  // background: $bg-color;
-
   padding: 2rem 4rem 1rem 4rem;
-  // right: 1rem;
   z-index: 1000;
-  // width: 100%;
-  // margin: auto;
+
   &-fixed {
     position: fixed;
     top: 0;
@@ -662,15 +655,9 @@ p {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 612px) {
   .hero-item {
     display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-item {
-    padding-right: 1rem;
   }
 }
 
@@ -788,20 +775,21 @@ p {
 }
 
 .project-subheading {
-  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
+  font-family: "IBMPlexSans-SemiBold", "Courier New", Courier, monospace;
   margin-left: 1rem;
-  padding: 0 0.8rem 0.5rem 0;
-  text-transform: uppercase;
-  border-right: 1px solid #d7dcda;
-  border-bottom: 1px solid #d7dcda;
-  border-bottom-right-radius: 6px;
-  width: max-content;
+  // padding: 0 0.8rem 0.5rem 0;
+  // text-transform: uppercase;
+  // border-right: 1px solid #d7dcda;
+  // border-bottom: 1px solid #d7dcda;
+  // border-bottom-right-radius: 6px;
+  // width: max-content;
   color: $heading-color;
+  font-size: 22px;
 }
 
 @media (max-width: 512px) {
   .project-subheading {
-    padding: 0 0.8rem 0.5rem 0;
+    padding: 0;
     margin-left: 0;
     margin-top: 1rem;
   }
@@ -1676,6 +1664,7 @@ h2 .project {
   .homeSummary {
     padding-top: 2rem;
     padding-right: 0;
+    padding-bottom: 1rem;
   }
 }
 
