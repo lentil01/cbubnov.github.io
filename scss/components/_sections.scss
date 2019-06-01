@@ -1102,11 +1102,13 @@ a {
 }
 
 .project-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding-top: 4rem;
   background-color: #282a29;
-  // padding-left: 30px;
-  // padding-right: 30px;
-  z-index: 1005;
+  z-index: -1;
 }
 
 .description {
@@ -1264,6 +1266,7 @@ h2 .project {
   z-index: 1000;
   background: $bg-color;
   position: relative;
+  margin-bottom: 608px;
 }
 
 .project-summary {
@@ -1481,7 +1484,8 @@ h2 .project {
 .project-hero-container {
   position: fixed;
   top: 0;
-  z-index: 0;
+  z-index: 100;
+  overflow: hidden;
 }
 .bg-scheme-light {
   background: $bg-color;
