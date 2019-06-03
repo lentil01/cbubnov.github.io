@@ -10,26 +10,27 @@
   <meta property="og:image" content="https://chrisbubnov.com/img/rich-preview.png" />
   <meta property="og:title" content="chris bubnov, designer" />
   <meta property="og:description" content="the site of" />
-  <!-- <title>character</title> -->
+  <!-- <title>eximchain</title> -->
   <link rel="icon" href="img/favicon-character.png">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link type="text/css" href="css/main.css" rel="stylesheet">
+
 </head>
 
 <script language="JavaScript">
-    var space = " ";
-    var speed = "200";
-    var pos = 0;
-    var foo = document.createTextNode("\u00A0");
-    var msg ="~ character ~ holistic skincare";
-    function Scroll()
-    {
-    document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+  var space = " ";
+  var speed = "200";
+  var pos = 0;
+  var foo = document.createTextNode("\u00A0");
+  var msg = "~ character ~ holistic skincare";
+
+  function Scroll() {
+    document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
     pos++;
     if (pos > msg.length) pos = 0;
     window.setTimeout("Scroll()", speed);
-    }
-    Scroll();
+  }
+  Scroll();
 </script>
 
 <body class="fadein">
@@ -42,43 +43,27 @@
 
     <div class="project-navigation project-center row">
       <div class="col-xl-4 col-lg-4 col-md-3">
-          <a href="index.html"><img src="img/logo-symbol-inverted.svg" class="home-logoSymbol"></a>
+        <a href="index.html"><img src="img/logo-symbol-inverted.svg" class="home-logoSymbol"></a>
       </div>
       <div class=" col-xl-8 col-lg-8 col-md-9 hero-item-right">
         <a class="hero-item hero-item-light" href="index.html">work</a>
         <a class="hero-item hero-item-light" href="photography.html">photo</a>
         <a class="hero-item hero-item-light" href="resume.pdf" target="_blank">résumé</a>
-        <!-- <a class="hero-item hero-item-light" href="mailto:loverly@protonmail.com?subject=hi">email</a> -->
       </div>
     </div>
 
     <!-- HERO CONTAINER -->
 
-    <div class="project-hero-container row" style="background-image: url('img/character/hero-bg.png'); background-position: center;">
-      
-      <!-- HERO TITLE -->
-
-      <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-xs-12">
-        <h5 class="project-center project-hero-title">Creating an Identity for Holistic Skincare with Character</h5>
+    <div class="project-hero-container row"
+      style="background-image: url('img/character/hero-bg.png'); background-position: center;">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="hero-logo"><img src="img/character/hero-logo.svg" class="image"></div>
       </div>
 
       <!-- HERO TAGS -->
 
       <div class="project-center project-hero-tags col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p class="project-hero-tag project-hero-tag-light"> identity / web / packaging</p>
-      </div>
-    </div>
-
-    <!-- PROJECT MENU -->
-
-    <div class="project-menu">
-      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 project-hero-sections">
-            <div class="project-menu-logo"><img src="img/character/logo-menu.svg" class="image"></div>
-            <p><a class="project-hero-sections-section project-hero-sections-section-dark" href="character.html#identity">Identity</a></p>
-            <p><a class="project-hero-sections-section project-hero-sections-section-dark" href="character.html#packaging">Packaging</a></p>
-      </div>
-      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 project-center prev-next">
-        <a class="button-transparent-dark-draw" href="interventions.html"><button class="button draw meet">next proj →</button></a>
+        <p class="project-hero-tag project-hero-tag-light">identity / web / packaging</p>
       </div>
     </div>
 
@@ -86,185 +71,317 @@
 
     <div class="project-meat">
 
+      <div class="bg-scheme-light col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="project-row project-center col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+          <h5 class="project-center project-hero-title">How can we create a wholesome yet stylish identity?</h5>
+        </div>
+
         <!-- SUMMARY -->
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p class="project-summary project-row-element">
+            <span class="project-summary-dropcap">I</span>
+            created the identity and packaging for Character Skin Care, a company that approaches skincare as nourishing
+            for both body and soul.
+          </p>
+        </div>
+
+        <!-- DESIGN SYSTEM SECTION -->
+
+        <div id="identity" class="project-section-padding">
+          <h3><span>Identity</span></h3>
+        </div>
+
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="project-row-element text-left col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="project-subheading">Logo</h2>
+            <div>
+              <p>The Character logo was designed to be recognizable and versatile in a variety of formats, to accommodate for the different sizes and shapes of each product's unique container.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="project-row-element col-xl-8 col-lg-7 col-md-7 col-sm-7 col-xs-12">
+              <img src="img/character/logo-1.png" class="image">
+            </div>
+            <div class="project-row-element col-xl-4 col-lg-5 col-md-5 col-sm-5 col-xs-12">
+              <img src="img/character/logo-2.png" class="image">
+            </div>
+        </div>
+
+        <!-- <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="project-subheading">Colors</h2>
+            <h2 class="project-row-element">The colors of<span> Character are soft and soothing, yet playful. Each color represents a key ingredient of a certain product. Together, they make up the entire color palette of the brand.</span></h2>
+        </div> -->
+
+      <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="project-row-element text-left col-xl-5 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h2 class="project-subheading">Colors</h2>
+            <div>
+              <p>The colors of Character are soft and soothing, yet playful. Each color represents a key ingredient of a certain product. Together, they make up the entire color palette of the brand.</p>
+            </div>
+          </div>
+          <div class="project-row-element col-xl-7 col-lg-6 col-md-6 col-sm-6 col-xs-12 row">
+          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/character/brand-colors-01.png" class="image">
+          </div>
+          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <img src="img/character/brand-colors-02.png" class="image">
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="project-row-element text-left col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2 class="project-subheading">Business Cards</h2>
+              <!-- <div>
+                <p>The Character logo was designed to be recognizable and versatile in a variety of formats, to accommodate for the different sizes and shapes of each product's unique container.</p>
+              </div> -->
+            </div>
+          </div>
+    
+      <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+        <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img src="img/character/biz-cards-01.png" class="image">
+        </div>
+        <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img src="img/character/biz-cards-02.png" class="image">
+        </div>
+    </div>
+
+        <!-- PACKAGING SECTION -->
+
+        <div id="packaging" class="project-section-padding">
+          <h3><span>Packaging</span></h3>
+        </div>
 
         <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h2 class="project-row-element">I created the<span> identity and packaging for Character Skin Care, a company that approaches skincare as nourishing for both body and soul.</span></h2>
+          <div class="project-row-element">
+            <h2 class="project-subheading">Passport App</h2>
+            <p>I led the design of the <a href="https:eximchain.com/app" class="about-link about-link-dark">Eximchain
+                Passport App</a>, which allows members of the Eximchain Network to vote for who should run the
+              masternodes of the network, view election stats in real-time, and create + view member profiles.</p>
+          </div>
         </div>
 
-    <!-- IDENTITY SECTION -->
+        <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="project-row-element col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <img src="img/eximchain/passport-1.png" class="image">
+          </div>
 
-    <div id="identity" class="project-section-padding">
-      <h3><span>Identity</span></h3>
-    </div>
-
-
-      <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2 class="project-subheading">Logo</h2>
-        <h2 class="project-row-element">The Character logo<span> was designed to be recognizable and versatile in a variety of formats, to accommodate for the different sizes and shapes of each product's unique container.</span></h2>
-      </div>
-
-      <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-        <div class="project-row-element col-xl-8 col-lg-7 col-md-7 col-sm-7 col-xs-12">
-          <img src="img/character/logo-1.png" class="image">
+          <div class="project-row-element col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <img src="img/eximchain/passport-6.png" class="image">
+          </div>
+          <div class="project-row-element col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <img src="img/eximchain/passport-2.png" class="image">
+          </div>
         </div>
-        <div class="project-row-element col-xl-4 col-lg-5 col-md-5 col-sm-5 col-xs-12">
-          <img src="img/character/logo-2.png" class="image">
+
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-row-element">
+            <h2 class="project-subheading">Wallet App + Website</h2>
+            <p>I was responsible for the front-end development of the Eximchain Wallet app, an electron-based desktop
+              app powered by react. Forked from the popular MyCrypto crytocurrency wallet, our app featured a number of
+              improvements, including a streamlined interface, a simpler transaction executor, and the ability to vote
+              for which members of the Eximchain Network have control of masternodes. I also created the landing page
+              for the <a href="https:eximchain.com/wallet" class="about-link about-link-dark">Wallet marketing site</a>.
+            </p>
+          </div>
         </div>
-    </div>
 
-    <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2 class="project-subheading">Colors</h2>
-        <h2 class="project-row-element">The colors of<span> Character are soft and soothing, yet playful. Each color represents a key ingredient of a certain product. Together, they make up the entire color palette of the brand.</span></h2>
-    </div>
+        <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/eximchain/wallet-1.png" class="image">
+          </div>
+        </div>
 
-    <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-      <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <img src="img/character/brand-colors-01.png" class="image">
-      </div>
-      <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <img src="img/character/brand-colors-02.png" class="image">
-      </div>
-  </div>
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-row-element">
+            <h2 class="project-subheading">Token Holder Verification</h2>
+            <p>I created the process by which users verified that they held tokens. The Eximchain Network requires
+              members to hold a minimum of 500 EXC and pass Know Your Customer (KYC) Verification to participate in
+              voting cycles.</p>
+          </div>
+        </div>
 
-    <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <h2 class="project-subheading">Business Cards</h2>
-  </div>
+        <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="img/eximchain/thv-1.png" class="image">
+          </div>
+        </div>
 
-  <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-    <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <img src="img/character/biz-cards-01.png" class="image">
-    </div>
-    <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <img src="img/character/biz-cards-02.png" class="image">
-    </div>
-</div>
+        <!-- WEBSITE -->
 
-    <!-- PACKAGING SECTION -->
+        <div id="branding" class="project-section-padding">
+          <h3><span>Branding</span></h3>
+        </div>
 
-    <div id="packaging" class="project-section-padding">
-      <h3><span>packaging</span></h3>
-    </div>
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-row-element">
+            <h2 class="project-subheading">Brand Guide</h2>
+            <p>Along with Mario, a fellow designer at Eximchain, I created the company's brand guide. Most unique to our
+              documentation are the illustration and motion sections, to ensure our graphics and animations are
+              consistent and on-brand.</p>
+          </div>
+        </div>
 
-    <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2 class="project-subheading">Skincare Products</h2>
-        <h2 class="project-row-element">The tight constraints<span> of different packaging sizes and shapes required a logo that could morph with them. The end result: a brand with a clean, simple look that mirrored the wholesomeness of the ingredients.</span></h2>
-    </div>
-
-    <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2 class="project-subheading">Insert</h2>
-        <h2 class="project-row-element">When starting off,<span> Character created a sample pack of all products for friends and family to try out. With it, we included an insert to thank them for testing the skincare and pointing them to the newly created website.</span></h2>
-    </div>
-
-      <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+        <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
           <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="img/character/Insert-01.png" class="image">
+            <img src="img/eximchain/brand-guide-1.png" class="image">
           </div>
           <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="img/character/Insert-02.png" class="image">
+            <img src="img/eximchain/brand-guide-2.png" class="image">
           </div>
-      </div>
+        </div>
 
-  <!-- SUBFOOTER -->
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-row-element">
+            <h2 class="project-subheading">Token Logo</h2>
+            <p>I designed the Eximchain token logo, a mark that doubles as the symbol for our native token and an
+              abbreviated counterpart to the Eximchain Wordmark.</p>
+          </div>
+        </div>
 
-  <div class="project-row subfooter">
-    <div class="subfooter-border col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-      <div class="project-row-element project-center col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <p class="tools-used">tools used: pen & paper, Adobe CS, sketch, wordpress</p>
-      </div>
-      <div class="project-row-element project-ending-button col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <a class="button button-dark" href="https://eximchain.com" target="_blank">characterskincare.com →</a>
+        <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="img/eximchain/token-logo-1.svg" class="image">
+          </div>
+          <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="img/eximchain/token-logo-2.svg" class="image">
+          </div>
+        </div>
+
+        <div class="project-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="img/eximchain/token-logo-6.svg" class="image">
+          </div>
+          <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="img/eximchain/token-logo-7.svg" class="image">
+          </div>
+        </div>
+
+        <!-- SUBFOOTER -->
+
+        <div class="project-row subfooter">
+          <div class="subfooter-border col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="project-row-element project-center col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <p class="tools-used">tools used: pen & paper, figma, Adobe CS, sketch, markers, sticky notes</p>
+            </div>
+            <div class="project-row-element project-ending-button col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <a class="button button-dark" href="https://eximchain.com" target="_blank">eximchain.com →</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</body>
+    <!-- FOOTER -->
 
-<!-- FOOTER -->
+    <div class="project-footer col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-top-section row">
+        <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <a href="index.html"><img src="img/logo-symbol-footer.svg" class="footer-logoSymbol"></a>
+        </div>
+      </div>
+      <div class="project-footer-projects row col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
 
-<div class="project-footer">
-
-  <div class="container project-row row">
-
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-          <div class="box-footer">
-            <img src="img/eximchain/thumb-dark.svg" class="image project-center">
-            <a href="eximchain.html">
-              <div class="box-footer-text">
-                <div><span><h1 class="thumb-heading">Eximchain</h1><p>the blockchain ecosystem</p></span></div>
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="box-active">
+            <a href="#">
+              <div class="box-text-active">
+                <div><span>
+                    <h1 class="thumb-heading">Eximchain</h1>
+                    <p>blockchain ecosystem</p>
+                  </span></div>
               </div>
             </a>
           </div>
         </div>
 
         <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-          <div class="box-active">
-            <a href="#">
-              <div class="box-text-active">
-                <div><span><h1 class="thumb-heading">Character</h1><p>holistic skincare</p></span></div>
+          <div class="box-footer">
+            <a href="character.html">
+              <div class="box-footer-text">
+                <div><span>
+                    <h1 class="thumb-heading">Character</h1>
+                    <p>holistic skincare</p>
+                  </span></div>
               </div>
             </a>
           </div>
         </div>
 
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
           <div class="box-footer">
-            <img src="img/interventions/thumb-dark.svg" class="image project-center">
             <a href="interventions.html">
               <div class="box-footer-text">
-                <div><span><h1 class="thumb-heading">Interventions</h1><p>a design conference</p></span></div>
+                <div><span>
+                    <h1 class="thumb-heading">Interventions</h1>
+                    <p>design conference</p>
+                  </span></div>
               </div>
             </a>
           </div>
         </div>
 
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="box-footer">
-          <img src="img/tulip/thumb-dark.svg" class="image project-center">
-          <a href="tulip.html">
-            <div class="box-footer-text">
-              <div><span><h1 class="thumb-heading">Tulip Interfaces</h1><p>comprehensive manufacturing</p></span></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="box-footer">
-          <img src="img/project-access/thumb-dark.svg" class="image project-center">
-          <a href="project-access.html">
-            <div class="box-footer-text">
-              <div><span><h1 class="thumb-heading">Project Access</h1><p>higher education for all</p></span></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="box-footer">
-          <img src="img/matebros/thumb-dark.svg" class="image project-center">
-          <a href="matebros.html">
-            <div class="box-footer-text">
-              <div><span><h1 class="thumb-heading">Maté Bros</h1><p>the natural energy beverage</p></span>
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="box-footer">
+            <a href="tulip.html">
+              <div class="box-footer-text">
+                <div><span>
+                    <h1 class="thumb-heading">Tulip Interfaces</h1>
+                    <p>comprehensive manufacturing</p>
+                  </span></div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
+
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="box-footer">
+            <a href="project-access.html">
+              <div class="box-footer-text">
+                <div><span>
+                    <h1 class="thumb-heading">Project Access</h1>
+                    <p>higher education for all</p>
+                  </span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="box-footer">
+            <a href="matebros.html">
+              <div class="box-footer-text">
+                <div><span>
+                    <h1 class="thumb-heading">Maté Bros</h1>
+                    <p>natural energy beverage</p>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
       </div>
-  </div>
+      <div class="project-footer-projects row col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
+        <div class="project-row-element col-xl-12 col-lg-12 col-md-6 col-sm-12 col-xs-12 footer-links">
+          <div class="hero-item-footer">
+            <a class="hero-item-footer-link" href="index.html">work</a>
+          </div>
+          <div class="hero-item-footer">
+            <a class="hero-item-footer-link" href="photography.html">photo</a>
+          </div>
+          <div class="hero-item-footer">
+            <a class="hero-item-footer-link" href="resume.pdf" target="_blank">résumé</a>
+          </div>
+        </div>
 
-
-  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-center footer-bottom-section row">
-    <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <a href="index.html"><img src="img/logo-symbol-footer.svg" class="home-logoSymbol"></a>
+      </div>
     </div>
-  <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-links">
-      <a class="hero-item hero-item-footer" href="index.html">work</a>
-      <a class="hero-item hero-item-footer" href="photography.html">photo</a>
-      <a class="hero-item hero-item-footer" href="resume.pdf" target="_blank">résumé</a>
-    <!-- <a class="hero-item hero-item-footer" href="mailto:loverly@protonmail.com?subject=hi">email</a> -->
-  </div>
-</div>
-</div>
+</body>
 
 </html>

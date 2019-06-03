@@ -316,7 +316,7 @@ a {
   width: 100%;
   // overflow: hidden;
   // background: #313432;
-  border-left: 1px solid #474645;
+  border-left: 1px solid #4D4C4C;
   transition: border-left-color .3s ease-in-out;
   margin: 1rem 0;
 
@@ -520,10 +520,12 @@ a {
   color: $heading-color;
 
   &-heading {
-    font-size: 36px;
+    color: $grey50;
+    font-size: 40px;
     padding-bottom: 1rem;
     line-height: 1.4;
-    font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
+    font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
+    padding-right: 9rem;
   }
 }
 
@@ -553,14 +555,14 @@ a {
 }
 
 .design-nav {
-  padding: 2rem 4rem 1rem 4rem;
+  padding: 2rem 13rem 1rem 13rem;
   // right: 1rem;
   z-index: 1000;
 
   // width: 100%;
   // margin: auto;
   &-fixed {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -587,11 +589,11 @@ a {
 }
 
 .photo-nav {
-  padding: 2rem 4rem 1rem 4rem;
+  padding: 2rem 13rem 1rem 13rem;
   z-index: 1000;
 
   &-fixed {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -617,7 +619,7 @@ a {
 .home-link {
   font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   padding-left: 0;
-  margin-right: 1rem;
+  margin-right: 2rem;
   letter-spacing: 0.04em;
   font-size: 14px;
   text-decoration: none;
@@ -671,14 +673,14 @@ a {
 }
 
 .hero-item {
-  font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   padding-left: 0;
-  margin-right: 1rem;
+  margin-right: 2rem;
   letter-spacing: 0.04em;
   font-size: 14px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-bottom ease-in-out 0.2s;
+  transition: border-bottom ease-in-out 0.3s, opacity ease-in-out 0.3s, color 0.3s ease-in-out;
 
   &:last-child {
     margin-right: 0;
@@ -686,13 +688,12 @@ a {
 
   &-light {
     color: $bg-color;
+    opacity: .8;
 
     &:hover {
-      // background-color: $g30;
+      opacity: 1;
       color: $bg-color;
       border-color: $bg-color;
-
-      // border-color: red;
     }
   }
 
@@ -700,41 +701,53 @@ a {
     margin-bottom: 1rem;
 
     &-link {
-      font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
+      font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
       padding-left: 0;
-      margin-right: 1rem;
+      margin-right: 2rem;
       letter-spacing: 0.04em;
       font-size: 14px;
       text-decoration: none;
       border-bottom: 1px solid transparent;
-      transition: border-bottom ease-in-out 0.2s;
+      transition: all ease-in-out 0.2s;
       color: #949391;
 
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-is-selected {
+        color: $n60;
+
+        &:hover {
+          border-color: transparent !important;
+        }
+      }
+
       &:hover {
-        color: #949391;
-        border-color: #949391;
+        color: $n60;
+        border-color: $n60;
       }
     }
 
   }
 
   &-dark {
-    color: $heading-color;
+    color: $grey50;
 
     &:hover {
       // background-color: $g30;
-      color: $heading-color;
-      border-color: $heading-color;
+      color: $yellow;
+      border-color: $yellow;
     }
 
     &-selected {
       // text-decoration: underline;
-      color: $heading-color;
-      border-color: $heading-color;
+      color: $yellow;
+      // border-color: $heading-color;
 
       &:hover {
-        color: $heading-color;
-        border-color: $heading-color;
+        color: $yellow;
+        border-color: transparent;
       }
     }
   }
@@ -805,7 +818,7 @@ a {
 }
 
 .footer-top-section {
-  padding: 2rem 3rem 0rem 3rem;
+  padding: 2rem 12rem 0 12rem;
 }
 
 @media (max-width: 512px) {
@@ -893,8 +906,8 @@ a {
 .photo-container {
   max-width: 100%;
   padding-top: 6rem;
-  padding-left: 54px;
-  padding-right: 54px;
+  padding-left: 198px;
+  padding-right: 198px;
   padding-bottom: 54px;
 }
 
@@ -1134,14 +1147,14 @@ a {
   &-dark {
     color: $heading-color;
 
-    &:hover {
-      color: $green;
-      text-decoration: none;
-      transition: color 0.25s ease;
-      -webkit-transition: color 0.25s ease;
-      -moz-transition: color 0.25s ease;
-      -o-transition: color 0.25s ease;
-    }
+    // &:hover {
+    //   color: $green;
+    //   text-decoration: none;
+    //   transition: color 0.25s ease;
+    //   -webkit-transition: color 0.25s ease;
+    //   -moz-transition: color 0.25s ease;
+    //   -o-transition: color 0.25s ease;
+    // }
   }
 
   &-home {
@@ -1215,7 +1228,7 @@ a {
 }
 
 .project-footer-projects {
-  padding: 4.5rem 3rem 0 3rem;
+  padding: 4.5rem 12rem 0 12rem;
 }
 
 @media (max-width: 512px) {
@@ -1368,7 +1381,7 @@ h2 .project {
   position: fixed;
   top: 0;
   // z-index: 0;
-  padding: 2rem 4rem 0 4rem;
+  padding: 2rem 13rem 0 13rem;
 }
 
 .project-meat {
@@ -1449,7 +1462,7 @@ h2 .project {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 13rem;
     background: $bg-color;
     height: 550px;
     z-index: -1;
@@ -1720,6 +1733,18 @@ h2 .project {
 
 .hero {
   padding-top: 2em;
+
+  &-logoSymbol {
+    width: 36px;
+    height: 36px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    margin-right: 2rem;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 @media (min-width: 767px) {
@@ -1792,6 +1817,7 @@ h2 .project {
   &-logoSymbol {
     width: 36px;
     height: 36px;
+    margin-right: 2rem;
     // transition: opacity 0.2s ease-in-out;
 
     &:hover {
@@ -1801,9 +1827,9 @@ h2 .project {
 }
 
 .home {
-  padding-top: 8rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 8rem 13rem 4rem 13rem;
+  // padding-left: 13rem;
+  // padding-right: 13rem;
 
   &-eye {
     width: 36px;
@@ -1814,7 +1840,9 @@ h2 .project {
   &-logoSymbol {
     width: 36px;
     height: 36px;
-    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    margin-right: 2rem;
 
     &:hover {
       opacity: 0.8;
@@ -1824,17 +1852,28 @@ h2 .project {
   &-projects {
     margin-left: auto;
     margin-right: 0;
-    padding-top: 10px;
-    padding-left: 2rem;
+    padding-top: 2rem;
+    // padding-left: 2rem;
   }
 
   &-project {
-    padding-bottom: 2rem;
-    border-top: 1px solid #e6e8e7;
-    padding-top: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #DFE1E1;
+    border-radius: 7px;
+    margin-top: 1rem;
+
+    &-text {
+      margin: auto;
+      padding-right: 1.5rem;
+    }
 
     &-thumbnail {
-      border-radius: 6px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 0;
+
+
 
       &-padding {
         padding-right: 1.5rem;
@@ -1842,14 +1881,17 @@ h2 .project {
     }
 
     &:first-child {
-      border: none;
-      padding-top: 1rem;
+      // border-top: none;
+      margin-top: 1rem;
     }
 
-    transition: opacity 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
 
     &:hover {
-      opacity: 0.8;
+      background: $n20;
+      border-color: $n50;
+      // opacity: 0.8;
       // background: $n20;
     }
   }
@@ -1860,7 +1902,7 @@ h2 .project {
   }
 
   &-project-subtitle {
-    color: $heading-color;
+    color: $grey50;
     // padding-top: 1rem;
     margin-bottom: 0;
     line-height: 1.3em;
