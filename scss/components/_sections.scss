@@ -512,7 +512,7 @@ a {
 }
 
 .homeSummary {
-  position: sticky;
+  // position: sticky;
   padding-right: 2rem;
   top: 144px;
   left: 0;
@@ -633,7 +633,7 @@ a {
 .home-link {
   font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
   padding-left: 0;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   letter-spacing: 0.04em;
   font-size: 14px;
   text-decoration: none;
@@ -689,7 +689,7 @@ a {
 .hero-item {
   font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   padding-left: 0;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   letter-spacing: 0.04em;
   font-size: 14px;
   text-decoration: none;
@@ -717,7 +717,7 @@ a {
     &-link {
       font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
       padding-left: 0;
-      margin-right: 2rem;
+      margin-right: 1.5rem;
       letter-spacing: 0.04em;
       font-size: 14px;
       text-decoration: none;
@@ -1760,7 +1760,7 @@ h2 .project {
     height: 36px;
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 
     &:hover {
       opacity: 1;
@@ -1838,7 +1838,7 @@ h2 .project {
   &-logoSymbol {
     width: 36px;
     height: 36px;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     // transition: opacity 0.2s ease-in-out;
 
     &:hover {
@@ -1863,7 +1863,7 @@ h2 .project {
     height: 36px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 
     &:hover {
       opacity: 0.8;
