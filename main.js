@@ -56,7 +56,7 @@ function preventDefault(e) {
 }
 
 function keydown(e) {
-  for (var i = keys.length; i--; ) {
+  for (var i = keys.length; i--;) {
     if (e.keyCode === keys[i]) {
       preventDefault(e);
       return;
@@ -91,6 +91,7 @@ function enable_scroll() {
 function disable_scroll_mobile() {
   document.addEventListener("touchmove", preventDefault, false);
 }
+
 function enable_scroll_mobile() {
   document.removeEventListener("touchmove", preventDefault, false);
 }
