@@ -586,6 +586,13 @@ a {
   }
 }
 
+@media (min-width: 512px) and (max-width: 1200px) {
+  .design-nav {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
 @media (max-width: 512px) {
   .design-nav-fixed {
     position: relative;
@@ -1841,7 +1848,7 @@ h2 .project {
 }
 
 .home {
-  padding: 8rem 13rem 4rem 13rem;
+  padding: 9rem 13rem 4rem 13rem;
   // padding-left: 13rem;
   // padding-right: 13rem;
 
@@ -1866,7 +1873,7 @@ h2 .project {
   &-projects {
     margin-left: auto;
     margin-right: 0;
-    padding-top: 2rem;
+    padding-top: 6rem;
     // padding-left: 2rem;
   }
 
@@ -1931,10 +1938,12 @@ h2 .project {
   }
 }
 
-@media (min-width: 512px) and (max-width: 992px) {
+@media (min-width: 512px) and (max-width: 1200px) {
   .home {
-    padding-top: 6rem;
+    padding-top: 8rem;
     padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
