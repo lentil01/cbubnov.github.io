@@ -897,7 +897,12 @@ a {
     }
 
     &-selected {
+
       // text-decoration: underline;
+      a {
+        color: $yellow;
+      }
+
       color: $yellow;
       // border-color: $heading-color;
 
@@ -1083,27 +1088,32 @@ a {
 
 .photo-container {
   max-width: 100%;
-  padding-top: 6rem;
-  padding-left: 198px;
-  padding-right: 198px;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  margin-right: 4rem;
   padding-bottom: 54px;
+  margin-left: 6rem;
+  padding-right: 10rem;
 }
 
 @media (max-width: 512px) {
   .photo-container {
+    padding-top: 22px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-@media (min-width: 512px) and (max-width: 1200px) {
-  .photo-container {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-    padding-left: 54px;
-    padding-right: 54px;
-  }
-}
+// @media (min-width: 512px) and (max-width: 1200px) {
+//   .photo-container {
+//     padding-top: 6rem;
+//     padding-bottom: 3rem;
+//     padding-left: 54px;
+//     padding-right: 54px;
+//   }
+// }
 
 .design-container {
   max-width: 80%;
