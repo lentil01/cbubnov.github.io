@@ -11,25 +11,26 @@
   <meta property="og:title" content="chris bubnov, designer" />
   <meta property="og:description" content="the site of" />
   <!-- <title>maté bros</title> -->
-  <link rel="icon" href="img/favicon-matebros.png">
+  <link rel="icon" href="img/favicon.png">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link type="text/css" href="css/main.css" rel="stylesheet">
+
 </head>
 
 <script language="JavaScript">
-    var space = " ";
-    var speed = "200";
-    var pos = 0;
-    var foo = document.createTextNode("\u00A0");
-    var msg ="~ maté bros ~ natural energy beverage";
-    function Scroll()
-    {
-    document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+  var space = " ";
+  var speed = "200";
+  var pos = 0;
+  var foo = document.createTextNode("\u00A0");
+  var msg = "~ maté bros ~ natural energy beverage";
+
+  function Scroll() {
+    document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
     pos++;
     if (pos > msg.length) pos = 0;
     window.setTimeout("Scroll()", speed);
-    }
-    Scroll();
+  }
+  Scroll();
 </script>
 
 <body class="fadein">
@@ -38,30 +39,31 @@
 
   <div class="container">
 
-      <!-- PROJECT NAVIGATION -->
+    <!-- NAVIGATION -->
 
-    <div class="project-navigation project-center row">
-      <div class="col-xl-4 col-lg-4 col-md-3">
-          <a href="index.html"><img src="img/logo-symbol-inverted.svg" class="home-logoSymbol"></a>
-      </div>
-      <div class=" col-xl-8 col-lg-8 col-md-9 hero-item-right">
-        <a class="hero-item hero-item-light" href="index.html">work</a>
-        <a class="hero-item hero-item-light" href="photography.html">photo</a>
-        <!-- <a class="hero-item hero-item-light" href="https://dribbble.com/chrisdega" target="_blank">dribbble</a> -->
-        <!-- <a class="hero-item hero-item-light" href="https://github.com/lentil01" target="_blank">github</a> -->
-        <a class="hero-item hero-item-light" href="resume.pdf" target="_blank">résumé</a>
-        <!-- <a class="hero-item hero-item-light" href="mailto:loverly@protonmail.com?subject=hi">email</a> -->
+    <div class="design-nav-fixed">
+      <div class="project-nav">
+        <a href="index.html">
+          <img src="img/logo-symbol.svg" class="project-nav-logo project-nav-logo-dark">
+          <img src="img/logo-symbol-inverted.svg" class="project-nav-logo project-nav-logo-light">
+        </a>
+        <div class="project-nav-links">
+          <li class="hero-item hero-item-light">
+            <a href="photography.html">Photo</a>
+          </li>
+          <li class="hero-item hero-item-light">
+            <a href="resume.pdf" target="_blank">Résumé</a>
+          </li>
+        </div>
       </div>
     </div>
 
-    <!-- HERO CONTAINER -->
+    <!-- HERO -->
 
-    <div class="project-hero-container row" style="background-image: url('img/matebros/hero-bg.png'); background-position: center;">
-      
-      <!-- HERO TITLE -->
-
-      <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-xs-12">
-        <h5 class="project-center project-hero-title">Using Natural Energy and Culture to Empower a Lifestyle</h5>
+    <div class="project-hero-container row"
+      style="background-image: url('img/matebros/hero-bg.png'); background-position: center;">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="hero-logo"><img src="img/matebros/hero-logo.svg" class="image"></div>
       </div>
 
       <!-- HERO TAGS -->
@@ -71,39 +73,48 @@
       </div>
     </div>
 
-    <!-- PROJECT MENU -->
-
-    <div class="project-menu">
-      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 project-hero-sections">
-        <div class="project-menu-logo"><img src="img/matebros/logo-menu.svg" class="image"></div>
-        <p><a class="project-hero-sections-section project-hero-sections-section-dark" href="matebros.html#marketing">Marketing</a></p>
-        <p><a class="project-hero-sections-section project-hero-sections-section-dark" href="matebros.html#packaging">Packaging</a></p>
-      </div>
-      <div class="project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 project-center prev-next">
-        <a class="button-transparent-dark-draw" href="interventions.html"><button class="button draw meet">next proj →</button></a>
-      </div>
-    </div>
-
     <!-- PROJECT MEAT -->
 
-    <div class="project-meat-tulip">
-        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h2 class="project-row-element">Maté Bros makes<span> energy tea from Yerba Mate, a plant native to South America. I loved working with this startup to iteratively define their market, copy, and style thought advertisements and marketing collateral. It was interesting to leverage a co-founder of the company's olympian status, Sam Mikulak, through advertising and social media endorsements.</span></h2>
+    <div class="project-meat">
+
+      <div class="bg-scheme-light col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="project-row project-center col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+          <h5 class="project-center project-hero-title">Using natural energy & culture to empower a lifestyle</h5>
         </div>
 
-    <!-- MARKETING SECTION -->
+        <!-- SUMMARY -->
 
-    <div id="marketing" class="project-section-padding">
-      <h3><span>marketing</span></h3>
-    </div>
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p class="project-summary project-row-element">
+            <span class="project-summary-dropcap">M</span>
+            até Bros brews energy tea from Yerba Mate, a plant native to South America. I loved working with this
+            startup to
+            iteratively define their market, copy, and style thought advertisements and marketing collateral. It was
+            interesting to leverage a co-founder of the company's olympian status, Sam Mikulak, through advertising and
+            social media endorsements.
+          </p>
+        </div>
 
-      <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2 class="project-row-element">This is a brand<span> born out of the search for a natural alternative to unhealthy energy drinks. Its followers are active, health-conscious, and know when to relax. The logo represents balance with the people and environment around us, and the three hands symbolize commitment, connection, and competition. Our marketing is colorful, focused, and honest.</span></h2>
-      </div>
+        <!-- MARKETING SECTION -->
 
-    <div class="project-row row">
-      <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 row">
-          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div id="marketing" class="project-section-padding">
+          <h3><span>Marketing</span></h3>
+        </div>
+
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="project-row-element text-left col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="project-subheading">A brand with energy to match the product</h2>
+            <div>
+              <p>This is a brand born out of the search for a natural alternative to unhealthy energy drinks. Its
+                followers are active, health-conscious, and know when to relax. The logo represents balance with the
+                people and environment around us, and the three hands symbolize commitment, connection, and competition.
+                Our marketing is colorful, focused, and honest.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <img src="img/matebros/marketing/horiz-ad-2.jpg" class="image">
             </div>
             <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -112,192 +123,210 @@
             <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <img src="img/matebros/marketing/horiz-ad-1.jpg" class="image">
             </div>
-      </div>
-      <div class="project-row-element col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 caption">
-        <p><span>↑ </span>Banner advertisements for use on outdoor apparel, generic, and gymnastics sites, respectively.</p>
-      </div>
-    </div>
-
-
-    <div class="project-row row">
-        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 caption project-row-element">
-          <p><span>↓ </span>End aisle displays and product holders to showcase endorsements and a new addition to a store.</p>
+            <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 caption">
+              <p><span>↑ </span>Banner advertisements for use on outdoor apparel, generic, and gymnastics sites,
+                respectively.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 project-row-element">
-          <img src="img/matebros/marketing/stand2.png" class="image">
-        </div>
-    </div>
 
-    <div class="project-row row">
-        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 row">
-            <div class="project-row-element col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <img src="img/matebros/marketing/stand2.png" class="image">
+            </div>
+            <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 caption">
+              <p><span>↑ </span>End aisle displays and product holders to showcase endorsements and a new addition to a
+                store.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <img src="img/matebros/marketing/banner-01.jpg" class="image">
             </div>
-            <div class="project-row-element col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <img src="img/matebros/marketing/banner-02.jpg" class="image">
             </div>
+            <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 caption">
+              <p><span>↑ </span>A one-pager highlighting the drink's simple ingredients and a testimonial from Sam
+                Mikulak, an olympian and co-founder of the company.</p>
+            </div>
+          </div>
         </div>
-        <div class="project-row-element col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 caption">
-          <p><span>↑ </span>A one-pager highlighting the drink's simple ingredients and a testimonial from Sam Mikulak, an olympian and co-founder of the company.</p>
+
+        <!-- PACKAGING SECTION -->
+
+        <div id="packaging" class="project-section-padding">
+          <h3><span>Packaging</span></h3>
         </div>
-      </div>
 
-    <!-- PACKAGING SECTION -->
 
-    <div id="packaging" class="project-section-padding">
-      <h3><span>packaging</span></h3>
-    </div>
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>The founders wished to take the beverage to the next level. We worked together to create new packaging
+              that was dynamic, bright, and ready to power a healthy, active lifestyle. The can is bigger than the
+              previous version and all the ingredients are now organic. The cans now distinguish between different
+              flavorings for future products such as yerba mate with lemon, raspberry, or orange.</p>
+          </div>
+        </div>
 
-    <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <h2 class="project-row-element">The founders wished<span> to take the beverage to the next level. We worked together to create new packaging that was dynamic, bright, and ready to power a healthy, active lifestyle. The can is bigger than the previous version and all the ingredients are now organic. The cans now distinguish between different flavorings for future products such as yerba mate with lemon, raspberry, or orange.</span></h2>
-    </div>
-
-    <div class="project-row row">
-        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 row">
-            <div class="project-row-element col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 project-row-element">
               <img src="img/matebros/packaging/IMG_1035.JPG" class="image">
             </div>
-            <div class="project-row-element col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 project-row-element">
               <img src="img/matebros/packaging/IMG_1036.JPG" class="image">
             </div>
-            <div class="project-row-element col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <img src="img/matebros/packaging/IMG_1037.JPG" class="image">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 project-row-element">
+              <img src="img/matebros/packaging/IMG_1037.JPG" class="image">
             </div>
-        </div>
-        <div class="project-row-element caption col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          </div>
+          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 caption">
             <p><span>↑ </span>Early concept sketches.</p>
           </div>
-      </div>
+        </div>
 
-      <div class="project-row row">
-          <div class="project-row-element caption col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
-            <p><span>↓ </span>Directions that didn't make the cut.</p>
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 project-row-element">
+              <img src="img/matebros/packaging/6.jpg" class="image">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 project-row-element">
+              <img src="img/matebros/packaging/7.jpg" class="image">
+            </div>
           </div>
-          <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 row">
-              <div class="project-row-element col-xl-6 col-lg-6 col-md-4 col-sm-4 col-xs-12">
-                <img src="img/matebros/packaging/6.jpg" class="image">
-              </div>
-              <div class="project-row-element col-xl-6 col-lg-6 col-md-4 col-sm-4 col-xs-12">
-                <img src="img/matebros/packaging/7.jpg" class="image">
-              </div>
+          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 caption">
+            <p><span>↑ </span>Directions that didn't make the cut.</p>
           </div>
         </div>
 
-        <div class="project-row row">
-            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 row">
-                <div class="project-row-element col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                  <img src="img/matebros/packaging/can-final.jpg" class="image">
-                </div>
-                <div class="project-row-element col-xl-8 col-lg-8 col-md-4 col-sm-4 col-xs-12">
-                  <img src="img/matebros/packaging/can-final-01.jpg" class="image">
-                </div>
+        <div class="project-row project-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 project-row-element">
+              <img src="img/matebros/packaging/can-final.jpg" class="image">
             </div>
-            <div class="project-row-element caption col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                <p><span>↑ </span>Two variations of the final packaging, designed to make people curious about turning it over in their hand to see more of the logo and the company's story.</p>
-              </div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 project-row-element">
+              <img src="img/matebros/packaging/can-final-01.jpg" class="image">
+            </div>
           </div>
+          <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 caption">
+            <p><span>↑ </span>Two variations of the final packaging, designed to make people curious about turning it
+              over in their hand to see more of the logo and the company's story.</p>
+          </div>
+        </div>
 
-  <!-- SUBFOOTER -->
+        <!-- SUBFOOTER -->
 
-  <div class="project-row subfooter">
-    <div class="subfooter-border col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-      <div class="project-row-element project-center col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <p class="tools-used">tools used: PEN & PAPER, ILLUSTRATOR, INDESIGN, PHOTOSHOP, SKETCH</p>
-      </div>
-      <div class="project-row-element project-ending-button col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <a class="button button-dark" href="https://matebros.com" target="_blank">matebros.com →</a>
+        <div class="project-row subfooter">
+          <div class="subfooter-border col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+            <div class="project-row-element project-center col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <p class="tools-used">TOOLS USED: PEN & PAPER, ILLUSTRATOR, INDESIGN, PHOTOSHOP, SKETCH</p>
+            </div>
+            <div class="project-row-element project-ending-button col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <a class="button button-dark" href="https://drinkmatebros.com" target="_blank">Website →</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</body>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
-<div class="project-footer">
-
-  <div class="container project-row row">
-
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="box-footer">
-          <img src="img/eximchain/thumb-dark.svg" class="image project-center">
-          <a href="eximchain.html">
-            <div class="box-footer-text">
-              <div><span><h1 class="thumb-heading">Eximchain</h1><p>the blockchain ecosystem</p></span>
-              </div>
-            </div>
-          </a>
+    <div class="project-footer col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-top-section row">
+        <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <a href="index.html"><img src="img/logo-symbol-footer.svg" class="footer-logoSymbol"></a>
+          <a class="hero-item-footer-link" href="photography.html">photo</a>
+          <a class="hero-item-footer-link" href="resume.pdf" target="_blank">résumé</a>
+          <a class="hero-item-footer-link" href="about.html">about</a>
         </div>
       </div>
+      <div class="project-footer-projects row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
           <div class="box-footer">
-            <img src="img/character/thumb-dark.svg" class="image project-center">
+            <a href="eximchain.html">
+              <div class="box-footer-text">
+                <div><span>
+                    <h1 class="thumb-heading">Eximchain</h1>
+                    <p>blockchain ecosystem</p>
+                  </span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="box-footer">
             <a href="character.html">
               <div class="box-footer-text">
-                <div><span><h1 class="thumb-heading">Character</h1><p>holistic skincare</p></span></div>
+                <div><span>
+                    <h1 class="thumb-heading">Character</h1>
+                    <p>holistic skincare</p>
+                  </span></div>
               </div>
             </a>
           </div>
         </div>
 
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
           <div class="box-footer">
-            <img src="img/interventions/thumb-dark.svg" class="image project-center">
             <a href="interventions.html">
               <div class="box-footer-text">
-                <div><span><h1 class="thumb-heading">Interventions</h1><p>a design conference</p></span></div>
+                <div><span>
+                    <h1 class="thumb-heading">Interventions</h1>
+                    <p>design conference</p>
+                  </span>
+                </div>
               </div>
             </a>
           </div>
         </div>
 
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="box-footer">
-          <img src="img/tulip/thumb-dark.svg" class="image project-center">
-          <a href="tulip.html">
-            <div class="box-footer-text">
-              <div><span><h1 class="thumb-heading">Tulip Interfaces</h1><p>comprehensive manufacturing</p></span></div>
-            </div>
-          </a>
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="box-footer">
+            <a href="tulip.html">
+              <div class="box-footer-text">
+                <div><span>
+                    <h1 class="thumb-heading">Tulip Interfaces</h1>
+                    <p>comprehensive manufacturing</p>
+                  </span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="box-footer">
+            <a href="project-access.html">
+              <div class="box-footer-text">
+                <div><span>
+                    <h1 class="thumb-heading">Project Access</h1>
+                    <p>higher education for all</p>
+                  </span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="box-active">
+            <a href="#">
+              <div class="box-text-active">
+                <div><span>
+                    <h1 class="thumb-heading">Maté Bros</h1>
+                    <p>natural energy beverage</p>
+                  </span></div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="box-footer">
-          <img src="img/project-access/thumb-dark.svg" class="image project-center">
-          <a href="project-access.html">
-            <div class="box-footer-text">
-              <div><span><h1 class="thumb-heading">Project Access</h1><p>higher education for all</p></span></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="project-row-element col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="box-active">
-          <a href="#">
-            <div class="box-text-active">
-              <div><span><h1 class="thumb-heading">Maté Bros</h1><p>the natural energy beverage</p></span></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-  </div>
-
-
-  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-center footer-bottom-section row">
-    <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <a href="index.html"><img src="img/logo-symbol-footer.svg" class="home-logoSymbol"></a>
     </div>
-  <div class="project-row-element col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-links">
-      <a class="hero-item hero-item-footer" href="index.html">work</a>
-      <a class="hero-item hero-item-footer" href="photography.html">photo</a>
-      <a class="hero-item hero-item-footer" href="resume.pdf" target="_blank">résumé</a>
-    <!-- <a class="hero-item hero-item-footer" href="mailto:loverly@protonmail.com?subject=hi">email</a> -->
-  </div>
-</div>
-</div>
+</body>
 
 </html>
