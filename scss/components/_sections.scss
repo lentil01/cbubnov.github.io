@@ -2190,7 +2190,8 @@ h2 .project {
   }
 
   &-project-subtitle {
-    color: $grey50;
+    font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
+    color: $heading-color;
     // padding-top: 1rem;
     margin-bottom: 0.5rem;
     line-height: 1.3em;
