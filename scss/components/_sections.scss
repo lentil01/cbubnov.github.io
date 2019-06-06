@@ -28,15 +28,15 @@ body {
 @media (min-width: 992px) {
 
   .home-scrolling {
-  //   overflow-x: auto !important;
+    //   overflow-x: auto !important;
     overflow-y: hidden !important;
 
-  //   overflow: -moz-scrollbars-none !important;
-  //   -ms-overflow-style: none !important;
+    //   overflow: -moz-scrollbars-none !important;
+    //   -ms-overflow-style: none !important;
 
-  //   ::-webkit-scrollbar {
-  //     width: 0 !important;
-  //   }
+    //   ::-webkit-scrollbar {
+    //     width: 0 !important;
+    //   }
   }
 }
 
@@ -1474,6 +1474,8 @@ a {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 12px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .center-text {
