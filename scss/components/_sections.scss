@@ -25,6 +25,21 @@ body {
   // overflow: auto;
 }
 
+@media (min-width: 992px) {
+
+  .home-scrolling {
+  //   overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+  //   overflow: -moz-scrollbars-none !important;
+  //   -ms-overflow-style: none !important;
+
+  //   ::-webkit-scrollbar {
+  //     width: 0 !important;
+  //   }
+  }
+}
+
 ::selection {
   background: $yellow-highlight;
   color: $bg-color;
@@ -2077,6 +2092,8 @@ h2 .project {
 .home {
   // margin-left: 6rem;
   padding: 4rem 0;
+  // overflow: hidden;
+
   // padding-left: 13rem;
   // padding-right: 13rem;
 
@@ -2105,19 +2122,29 @@ h2 .project {
     right: 0;
     margin-left: 6rem;
     margin-right: 6rem;
-    // height: 100vh;
     display: flex;
     flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
-    // overflow-y: hidden;
-    overflow-x: auto;
     padding-left: 6rem;
-    // padding-right: 9rem !important;
+    // -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    scrollbar-width: none;
 
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
 
+    &::-webkit-scrollbar-track-piece {
+      background-color: transparent;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+    }
 
+    // overflow: -moz-scrollbars-none;
+    // -ms-overflow-style: none;
 
-    // padding-left: 2rem;
+    // &::-webkit-scrollbar {
+    //   width: 0 !important;
+    // }
   }
 
   &-project {
@@ -2249,10 +2276,6 @@ h2 .project {
     padding-bottom: 1rem;
     margin-right: 4rem;
     position: relative;
-    // padding-top: 1.5rem;
-    // padding-left: 1.5rem;
-    // padding-right: 1.5rem;
-    // padding-bottom: 0;
     top: -4rem;
     left: 0;
     margin-right: 0;
@@ -2275,6 +2298,12 @@ h2 .project {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .home-project-text {
+    max-width: 418px;
+  }
+}
+
 
 
 @media (max-width: 512px) {
@@ -2294,10 +2323,6 @@ h2 .project {
 @media (min-width: 992px) and (max-width: 1335px) {
   .home-projects {
     top: 20rem;
-  }
-
-  .home-project-text {
-    max-width: 418px;
   }
 }
 
