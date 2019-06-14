@@ -1790,7 +1790,7 @@ h2 .project {
       text-transform: uppercase;
 
       &-light {
-        color: $n50;
+        color: $n55;
       }
 
       &-dark {
@@ -1992,10 +1992,7 @@ h2 .project {
 
 @media (max-width: 512px) {
   .project-row {
-    padding-left: 1.35rem;
-    padding-right: 1.35rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 1.25rem;
   }
 }
 
