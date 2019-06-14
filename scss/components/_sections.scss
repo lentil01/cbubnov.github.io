@@ -1339,8 +1339,10 @@ a {
   }
 }
 
-.override-pos-relative {
-  position: relative !important;
+@media (max-width: 512px) {
+  .override-pos-relative {
+    position: relative !important;
+  }
 }
 
 .logo {
