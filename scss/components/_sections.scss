@@ -635,7 +635,7 @@ a {
 
 @media (max-width: 512px) {
   .design-nav-fixed {
-    position: relative;
+    position: fixed;
     background: none;
   }
 }
@@ -1339,6 +1339,10 @@ a {
   }
 }
 
+.override-pos-relative {
+  position: relative !important;
+}
+
 .logo {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   line-height: 1.2em;
@@ -1812,8 +1816,8 @@ h2 .project {
 @media (max-width: 512px) {
   .project-hero-title {
     font-size: 40px;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -1988,8 +1992,8 @@ h2 .project {
 
 @media (max-width: 512px) {
   .project-row {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
     padding-top: 0;
     padding-bottom: 0;
   }
