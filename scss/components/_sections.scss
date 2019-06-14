@@ -91,7 +91,7 @@ a {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: #f9f9fa;
   font-size: 14px;
-  letter-spacing: 0.3px;
+  // letter-spacing: 0.3px;
   text-transform: uppercase;
   padding-top: 4em;
   padding-bottom: 4em;
@@ -1890,6 +1890,9 @@ h2 .project {
     font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
     max-width: 310px;
     bottom: 1.5rem;
+  }
+  .project-hero-tag {
+    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
   }
 }
 
