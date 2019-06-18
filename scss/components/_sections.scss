@@ -543,7 +543,7 @@ a {
     // color: $grey50;
     font-size: 40px;
     // padding-left: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     line-height: 1.4;
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     padding-right: 9rem;
@@ -599,9 +599,9 @@ a {
 
   &-links {
     position: absolute;
-    bottom: -320px;
+    top: 280px;
     left: -3px;
-    width: 100vh;
+    width: 100%;
     transform-origin: 0% 0%;
     transform: rotate(-90deg);
     display: flex;
@@ -1348,7 +1348,7 @@ a {
 .logo {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   line-height: 1.2em;
-  cursor: pointer;
+  // cursor: pointer;
   text-decoration: none;
   transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
