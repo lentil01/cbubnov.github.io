@@ -29,7 +29,7 @@ body {
 
   .home-scrolling {
     //   overflow-x: auto !important;
-    overflow-y: hidden !important;
+    // overflow-y: hidden !important;
 
     //   overflow: -moz-scrollbars-none !important;
     //   -ms-overflow-style: none !important;
@@ -336,11 +336,6 @@ a {
   margin: 1rem 0;
 
 
-  &:hover {
-    border-left-color: $n60;
-  }
-
-
   h2 {
     font-size: 16px;
   }
@@ -439,18 +434,15 @@ a {
 }
 
 .box-footer-text:hover span {
-
-  // display: none;
-
   color: $n60;
 }
 
 .box-footer-text span:hover {
+  cursor: pointer;
 
   p {
     transition: color .3s ease-in-out;
     color: $n50;
-
   }
 }
 
@@ -669,9 +661,9 @@ a {
 
   &-links {
     position: absolute;
-    bottom: -320px;
+    top: 280px;
     left: -3px;
-    width: 100vh;
+    width: 100%;
     transform-origin: 0% 0%;
     transform: rotate(-90deg);
     display: flex;
@@ -841,7 +833,8 @@ a {
     display: inline-block;
     // line-height: 11.5rem;
     white-space: nowrap;
-    padding: 0 0.5em;
+    margin: 0 0.5em;
+    transition: border .1s ease-in-out;
   }
 
   &:last-child {
@@ -903,12 +896,19 @@ a {
 
     a {
       color: $heading-color;
+      border-bottom: 2px solid transparent;
     }
 
     &:hover {
       // background-color: $g30;
       color: $heading-color;
-      border-color: $heading-color;
+      // border-color: $heading-color;
+
+      
+        a {
+          border-color: $heading-color;
+        }
+      
     }
 
     &-selected {
@@ -1893,6 +1893,7 @@ h2 .project {
     max-width: 310px;
     bottom: 1.5rem;
   }
+
   .project-hero-tag {
     font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
   }
@@ -2133,26 +2134,19 @@ h2 .project {
     display: flex;
     flex-wrap: nowrap;
     padding-left: 6rem;
-    // -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      width: 0px;
-    }
-
-    &::-webkit-scrollbar-track-piece {
-      background-color: transparent;
-      border-radius: 6px;
-      -webkit-border-radius: 6px;
-    }
-
-    // overflow: -moz-scrollbars-none;
-    // -ms-overflow-style: none;
+    // overflow-x: auto;
+    // scrollbar-width: none;
 
     // &::-webkit-scrollbar {
-    //   width: 0 !important;
+    //   width: 0px;
     // }
+
+    // &::-webkit-scrollbar-track-piece {
+    //   background-color: transparent;
+    //   border-radius: 6px;
+    //   -webkit-border-radius: 6px;
+    // }
+
   }
 
   &-project {

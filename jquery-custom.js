@@ -1,7 +1,6 @@
-$(document).ready(function () {
-
-    // $(window).on('scroll', function () {
-    //     $("#homeprojects").css("left", -$(window).scrollTop());
-    // });
-
-});
+$(document).ready(function() {
+    $('html, body, *').mousewheel(function(e, delta) {
+    this.scrollLeft -= (delta);
+    e.preventDefault();
+    });
+    });
