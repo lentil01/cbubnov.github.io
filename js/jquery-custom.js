@@ -6,8 +6,7 @@ $(document).ready(function () {
             this.scrollLeft -= (delta);
             evt.preventDefault();
         });
+
+        
     }
-
-    
-
 });
