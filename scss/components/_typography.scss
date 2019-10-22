@@ -98,7 +98,6 @@ p {
   font-size: 17px;
   line-height: 1.6em;
   margin-bottom: 0;
-  // margin-top: 2rem;
 }
 
 @media (max-width: 512px) {
@@ -117,13 +116,11 @@ h3 {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   text-transform: uppercase;
   position: relative;
-  // padding-left: 3rem;
   color: $heading-color;
   font-size: 2em;
   letter-spacing: 1px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  // margin-right: 4rem;
 
   span {
     background: $bg-color;
@@ -175,7 +172,6 @@ h2 {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: $heading-color;
   font-size: 18px;
-  // letter-spacing: 0.3px;
 
   span {
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
