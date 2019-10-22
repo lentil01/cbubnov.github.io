@@ -22,14 +22,6 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
-  // overflow: auto;
-}
-
-@media (min-width: 992px) {
-
-  .home-scrolling {
-    // overflow-y: hidden !important;
-  }
 }
 
 ::selection {
@@ -67,7 +59,6 @@ a {
 @media (max-width: 512px) {
   .text-left {
     padding-right: 0 !important;
-    // padding-bottom: 50px;
   }
 }
 
@@ -83,7 +74,6 @@ a {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: #f9f9fa;
   font-size: 14px;
-  // letter-spacing: 0.3px;
   text-transform: uppercase;
   padding-top: 4em;
   padding-bottom: 4em;
@@ -97,45 +87,17 @@ a {
   }
 }
 
-// .about {
-//   padding: 0 2rem;
-//   margin: auto;
-// }
-
 @media (max-width: 512px) {
   .about {
     padding: 1rem;
   }
 }
 
-// .mobile-padding {
-//   padding-left: 5px;
-// }
-
-// @media (min-width: 512px) {
-//   .mobile-padding {
-//     padding-top: 200px;
-//   }
-// }
-
 @media (max-width: 512px) {
   .mobile-padding {
     padding-top: 50px;
-    // padding-bottom: 50px;
   }
 }
-
-// @media (max-width: 768px) {
-//   .mobile-padding {
-//     padding-top: 200px;
-//   }
-// }
-
-// @media (max-width: 912px) {
-//   .mobile-padding-top {
-//     padding-top: 50px;
-//   }
-// }
 
 .image {
   display: block;
@@ -149,36 +111,11 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  // background: #edeff1;
 }
 
 .box h2 {
   font-size: 16px;
 }
-
-// .box img {
-//   min-height: 150px;
-//   width: 100%;
-//   border-radius: 3px;
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   z-index: 0;
-// }
-
-// .box:hover img {
-//   display: none;
-//   background: $bg-color;
-// }
-
-// @media (max-width: 512px) {
-//   .box:hover img {
-//     display: none;
-//   }
-// }
 
 .box-padding {
   padding: 10px;
@@ -203,12 +140,6 @@ a {
     padding-bottom: 30px;
   }
 }
-
-// .box:before {
-//   content: "";
-//   display: block;
-//   padding-top: 100%;
-// }
 
 .box-text {
   font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
@@ -253,10 +184,8 @@ a {
   height: 54px;
   position: relative;
   width: 100%;
-  // overflow: hidden;
   border-left: 1px solid $n60;
   margin: 1rem 0;
-
 }
 
 @media (max-width: 512px) {
@@ -264,12 +193,6 @@ a {
     margin: 1rem 0;
   }
 }
-
-// .box-active:before {
-//   content: "";
-//   display: block;
-//   padding-top: 54px;
-// }
 
 .box-text-active {
   position: absolute;
@@ -294,9 +217,7 @@ a {
 
 .box-text-active span {
   display: table-cell;
-  // text-align: center;
   vertical-align: middle;
-  // color: $bg-color;
   color: $n60;
 
   p {
@@ -318,58 +239,22 @@ a {
 
 .box-footer {
   height: 54px;
-  // border-radius: 6px;
   position: relative;
   width: 100%;
-  // overflow: hidden;
-  // background: #313432;
   border-left: 1px solid #4D4C4C;
   transition: border-left-color .3s ease-in-out;
   margin: 1rem 0;
 
-
   h2 {
     font-size: 16px;
   }
-
-  // img {
-  //   min-height: 150px;
-  //   width: 100%;
-  //   border-radius: 3px;
-  //   // display: none;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   z-index: 0;
-  // }
-
-  // &:hover img {
-  //   display: block;
-  //   background: #282a29;
-  // }
 }
 
 @media (max-width: 512px) {
   .box-footer {
     margin: 1rem 0;
   }
-
 }
-
-@media (max-width: 512px) {
-  // .box-footer:hover img {
-  //   display: none;
-  // }
-}
-
-// .box-footer:before {
-//   content: "";
-//   display: block;
-//   padding-top: 54px;
-//   margin-bottom: 0;
-// }
 
 .box-footer-text {
   font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
@@ -381,8 +266,6 @@ a {
   padding-right: 2rem;
   padding-left: 2rem;
   color: #d7dcda;
-  // margin-top: 3rem;
-  // margin-bottom: 3rem;
 
   p {
     margin-bottom: 0;
@@ -415,7 +298,6 @@ a {
 
 .box-footer-text span {
   display: table-cell;
-  // text-align: center;
   vertical-align: middle;
   color: $bg-color;
   transition: color .3s ease-in-out;
@@ -481,12 +363,6 @@ a {
       text-decoration: none;
     }
   }
-
-  // &:hover {
-  //   // color: $bg-color;
-  //   border-color: $heading-color;
-  //   text-decoration: none;
-  // }
 }
 
 .footer {
@@ -505,9 +381,7 @@ a {
 }
 
 .home-links {
-  // position: fixed;
   padding-top: 1rem;
-  // padding-bottom: 2rem;
 }
 
 .homeSummary {
@@ -519,14 +393,8 @@ a {
   color: $heading-color;
   z-index: 1000;
 
-  // span {
-  //   padding-right: 14rem;
-  // }
-
   &-heading {
-    // color: $grey50;
     font-size: 40px;
-    // padding-left: 4rem;
     padding-bottom: 1rem;
     line-height: 1.4;
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
@@ -546,7 +414,6 @@ a {
     left: 0;
     margin-right: 0;
 
-    // font-size: 20px;
     &-heading {
       padding-right: 0;
       font-size: 30px;
@@ -556,71 +423,11 @@ a {
 
 @media (max-width: 512px) {
   .home-links {
-    // margin-top: 2rem !important;
     position: relative;
     display: flex;
-    // padding: 1.5rem !important;
     padding-top: 1.5rem;
 
     padding-bottom: 1.5rem;
-  }
-}
-
-.design-nav {
-  padding: 4.5rem 1.5rem 1rem 1.5rem;
-  z-index: 1000;
-  height: 100%;
-
-  &-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 6rem;
-    background: $bg-color;
-    z-index: 1000;
-  }
-
-  &-links {
-    position: absolute;
-    top: 280px;
-    left: -3px;
-    width: 100%;
-    transform-origin: 0% 0%;
-    transform: rotate(-90deg);
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 512px) {
-  .design-nav {
-    max-width: 100%;
-    background: none;
-    padding: 2rem 1.5rem 1rem 1.5rem;
-
-    &-fixed {
-      z-index: 0;
-    }
-  }
-}
-
-@media (max-width: 512px) {
-  .design-nav-links {
-    transform: none;
-    top: 16px;
-    bottom: 0;
-    width: inherit;
-    left: 90px;
-  }
-}
-
-@media (max-width: 512px) {
-  .design-nav-fixed {
-    position: fixed;
-    background: none;
   }
 }
 
@@ -727,9 +534,6 @@ a {
   .photo-nav {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    // position: sticky;
-    // top: -4rem !important;
-    // margin-top: -4rem !important;
   }
 }
 
@@ -773,13 +577,11 @@ a {
     color: $heading-color;
 
     &:hover {
-      // background-color: $g30;
       color: $heading-color;
       border-color: $heading-color;
     }
 
     &-selected {
-      // text-decoration: underline;
       color: $yellow;
       border-color: $yellow;
 
@@ -803,7 +605,6 @@ a {
 }
 
 .hero-item {
-  // font-family: "IBMPlexSans-Text", "Courier New", Courier, monospace;
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   padding-left: 0;
   margin-right: 1rem;
@@ -814,16 +615,12 @@ a {
   transition: border-bottom ease-in-out 0.1s, opacity ease-in-out 0.1s, color 0.1s ease-in-out;
   list-style: none;
   display: inline-block;
-  // line-height: 6rem;
   padding-top: 2rem;
   text-transform: capitalize;
 
 
   a {
-    // line-height: 6rem;
-    // font-size: 1.9rem;
     display: inline-block;
-    // line-height: 11.5rem;
     white-space: nowrap;
     margin: 0 0.5em;
     transition: border .1s ease-in-out;
@@ -892,26 +689,19 @@ a {
     }
 
     &:hover {
-      // background-color: $g30;
       color: $heading-color;
-      // border-color: $heading-color;
 
-      
-        a {
-          border-color: $heading-color;
-        }
-      
+      a {
+        border-color: $heading-color;
+      }
     }
 
     &-selected {
+      color: $yellow;
 
-      // text-decoration: underline;
       a {
         color: $yellow;
       }
-
-      color: $yellow;
-      // border-color: $heading-color;
 
       &:hover {
         color: $yellow;
@@ -1011,8 +801,6 @@ a {
 
 @media (min-width: 512px) {
   .footer-top-section {
-    // padding-left: 3rem;
-    // padding-right: 3rem;
     display: none;
 
   }
@@ -1073,13 +861,6 @@ a {
 
 .project-subheading {
   font-family: "IBMPlexSans-Text", "Courier New", Courier, monospace;
-  // margin-left: 1rem;
-  // padding: 0 0.8rem 0.5rem 0;
-  // text-transform: uppercase;
-  // border-right: 1px solid #d7dcda;
-  // border-bottom: 1px solid #d7dcda;
-  // border-bottom-right-radius: 6px;
-  // width: max-content;
   color: $heading-color;
   font-size: 24px;
   margin-bottom: 2rem;
@@ -1340,7 +1121,6 @@ a {
 .logo {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   line-height: 1.2em;
-  // cursor: pointer;
   text-decoration: none;
   transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
@@ -1363,19 +1143,9 @@ a {
 
   &-dark {
     color: $heading-color;
-
-    // &:hover {
-    //   color: $green;
-    //   text-decoration: none;
-    //   transition: color 0.25s ease;
-    //   -webkit-transition: color 0.25s ease;
-    //   -moz-transition: color 0.25s ease;
-    //   -o-transition: color 0.25s ease;
-    // }
   }
 
   &-home {
-    // z-index: 0;
 
     &:hover {
       color: $yellow !important;
@@ -1387,7 +1157,6 @@ a {
       left: 0;
       top: 24rem;
       max-width: 100px !important;
-      // display: block;
       z-index: 1005 !important;
     }
   }
@@ -1433,10 +1202,6 @@ a {
 }
 
 .project-footer {
-  // position: fixed;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
   padding-top: 4rem;
   padding-bottom: 6rem;
   background-color: #272928;
@@ -1489,7 +1254,6 @@ h2 .project {
 }
 
 .project-padding {
-  // padding: 1rem;
 
   &-top {
     padding-top: 1rem;
@@ -1611,19 +1375,15 @@ h2 .project {
   max-height: 100px;
   position: fixed;
   top: 0;
-  // z-index: 0;
   padding: 2rem 13rem 0 13rem;
 }
 
 .project-meat {
-  // margin-top: -55rem;
   margin-right: 0;
   margin-left: 6rem;
   margin-top: 550px;
-  // z-index: 1000;
   background: $bg-color;
   position: relative;
-  // margin-bottom: 608px;
 }
 
 .project-summary {
@@ -1646,7 +1406,6 @@ h2 .project {
 @media (max-width: 1100px) {
   .project-meat {
     margin-top: 550px;
-    // margin-left: 0;
     margin-right: 0;
     z-index: 101;
   }
@@ -1763,7 +1522,6 @@ h2 .project {
 
         &-dark {
 
-          // color: $heading-color;
           &:hover {
             color: $heading-color;
           }
@@ -1793,16 +1551,11 @@ h2 .project {
     }
 
     &-title {
-      // position: absolute;
       text-align: center;
       padding-top: 10rem;
       font-size: 80px;
       padding-bottom: 10rem;
       background: $bg-color;
-
-      // color: $bg-color;
-      // padding-top: 6rem;
-      // z-index: 4;
     }
   }
 }
@@ -1821,8 +1574,6 @@ h2 .project {
   z-index: 4;
   width: 200px;
 }
-
-
 
 .bg-scheme-light {
   background: $bg-color;
@@ -1847,13 +1598,6 @@ h2 .project {
     left: 0;
   }
 }
-
-// @media (max-width: 768px) {
-//   .project-text {
-//     padding-left: 1.5rem;
-//     padding-right: 1.5rem;
-//   }
-// }
 
 .prev-next {
   padding-left: 1rem;
@@ -1903,8 +1647,6 @@ h2 .project {
   .project-meat {
     margin-top: 350px;
     margin-left: 0;
-    // padding-left: 1.5rem;
-    // padding-right: 1.5rem;
   }
 }
 
@@ -2022,14 +1764,12 @@ h2 .project {
 
   &-border {
     border-top: 1px solid #d7dcda;
-    // border-bottom: 1px solid #d7dcda;
   }
 }
 
 @media (min-width: 512px) {
   .subfooter-border {
     border-top-color: transparent;
-    // border-bottom-color: transparent;
   }
 }
 
@@ -2042,7 +1782,6 @@ h2 .project {
 @media (max-width: 512px) {
   .subfooter {
     padding-top: 3rem;
-
     padding-bottom: 4rem;
   }
 }
@@ -2055,15 +1794,6 @@ h2 .project {
     color: #454c4a;
   }
 }
-
-// .caption-left p {
-//   font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
-//   font-weight: medium;
-//   font-size: 13px;
-//   padding-top: 1rem;
-//   line-height: 1.6em;
-//   color: #454c4a;
-// }
 
 @media (min-width: 992px) {
   .caption span {
@@ -2081,7 +1811,6 @@ h2 .project {
     width: 36px;
     height: 36px;
     margin-right: 1.5rem;
-    // transition: opacity 0.2s ease-in-out;
 
     &:hover {
       opacity: 0.8;
@@ -2091,17 +1820,11 @@ h2 .project {
 
 
 .home {
-  // margin-left: 6rem;
   padding: 4rem 0;
-  // overflow: hidden;
-
-  // padding-left: 13rem;
-  // padding-right: 13rem;
 
   &-eye {
     width: 36px;
     height: 36px;
-    // transition: filter 0.2s ease-in-out;
   }
 
   &-logoSymbol {
@@ -2126,25 +1849,10 @@ h2 .project {
     display: flex;
     flex-wrap: nowrap;
     padding-left: 6rem;
-    // overflow-x: auto;
-    // scrollbar-width: none;
-
-    // &::-webkit-scrollbar {
-    //   width: 0px;
-    // }
-
-    // &::-webkit-scrollbar-track-piece {
-    //   background-color: transparent;
-    //   border-radius: 6px;
-    //   -webkit-border-radius: 6px;
-    // }
-
   }
 
   &-project {
     padding-bottom: 2rem;
-    // border-top: 1px solid #EAECEC;
-    // border-radius: 7px;
     padding-top: 2rem;
     flex: 0 0 auto;
     padding-right: 4.5rem;
@@ -2161,14 +1869,9 @@ h2 .project {
     &-text {
       margin: auto;
       padding-top: 1rem;
-      // padding-right: 1.5rem;
     }
 
     &-thumbnail {
-      // border-top-left-radius: 6px;
-      // border-top-right-radius: 0;
-      // border-bottom-left-radius: 6px;
-      // border-bottom-right-radius: 0;
       border-radius: 4px;
       display: block;
       height: auto;
@@ -2187,16 +1890,9 @@ h2 .project {
       }
     }
 
-    // &:first-child {
-    //   border-top: none;
-    //   padding-top: 1rem;
-    // }
-
     transition: color 0.1s ease-in-out;
 
     &:hover {
-      // background: $n20;
-      // border-color: $n50;
 
       .home-project-text .home-project-title {
         color: $yellow;
@@ -2209,9 +1905,6 @@ h2 .project {
       .home-project-text .home-project-subtitle {
         color: $yellow;
       }
-
-      // opacity: 0.8;
-      // background: $n20;
     }
   }
 
@@ -2223,15 +1916,10 @@ h2 .project {
   &-project-subtitle {
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     color: $heading-color;
-    // padding-top: 1rem;
     margin-bottom: 0.5rem;
     line-height: 1.3em;
     transition: color 0.1s ease-in-out;
     max-width: 496px;
-
-    // font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
-    // letter-spacing: -0.03em;
-    // font-size: 14px;
   }
 
   &-project-title {
@@ -2241,7 +1929,6 @@ h2 .project {
 
     span {
       transition: color 0.1s ease-in-out;
-
     }
 
   }
@@ -2428,8 +2115,6 @@ h2 .project {
     padding-right: 0rem;
   }
 }
-
-
 
 @media (max-width: 512px) {
   .home-eye {
