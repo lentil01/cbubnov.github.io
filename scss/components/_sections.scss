@@ -87,6 +87,10 @@ a {
   }
 }
 
+.aboutpagelink {
+  margin-right: 1rem;
+}
+
 @media (max-width: 512px) {
   .about {
     padding: 1rem;
@@ -384,6 +388,17 @@ a {
   padding-top: 1rem;
 }
 
+.aboutSummary {
+  position: absolute;
+  margin-right: 22rem;
+  top: 0.5rem;
+  left: 8rem;
+  font-size: 22px;
+  color: $heading-color;
+  z-index: 1000;
+  padding-bottom: 2rem;
+}
+
 .homeSummary {
   position: fixed;
   margin-right: 22rem;
@@ -403,6 +418,17 @@ a {
 }
 
 @media (max-width: 512px) {
+  .aboutSummary {
+    font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+    top: 0;
+    left: 0;
+    margin-right: 0;
+  }
   .homeSummary {
     font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
     position: relative;
@@ -460,7 +486,7 @@ a {
 
   &-links {
     position: absolute;
-    top: 280px;
+    top: 310px;
     left: -3px;
     width: 100%;
     transform-origin: 0% 0%;
@@ -1870,7 +1896,15 @@ h2 .project {
       margin: auto;
       padding-top: 1rem;
     }
-
+    &-about {
+      border-radius: 4px;
+      display: block;
+      height: auto;
+      max-height: 320px;
+      opacity: 1;
+      transition: opacity .2s ease-in-out;
+    }
+    
     &-thumbnail {
       border-radius: 4px;
       display: block;
@@ -1878,6 +1912,9 @@ h2 .project {
       max-height: 320px;
       opacity: 1;
       transition: opacity .2s ease-in-out;
+
+
+      
 
       &:hover {
         opacity: .9;
@@ -1951,6 +1988,16 @@ h2 .project {
 }
 
 @media (min-width: 512px) and (max-width: 992px) {
+  .aboutSummary {
+    padding-top: 0rem;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    margin-right: 4rem;
+    position: relative;
+    top: -4rem;
+    left: 0;
+    margin-right: 0;
+  }
   .homeSummary {
     padding-top: 0rem;
     padding-right: 0;
@@ -1971,10 +2018,16 @@ h2 .project {
   .homeSummary {
     margin-right: 16rem;
   }
+  .aboutSummary {
+    margin-right: 16rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1335px) {
   .homeSummary {
+    margin-right: 8rem;
+  }
+  .aboutSummary {
     margin-right: 8rem;
   }
 }
@@ -2089,10 +2142,10 @@ h2 .project {
   .home-project-thumbnail {
     height: auto;
     width: 100%;
-    // border-top-left-radius: 6px;
-    // border-top-right-radius: 6px;
-    // border-bottom-left-radius: 0;
-    // border-bottom-right-radius: 0;
+  }
+  .home-project-about {
+    height: auto;
+    width: 100%;
   }
 }
 
