@@ -400,9 +400,9 @@ a {
 }
 
 .homeSummary {
-  position: fixed;
+  position: absolute;
   margin-right: 22rem;
-  top: 4rem;
+  top: 0;
   left: 8rem;
   font-size: 22px;
   color: $heading-color;
@@ -755,6 +755,15 @@ a {
 
       a {
         color: $heading-color;
+        border-bottom: 2px solid transparent;
+      }
+
+      &:hover {
+
+        a {
+          color: $heading-color;
+          border-color: $heading-color;
+        }
       }
     }
   }
@@ -1868,13 +1877,14 @@ h2 .project {
   &-projects {
     position: absolute;
     top: 18rem;
-    left: -6rem;
-    right: 0;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    display: flex;
-    flex-wrap: nowrap;
-    padding-left: 6rem;
+    left: 8rem;
+    background: $bg-color;
+    // right: 0;
+    // margin-left: 6rem;
+    // margin-right: 6rem;
+    // display: flex;
+    // flex-wrap: nowrap;
+    // padding-left: 6rem;
   }
 
   &-project {
@@ -1883,9 +1893,9 @@ h2 .project {
     flex: 0 0 auto;
     padding-right: 4.5rem;
 
-    &:first-child {
-      padding-left: 2rem;
-    }
+    // &:first-child {
+    //   padding-left: 2rem;
+    // }
 
     &:last-child {
       padding-right: 4.5rem;
@@ -1973,7 +1983,7 @@ h2 .project {
 
 @media (min-width: 512px) and (max-width: 1200px) {
   .home {
-    padding-top: 8rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     padding-left: 8rem;
     padding-right: 4rem;
@@ -1994,17 +2004,18 @@ h2 .project {
     padding-bottom: 2rem;
     margin-right: 4rem;
     position: relative;
-    top: -4rem;
+    top: 0;
     left: 0;
     margin-right: 0;
   }
+
   .homeSummary {
     padding-top: 0rem;
     padding-right: 0;
     padding-bottom: 1rem;
     margin-right: 4rem;
     position: relative;
-    top: -4rem;
+    top: 0;
     left: 0;
     margin-right: 0;
 
@@ -2025,7 +2036,7 @@ h2 .project {
 
 @media (min-width: 992px) and (max-width: 1335px) {
   .homeSummary {
-    margin-right: 8rem;
+    margin-right: 5rem;
   }
   .aboutSummary {
     margin-right: 8rem;
@@ -2033,11 +2044,16 @@ h2 .project {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+  .homeSummary {
+    left: 0;
+  }
+  .aboutSummary {
+    left: 0;
+  }
   .home-project-text {
     max-width: 418px;
   }
 }
-
 
 
 @media (max-width: 512px) {
