@@ -90,6 +90,12 @@ a {
 .aboutpagelink {
   margin-right: 1rem;
 }
+.aboutpagelinks {
+  font-size: 20px;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+
+}
 
 @media (max-width: 512px) {
   .about {
@@ -333,7 +339,7 @@ a {
 .about-link {
   border-bottom: 1.5px solid transparent;
   transition: border-bottom 0.1s ease-in-out, color 0.1s ease-in-out;
-  font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+  // font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
 
   &-dark {
     color: $heading-color;
@@ -401,19 +407,23 @@ a {
 
 .homeSummary {
   position: absolute;
-  margin-right: 22rem;
-  top: 0;
+  margin-right: 10rem;
+  top: -.2rem;
   left: 8rem;
-  font-size: 22px;
+  font-size: 20px;
   color: $heading-color;
   z-index: 1000;
 
   &-heading {
-    font-size: 40px;
+    font-size: 54px;
     padding-bottom: 1rem;
-    line-height: 1.4;
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
-    padding-right: 9rem;
+    padding-right: 2rem;
+    letter-spacing: -0.2px;
+    // line-height: 2.27;
+  }
+  &-subheading {
+    max-width: 42rem;
   }
 }
 
@@ -443,6 +453,15 @@ a {
     &-heading {
       padding-right: 0;
       font-size: 30px;
+      // line-height: 1.4;
+    }
+  }
+}
+
+@media (min-width: 512px) {
+  .homeSummary {
+    &-heading {
+      line-height: 68px;
     }
   }
 }
@@ -486,7 +505,7 @@ a {
 
   &-links {
     position: absolute;
-    top: 310px;
+    top: 270px;
     left: -3px;
     width: 100%;
     transform-origin: 0% 0%;
@@ -1876,7 +1895,7 @@ h2 .project {
 
   &-projects {
     position: absolute;
-    top: 18rem;
+    top: 29rem;
     left: 8rem;
     background: $bg-color;
     // right: 0;
@@ -1891,14 +1910,14 @@ h2 .project {
     padding-bottom: 2rem;
     padding-top: 2rem;
     flex: 0 0 auto;
-    padding-right: 4.5rem;
+    padding-right: 4rem;
 
     // &:first-child {
     //   padding-left: 2rem;
     // }
 
     &:last-child {
-      padding-right: 4.5rem;
+      padding-right: 4rem;
     }
 
 
@@ -1910,7 +1929,7 @@ h2 .project {
       border-radius: 4px;
       display: block;
       height: auto;
-      max-height: 320px;
+      max-height: 340px;
       opacity: 1;
       transition: opacity .2s ease-in-out;
     }
@@ -1919,7 +1938,7 @@ h2 .project {
       border-radius: 4px;
       display: block;
       height: auto;
-      max-height: 320px;
+      max-height: 340px;
       opacity: 1;
       transition: opacity .2s ease-in-out;
 
@@ -2027,7 +2046,7 @@ h2 .project {
 
 @media (min-width: 1335px) and (max-width: 1430px) {
   .homeSummary {
-    margin-right: 16rem;
+    margin-right: 9rem;
   }
   .aboutSummary {
     margin-right: 16rem;
@@ -2036,7 +2055,7 @@ h2 .project {
 
 @media (min-width: 992px) and (max-width: 1335px) {
   .homeSummary {
-    margin-right: 5rem;
+    margin-right: 4rem;
   }
   .aboutSummary {
     margin-right: 8rem;
@@ -2072,7 +2091,7 @@ h2 .project {
 
 @media (min-width: 992px) and (max-width: 1335px) {
   .home-projects {
-    top: 20rem;
+    top: 32rem;
   }
 }
 
@@ -2125,7 +2144,7 @@ h2 .project {
     position: relative;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
+    padding-top: 2rem;
     // z-index: 0 !important;
     position: relative;
     flex-wrap: wrap;
@@ -2168,6 +2187,11 @@ h2 .project {
 @media (min-width: 992px) and (max-width: 1200px) {
   .home-project-thumbnail {
     max-height: 270px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .home-project-thumbnail {
+    max-height: 320px;
   }
 }
 
