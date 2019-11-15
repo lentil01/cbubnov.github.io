@@ -416,11 +416,10 @@ a {
 
   &-heading {
     font-size: 54px;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     padding-right: 2rem;
     letter-spacing: -0.2px;
-    // line-height: 2.27;
   }
   &-subheading {
     max-width: 42rem;
@@ -453,7 +452,6 @@ a {
     &-heading {
       padding-right: 0;
       font-size: 30px;
-      // line-height: 1.4;
     }
   }
 }
