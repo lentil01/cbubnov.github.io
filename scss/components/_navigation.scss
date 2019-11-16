@@ -1,8 +1,35 @@
 .design-nav {
-    padding: 4.5rem 1.5rem 1rem 1.5rem;
+    padding: 6.5rem 0 2rem 0;
     z-index: 1000;
     height: 100%;
   
+    &-fixed {
+      // position: fixed;
+      // top: 0;
+      // left: 0;
+      // height: 100%;
+      // width: 6rem;
+      // background: $bg-color;
+      // z-index: 1100;
+      width: 100%;
+    }
+  
+    &-links {
+      // position: absolute;
+      // top: 270px;
+      // left: -3px;
+      width: 100%;
+      // transform-origin: 0% 0%;
+      // transform: rotate(-90deg);
+      display: flex;
+      text-align: center;
+      align-items: center;
+      // justify-content: center;
+    }
+  }
+
+  .project-nav {
+ 
     &-fixed {
       position: fixed;
       top: 0;
@@ -10,20 +37,7 @@
       height: 100%;
       width: 6rem;
       background: $bg-color;
-      z-index: 1000;
-    }
-  
-    &-links {
-      position: absolute;
-      top: 270px;
-      left: -3px;
-      width: 100%;
-      transform-origin: 0% 0%;
-      transform: rotate(-90deg);
-      display: flex;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
+      z-index: 1100;
     }
   }
   
@@ -33,6 +47,13 @@
       background: none;
       padding: 2rem 1.5rem 1rem 1.5rem;
   
+      &-fixed {
+        z-index: 0;
+      }
+    }
+
+    .project-nav {
+
       &-fixed {
         z-index: 0;
       }
@@ -51,6 +72,10 @@
   
   @media (max-width: 512px) {
     .design-nav-fixed {
+      position: fixed;
+      background: none;
+    }
+    .project-nav-fixed {
       position: fixed;
       background: none;
     }
