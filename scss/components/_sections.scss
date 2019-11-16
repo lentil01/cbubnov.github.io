@@ -93,15 +93,17 @@ a {
 
 .aboutpagelinks {
   font-size: 20px;
-  padding-bottom: 3rem;
-  padding-top: 2rem;
+  padding: 2rem 2rem 3rem;
 }
 
 @media (max-width: 512px) {
   .aboutpagelinks {
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
-
+    padding-right: 0;
+    font-size: 18px;
+  }
+  .aboutpagelink {
+    margin-right: 1.5rem;
   }
 }
 
@@ -421,6 +423,7 @@ a {
   padding-bottom: 2rem;
 }
 
+
 .homeSummary {
   // position: absolute;
   // margin-right: 10rem;
@@ -429,6 +432,15 @@ a {
   font-size: 20px;
   color: $heading-color;
   z-index: 1000;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #d7dcda;
+
+
+  &-border {
+    margin: 0 auto; 
+    width: 50%;
+    padding: 0 2rem;
+  }
 
   &-heading {
     font-size: 58px;
@@ -459,14 +471,14 @@ a {
   .homeSummary {
     font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
     position: relative;
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 0;
+    padding-top: 1.5rem 0 3rem;
     top: 0;
     left: 0;
-    margin-right: 0;
+    // margin-right: 0;
 
+    &-border {
+      padding: 2rem 1.5rem 0;
+    }
     &-heading {
       padding-right: 0;
       font-size: 30px;
@@ -478,6 +490,15 @@ a {
   .homeSummary {
     &-heading {
       line-height: 68px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .homeSummary {
+    &-border {
+      margin: 0; 
+      width: 100%;
     }
   }
 }
@@ -608,6 +629,13 @@ a {
   .photo-nav {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 1200px) {
+  .homeSummary-heading {
+    font-size: 48px;
+    line-height: 54px;
   }
 }
 
@@ -979,7 +1007,7 @@ a {
 .photo-container {
   max-width: 100%;
   padding-top: 4rem;
-  padding-left: 4rem;
+  padding-left: 2rem;
   margin-right: 4rem;
   padding-bottom: 54px;
   margin-left: 6rem;
@@ -1923,7 +1951,7 @@ h2 .project {
 
 
 .home {
-  padding: 0 6rem;
+  padding: 0 4rem;
 
   &-eye {
     width: 36px;
@@ -1947,8 +1975,8 @@ h2 .project {
     // top: 29rem;
     // left: 8rem;
     background: $bg-color;
-    margin: 0 -2rem;
-    padding-top: 4rem;
+    // margin: 0 -2rem;
+    padding-top: 3rem;
     // right: 0;
     // margin-left: 6rem;
     // margin-right: 6rem;
@@ -1963,11 +1991,6 @@ h2 .project {
     flex: 0 0 auto;
     padding-right: 2rem;
     padding-left: 2rem;
-
-    // &:last-child {
-    //   padding-right: 4rem;
-    // }
-
 
     &-text {
       margin: auto;
@@ -2056,7 +2079,7 @@ h2 .project {
   }
 
   .home-project {
-    padding-left: 0;
+    padding-left: 2rem;
   }
 }
 
@@ -2100,23 +2123,23 @@ h2 .project {
   .homeSummary {
     padding-top: 0rem;
     padding-right: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     margin-right: 4rem;
     position: relative;
     top: 0;
     left: 0;
     margin-right: 0;
 
-    &-heading {
-      padding-right: 5rem;
-    }
+    // &-heading {
+    //   padding-right: 5rem;
+    // }
   }
 }
 
 @media (min-width: 1335px) and (max-width: 1430px) {
-  .homeSummary {
-    margin-right: 9rem;
-  }
+  // .homeSummary {
+  //   margin-right: 9rem;
+  // }
 
   .aboutSummary {
     margin-right: 16rem;
@@ -2153,6 +2176,7 @@ h2 .project {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
     position: relative;
     flex-wrap: wrap;
     top: 0;
@@ -2189,7 +2213,7 @@ h2 .project {
 
 @media (min-width: 512px) and (max-width: 992px) {
   .home-project {
-    padding-right: 0;
+    padding-right: 2rem;
     width: 100%;
 
     // &:first-child {
@@ -2258,17 +2282,11 @@ h2 .project {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  .home-project-thumbnail {
-    max-height: 270px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .home-project-thumbnail {
-    max-height: 320px;
-  }
-}
+// @media (min-width: 992px) and (max-width: 1200px) {
+//   .home-project-thumbnail {
+//     max-height: 270px;
+//   }
+// }
 
 @media (min-width: 512px) and (max-width: 992px) {
   .home-project-thumbnail {
