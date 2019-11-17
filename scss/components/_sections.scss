@@ -93,13 +93,19 @@ a {
 
 .aboutpagelinks {
   font-size: 20px;
-  padding: 2rem 2rem 3rem;
+  padding: 2rem 2rem 4rem;
+  &-border {
+    border-top: 1px solid #d7dcda;
+    width: 100%;
+    padding-top: 4rem;
+
+  }
 }
 
 @media (max-width: 512px) {
   .aboutpagelinks {
     padding-left: 1.5rem;
-    padding-right: 0;
+    // padding-right: 0;
     font-size: 18px;
   }
   .aboutpagelink {
@@ -432,7 +438,7 @@ a {
   font-size: 20px;
   color: $heading-color;
   z-index: 1000;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   border-bottom: 1px solid #d7dcda;
 
 
@@ -482,6 +488,7 @@ a {
     &-heading {
       padding-right: 0;
       font-size: 30px;
+      line-height: 42px;
     }
   }
 }
@@ -2085,17 +2092,14 @@ h2 .project {
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .home {
-    padding-top: 0;
-    padding-bottom: 3rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding: 0 4rem;
   }
 }
 
 @media (min-width: 512px) and (max-width: 768px) {
   .home {
     padding-top: 0;
-    padding-bottom: 3rem;
+    padding-bottom: 0;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -2201,13 +2205,13 @@ h2 .project {
     padding-left: 0;
 
     &:first-child {
-      padding-left: 0;
+      // padding-left: 0;
       padding-top: 2rem;
     }
 
-    &:last-child {
-      padding-right: 0;
-    }
+    // &:last-child {
+    //   padding-right: 0;
+    // }
   }
 }
 
@@ -2221,9 +2225,9 @@ h2 .project {
     //   padding-top: 0;
     // }
 
-    &:last-child {
-      padding-right: 0;
-    }
+    // &:last-child {
+    //   padding-right: 0;
+    // }
 
     &-subtitle {
       max-width: none;
