@@ -104,12 +104,13 @@ a {
 
 @media (max-width: 512px) {
   .aboutpagelinks {
+    padding-top: 1rem;
     padding-left: 1.5rem;
     // padding-right: 0;
-    font-size: 18px;
+    font-size: 16px;
   }
   .aboutpagelink {
-    margin-right: 1.5rem;
+    margin-right: .5rem;
   }
 }
 
@@ -2180,7 +2181,7 @@ h2 .project {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
     position: relative;
     flex-wrap: wrap;
     top: 0;
