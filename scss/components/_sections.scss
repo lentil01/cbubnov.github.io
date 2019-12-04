@@ -94,6 +94,7 @@ a {
 .aboutpagelinks {
   font-size: 20px;
   padding: 2rem 2rem 4rem;
+
   &-border {
     border-top: 1px solid #d7dcda;
     width: 100%;
@@ -109,8 +110,10 @@ a {
     padding-right: 1.5rem;
     font-size: 18px;
   }
+
   .aboutpagelink {
     margin-right: 1.3rem;
+
     &:last-child {
       margin-right: 0;
     }
@@ -447,7 +450,7 @@ a {
 
 
   &-border {
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 50%;
     padding: 0 2rem;
   }
@@ -489,6 +492,7 @@ a {
     &-border {
       padding: 2rem 1.5rem 0;
     }
+
     &-heading {
       padding-right: 0;
       font-size: 30px;
@@ -508,7 +512,7 @@ a {
 @media (max-width: 768px) {
   .homeSummary {
     &-border {
-      margin: 0; 
+      margin: 0;
       width: 100%;
     }
   }
@@ -1260,10 +1264,15 @@ a {
   }
 }
 
+.frame-bg {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.10), 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+.border-radius-2px {
+  border-radius: 2px;
+}
+
 .browser-bg {
   border-radius: 4px;
-  // box-shadow: 4px 4px 4px #d7dcda;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 6px 10px rgba(0,0,0,0.08);
 }
 
 .logo {
