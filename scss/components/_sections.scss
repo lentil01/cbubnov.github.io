@@ -1260,6 +1260,12 @@ a {
   }
 }
 
+.browser-bg {
+  border-radius: 4px;
+  // box-shadow: 4px 4px 4px #d7dcda;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 6px 10px rgba(0,0,0,0.08);
+}
+
 .logo {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   line-height: 1.2em;
