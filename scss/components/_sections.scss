@@ -1988,6 +1988,24 @@ h2 .project {
   }
 }
 
+.tag {
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 5px 5px 4px 5px;
+  background: #d7dcda;
+  border-radius: 3px;
+  margin-left: 8px;
+  margin-top: 3px;
+  letter-spacing: 0.05em !important;
+  position: absolute;
+}
+
+.home-project:hover .home-project-text .home-project-title .tag {
+    color: #fff !important;
+    background: #b5792a;
+  
+}
+
 
 .home {
   padding: 0 4rem;
@@ -2212,9 +2230,9 @@ h2 .project {
     left: 0;
   }
 
-  .home-project-text {
-    max-width: 418px;
-  }
+  // .home-project-text {
+  //   max-width: 418px;
+  // }
 }
 
 

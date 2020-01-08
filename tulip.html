@@ -50,7 +50,7 @@
 
     .staticrypt-form input {
       outline: 0;
-      background: #EDEEEF;
+      background: #f2f2f2;
       width: 100%;
       border: 0;
       margin: 0 0 15px;
@@ -61,7 +61,15 @@
       border-radius: 3px;
       letter-spacing: 0.05em;
       font-weight: 400;
+      border: 1px solid transparent;
 
+    }
+
+    .staticrypt-form input:focus {
+      background: #EDEEEF;
+    }
+    .staticrypt-form input:hover {
+      background: #EDEEEF;
     }
 
     /* .staticrypt-form input:hover {
@@ -82,7 +90,6 @@
       cursor: pointer;
       border-radius: 3px;
       letter-spacing: 0.05em;
-
     }
 
     .staticrypt-form .staticrypt-decrypt-button:hover,
@@ -137,8 +144,23 @@
   </style>
 </head>
 
-<body class="staticrypt-body">
+<body class="staticrypt-body fadein">
   <div class="staticrypt-page">
+
+    <div class="project-nav-fixed photography-nav-fixed">
+      <div class="project-nav photography-nav">
+        <a href="https://chrisbubnov.com"><img src="img/logo-symbol.svg" class="home-logoSymbol"></a>
+        <div class="project-nav-links">
+          <li class="proj-hero-item hero-item-dark">
+            <a href="photography.html">Photo</a>
+          </li>
+          <li class="proj-hero-item hero-item-dark">
+            <a href="resume.pdf" target="_blank">Résumé</a>
+          </li>
+        </div>
+      </div>
+    </div>
+
     <div class="staticrypt-form">
       <div class="staticrypt-instructions">
         <h5 class="staticrypt-title">Tulip - Protected Page</h5>
@@ -149,7 +171,6 @@
 
       <form id="staticrypt-form" action="#" method="post">
         <input id="staticrypt-password" type="password" name="password" placeholder="password" autofocus />
-
         <input type="submit" class="staticrypt-decrypt-button" value="ENTER" />
       </form>
     </div>
