@@ -62,14 +62,16 @@
       letter-spacing: 0.05em;
       font-weight: 400;
       border: 1px solid transparent;
-
+      transition: background 0.15s ease-in-out;
     }
 
     .staticrypt-form input:focus {
       background: #EDEEEF;
+      border-color: rgb(230, 231, 233);
     }
     .staticrypt-form input:hover {
       background: #EDEEEF;
+      transition: background 0.15s ease-in-out;
     }
 
     /* .staticrypt-form input:hover {
@@ -90,6 +92,7 @@
       cursor: pointer;
       border-radius: 3px;
       letter-spacing: 0.05em;
+      transition: background 0.15s ease-in-out;
     }
 
     .staticrypt-form .staticrypt-decrypt-button:hover,
@@ -170,7 +173,7 @@
       <!-- <hr class="staticrypt-hr"> -->
 
       <form id="staticrypt-form" action="#" method="post">
-        <input id="staticrypt-password" type="password" name="password" placeholder="password" autofocus />
+        <input id="staticrypt-password" type="password" name="password" placeholder="Password" autofocus />
         <input type="submit" class="staticrypt-decrypt-button" value="ENTER" />
       </form>
     </div>
@@ -6243,7 +6246,7 @@
         decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
       if (decryptedHMAC !== encryptedHMAC) {
-        alert('Bad passphrase!');
+        alert('Incorrect password. Please try again.');
         return;
       }
 
