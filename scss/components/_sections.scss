@@ -2000,6 +2000,12 @@ h2 .project {
   position: absolute;
 }
 
+@media (max-width: 512px) {
+  .tag {
+    display: none;
+  }
+}
+
 .home-project:hover .home-project-text .home-project-title .tag {
     color: #fff !important;
     background: #b5792a;
