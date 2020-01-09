@@ -2002,7 +2002,7 @@ h2 .project {
 
 @media (max-width: 512px) {
   .tag {
-    display: none;
+    display: none !important;
   }
 }
 
