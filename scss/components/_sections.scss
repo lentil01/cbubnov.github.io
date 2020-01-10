@@ -1989,14 +1989,15 @@ h2 .project {
 }
 
 .tag {
+  font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 10px;
-  padding: 5px 5px 4px 5px;
-  background: #d7dcda;
+  padding: 4px 5px 3px 5px;
+  background: #E7EAE9;
   border-radius: 3px;
   margin-left: 8px;
-  margin-top: 3px;
-  letter-spacing: 0.05em !important;
+  margin-top: 5.5px;
+  letter-spacing: 0.07em;
   position: absolute;
 }
 
