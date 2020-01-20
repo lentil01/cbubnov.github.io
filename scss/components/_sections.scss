@@ -45,8 +45,11 @@ a {
 
   &:hover {
     color: $yellow;
+    cursor: pointer;
+
   }
 }
+
 
 .text-left {
   padding-right: 4rem !important;
@@ -54,6 +57,10 @@ a {
   p {
     margin-top: 1.5rem;
   }
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 512px) {
@@ -137,6 +144,7 @@ a {
     text-align: center;
     padding-top: 2rem;
   }
+
   .aboutpagelinks {
     text-align: center;
 
@@ -325,6 +333,11 @@ a {
   border-left: 1px solid #4D4C4C;
   transition: border-left-color .3s ease-in-out;
   margin: 1rem 0;
+
+  &:hover {
+    border-left: 1px solid $n50;
+    transition: border-left-color .3s ease-in-out;
+  }
 
   h2 {
     font-size: 16px;
