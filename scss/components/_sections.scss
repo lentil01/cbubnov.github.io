@@ -2090,23 +2090,13 @@ h2 .project {
   }
 
   &-projects {
-    // position: absolute;
-    // top: 29rem;
-    // left: 8rem;
     background: $bg-color;
-    // margin: 0 -2rem;
     padding-top: 3rem;
-    // right: 0;
-    // margin-left: 6rem;
-    // margin-right: 6rem;
-    // display: flex;
-    // flex-wrap: nowrap;
-    // padding-left: 6rem;
   }
 
   &-project {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     flex: 0 0 auto;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -2136,22 +2126,9 @@ h2 .project {
       border-radius: 4px;
       display: block;
       height: auto;
-      // max-height: 340px;
       width: 100%;
       opacity: 1;
       transition: all .2s ease-in-out;
-      // transition: box-shadow .2s ease-in-out;
-
-
-
-
-
-
-      // &:hover {
-      //   opacity: .9;
-      //   box-shadow: 0 14px 20px rgba(0, 0, 0, 0.10), 0 6px 10px rgba(0, 0, 0, 0.08);
-      // }
-
 
 
       &-padding {
@@ -2323,18 +2300,13 @@ h2 .project {
   .home-project {
     width: 100%;
     padding-right: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding-left: 0;
 
     &:first-child {
-      // padding-left: 0;
-      padding-top: 2rem;
+      margin-top: 2rem;
     }
-
-    // &:last-child {
-    //   padding-right: 0;
-    // }
   }
 }
 
@@ -2342,15 +2314,6 @@ h2 .project {
   .home-project {
     padding-right: 2rem;
     width: 100%;
-
-    // &:first-child {
-    //   padding-left: 0;
-    //   padding-top: 0;
-    // }
-
-    // &:last-child {
-    //   padding-right: 0;
-    // }
 
     &-subtitle {
       max-width: none;
