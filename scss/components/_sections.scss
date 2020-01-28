@@ -1819,6 +1819,7 @@ h2 .project {
   .project-hero-container {
     height: 550px;
     left: 0;
+    
   }
 }
 
@@ -1863,6 +1864,14 @@ h2 .project {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     height: 350px;
+  }
+  .project-access-bg-image {
+    background-image: url('../img/project-access/hero-bg-mobile.png') !important;
+    background-position: right !important;
+  }
+  .eximchain-bg-image {
+    background-image: url('../img/eximchain/hero-bg-mobile.svg') !important;
+    // background-position: right !important;
   }
 }
 
@@ -2062,6 +2071,14 @@ h2 .project {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1167px) {
+  .tag {
+    display: none !important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+}
+
 .home-project:hover .home-project-text .home-project-title .tag {
   color: #fff !important;
   background: #b5792a;
@@ -2097,9 +2114,14 @@ h2 .project {
   &-project {
     margin-bottom: 2rem;
     margin-top: 2rem;
-    flex: 0 0 auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    // flex: 0 0 auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: block;
+
+    &-wrapper {
+      flex: 0 0 auto;
+    }
 
     &:hover {
       .home-project-thumbnail {
@@ -2186,7 +2208,8 @@ h2 .project {
   }
 
   .home-project {
-    padding-left: 2rem;
+    margin-left: 2rem;
+    max-width: 100%;
   }
 }
 
@@ -2302,7 +2325,7 @@ h2 .project {
     padding-right: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding-left: 0;
+    margin-left: 0;
 
     &:first-child {
       margin-top: 2rem;
@@ -2312,8 +2335,8 @@ h2 .project {
 
 @media (min-width: 512px) and (max-width: 992px) {
   .home-project {
-    padding-right: 2rem;
-    width: 100%;
+    margin-right: 2rem;
+    max-width: 100%;
 
     &-subtitle {
       max-width: none;
@@ -2324,6 +2347,7 @@ h2 .project {
 @media (max-width: 512px) {
   .home-project-title {
     font-size: 19px;
+    margin-bottom: .3rem;
   }
 }
 
@@ -2356,7 +2380,7 @@ h2 .project {
 
 @media (max-width: 512px) {
   .home-project-text {
-    padding: 1.5rem 0 0 0;
+    padding: 1rem 0 0 0;
   }
 }
 
