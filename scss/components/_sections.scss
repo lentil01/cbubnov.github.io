@@ -1607,6 +1607,16 @@ h2 .project {
   margin-top: 550px;
   background: $bg-color;
   position: relative;
+
+  ::selection {
+    background: $heading-color;
+    color: $bg-color;
+  }
+  
+  ::-moz-selection {
+    background: $heading-color;
+    color: $bg-color;
+  }
 }
 
 .project-summary {
@@ -2082,7 +2092,6 @@ h2 .project {
 .home-project:hover .home-project-text .home-project-title .tag {
   color: #fff !important;
   background: #b5792a;
-
 }
 
 
@@ -2127,6 +2136,8 @@ h2 .project {
       .home-project-thumbnail {
         opacity: .95;
         box-shadow: 0 10px 14px rgba(0, 0, 0, 0.10), 0 3px 5px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        // transition: border-radius 0.2s ease-in-out;
       }
     }
 
