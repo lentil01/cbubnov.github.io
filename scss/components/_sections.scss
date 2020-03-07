@@ -22,6 +22,8 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
+  cursor: url('../img/cursor.svg'), auto;	
+
 }
 
 ::selection {
@@ -45,7 +47,7 @@ a {
 
   &:hover {
     color: $yellow;
-    cursor: pointer;
+    cursor: url('../img/pointer.svg'), auto;	
 
   }
 }
@@ -406,7 +408,7 @@ li:hover {
 }
 
 .box-footer-text span:hover {
-  cursor: pointer;
+  cursor: url('../img/pointer.svg'), auto;	
 
   p {
     transition: color .3s ease-in-out;
@@ -500,6 +502,7 @@ li:hover {
   z-index: 1000;
   padding-bottom: 4rem;
   border-bottom: 1px solid #d7dcda;
+
 
 
   &-border {
@@ -2127,6 +2130,7 @@ h2 .project {
     margin-right: 2rem;
     margin-left: 2rem;
     display: block;
+
 
     &-wrapper {
       flex: 0 0 auto;
