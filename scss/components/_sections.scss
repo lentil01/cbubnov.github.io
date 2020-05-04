@@ -79,6 +79,17 @@ li:hover {
   text-align: center;
 }
 
+.socialLink {
+  max-height: 21px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  margin-right: 1.9rem;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
 .spread-text {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: #f9f9fa;
