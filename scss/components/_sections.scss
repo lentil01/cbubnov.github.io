@@ -97,7 +97,7 @@ li:hover {
 }
 
 .home-footer-text {
-  font-size: 20px;
+  font-size: 18px;
   text-align: right;
 }
 
@@ -113,7 +113,7 @@ li:hover {
 }
 
 .aboutpagelinks {
-  font-size: 20px;
+  font-size: 18px;
   padding: 2rem 2rem 4rem;
 
   &-border {
@@ -432,12 +432,12 @@ li:hover {
   // font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
 
   &-dark {
-    color: $heading-color;
-    border-color: $heading-color;
+    color: $blue;
+    border-color: transparent;
 
     &:hover {
-      color: $yellow;
-      border-color: transparent;
+      color: $blue;
+      border-color: $blue;
       text-decoration: none;
     }
   }
