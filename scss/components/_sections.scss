@@ -512,7 +512,7 @@ li:hover {
     font-size: 54px;
     padding-bottom: 2.5rem;
     font-family: "IBMPlexSans-Light", Arial, Helvetica, sans-serif;
-    padding-right: 14rem;
+    padding-right: 12rem;
     letter-spacing: -0.4px;
   }
 
@@ -647,6 +647,18 @@ li:hover {
       }
     }
   }
+  .project-nav-links {
+    transform: none;
+    top: 16px;
+    bottom: 0;
+    width: inherit;
+    left: 90px;
+  }
+  .project-nav-fixed {
+    position: fixed;
+    background: 0 0;
+    z-index: 0;
+  }
 }
 
 @media (min-width: 512px) {
@@ -656,24 +668,6 @@ li:hover {
         display: none;
       }
     }
-  }
-}
-
-@media (max-width: 512px) {
-  .project-nav-links {
-    transform: none;
-    top: 16px;
-    bottom: 0;
-    width: inherit;
-    left: 90px;
-  }
-}
-
-@media (max-width: 512px) {
-  .project-nav-fixed {
-    position: fixed;
-    background: 0 0;
-    z-index: 0;
   }
 }
 
@@ -1868,11 +1862,22 @@ h2 .project {
     padding-bottom: 1rem;
   }
 }
-
-@media (max-width: 512px) {
+@media (max-width: 375px) {
   .project-hero-tags {
     font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
     max-width: 310px;
+    bottom: 1.5rem;
+  }
+
+  .project-hero-tag {
+    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 512px) {
+  .project-hero-tags {
+    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+    max-width: 410px;
     bottom: 1.5rem;
   }
 
@@ -2115,7 +2120,7 @@ h2 .project {
 
 
 .home {
-  padding: 0 4rem;
+  padding: 0 6rem;
 
   &-eye {
     width: 36px;
@@ -2218,15 +2223,16 @@ h2 .project {
     margin-bottom: 0.5rem;
     line-height: 1.3em;
     transition: color 0.1s ease-in-out;
-    max-width: 496px;
+    max-width: 522px;
   }
 
   &-project-title {
-    font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
+    font-family: "IBMPlexSans-Semibold", Arial, Helvetica, sans-serif;
     color: $heading-color;
     transition: color 0.1s ease-in-out;
 
     span {
+      font-family: "IBMPlexSans-Light", Arial, Helvetica, sans-serif;
       transition: color 0.1s ease-in-out;
     }
 
