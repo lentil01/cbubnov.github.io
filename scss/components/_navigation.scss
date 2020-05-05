@@ -2,6 +2,12 @@
     padding: 2rem 2rem 5.5rem 2rem;
     z-index: 1000;
     height: 100%;
+    &-left {
+      text-align: left;
+    }
+    &-right {
+      text-align: right;
+    }
   
     &-fixed {
       // position: fixed;
@@ -34,8 +40,8 @@
       position: fixed;
       top: 0;
       left: 0;
-      height: 100%;
-      width: 6rem;
+      // height: 100%;
+      width: 100%;
       background: $bg-color;
       z-index: 1100;
     }
@@ -46,6 +52,10 @@
       max-width: 100%;
       background: none;
       padding: 2rem 1.5rem 1rem;
+      &-right {
+        text-align: left;
+        padding-top: 1.5rem;
+      }
   
       &-fixed {
         z-index: 0;
