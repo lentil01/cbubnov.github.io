@@ -22,7 +22,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
-  cursor: url('../img/cursor.svg'), auto;	
+  cursor: url('../img/cursor.svg'), auto;
 
 }
 
@@ -47,7 +47,7 @@ a {
 
   &:hover {
     color: $yellow;
-    cursor: url('../img/pointer.svg'), auto;	
+    cursor: url('../img/pointer.svg'), auto;
 
   }
 }
@@ -62,7 +62,7 @@ a {
 }
 
 li:hover {
-  cursor: url('../img/pointer.svg');	
+  cursor: url('../img/pointer.svg');
 }
 
 @media (max-width: 512px) {
@@ -142,6 +142,7 @@ li:hover {
     padding-right: 1.5rem;
     font-size: 18px;
   }
+ 
 
   .aboutpagelink {
     margin-right: 1.3rem;
@@ -157,6 +158,9 @@ li:hover {
     text-align: center;
     padding-top: 2rem;
   }
+  .socialLink-last {
+    margin-right: 0;
+}
 
   .aboutpagelinks {
     text-align: center;
@@ -234,7 +238,9 @@ li:hover {
 }
 
 .thumb-heading {
-  font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
+  font-family: "IBMPlexSans-Semibold", Arial, Helvetica, sans-serif;
+  letter-spacing: .1px;
+  margin-bottom: 5px;
 }
 
 .thumb-padding {
@@ -423,7 +429,7 @@ li:hover {
 }
 
 .box-footer-text span:hover {
-  cursor: url('../img/pointer.svg'), auto;	
+  cursor: url('../img/pointer.svg'), auto;
 
   p {
     transition: color .3s ease-in-out;
@@ -437,10 +443,23 @@ li:hover {
   }
 }
 
+.caption-link {
+  text-decoration: none;
+  transition: text-decoration 0.1s ease-in-out, color 0.1s ease-in-out;
+
+  &-dark {
+    color: $blue;
+
+    &:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+}
+
 .about-link {
   border-bottom: 1.5px solid transparent;
   transition: border-bottom 0.1s ease-in-out, color 0.1s ease-in-out;
-  // font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
 
   &-dark {
     color: $blue;
@@ -449,7 +468,6 @@ li:hover {
     &:hover {
       color: $blue;
       border-color: $blue;
-      text-decoration: none;
     }
   }
 
@@ -526,6 +544,7 @@ li:hover {
   &-subheading {
     max-width: 38rem;
     letter-spacing: -0.1px;
+
     p {
       font-size: 18px;
       padding-bottom: 1rem;
@@ -645,6 +664,7 @@ li:hover {
       }
     }
   }
+
   .project-nav-links {
     transform: none;
     top: 16px;
@@ -652,6 +672,7 @@ li:hover {
     width: inherit;
     left: 90px;
   }
+
   .project-nav-fixed {
     position: fixed;
     background: 0 0;
@@ -705,6 +726,7 @@ li:hover {
 
   }
 }
+
 @media (min-width: 1000px) and (max-width: 1400px) {
   .homeSummary-heading {
     padding-right: 4rem;
@@ -923,7 +945,7 @@ li:hover {
   font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   padding-left: 0;
   padding-right: 0;
-  color: #949391;
+  color: $caption-color;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 12px;
@@ -1280,7 +1302,7 @@ li:hover {
 }
 
 .frame-bg {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.10), 0 6px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 3px 8px rgba(0, 0, 0, 0.07);
 }
 
 .border-radius-2px {
@@ -1430,6 +1452,11 @@ h2 .project {
   padding: 1rem 8rem;
 }
 
+.project-row-caption {
+  padding: 0 1rem 1rem 1rem;
+  // max-width: 600px;
+}
+
 .project-padding {
 
   &-top {
@@ -1479,8 +1506,14 @@ h2 .project {
   .project-row-element {
     padding: 0.75rem 0;
   }
+
   .project-row-text {
     padding: 0.75rem 0;
+  }
+
+  .project-row-caption {
+    padding: .5rem 0;
+    // max-width: 100%;
   }
 }
 
@@ -1575,7 +1608,7 @@ h2 .project {
     background: $heading-color;
     color: $bg-color;
   }
-  
+
   ::-moz-selection {
     background: $heading-color;
     color: $bg-color;
@@ -1597,12 +1630,12 @@ h2 .project {
     float: left;
     margin-top: -0.2rem;
   }
+
   &-leading-words {
     letter-spacing: 1.7px;
     text-transform: lowercase;
     font-variant: small-caps;
     font-family: "IBMPlexSerif-Text", "Palatino Linotype", Palatino, serif;
-
   }
 }
 
@@ -1769,6 +1802,9 @@ h2 .project {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+  .project-summary-leading-words {
+    font-size: 19px;
+  }
 }
 
 .hero-logo {
@@ -1799,7 +1835,7 @@ h2 .project {
   .project-hero-container {
     height: 550px;
     left: 0;
-    
+
   }
 }
 
@@ -1826,6 +1862,7 @@ h2 .project {
     padding-bottom: 1rem;
   }
 }
+
 @media (max-width: 375px) {
   .project-hero-tags {
     font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
@@ -1856,10 +1893,12 @@ h2 .project {
     padding-right: 1.5rem;
     height: 350px;
   }
+
   .project-access-bg-image {
     background-image: url('../img/project-access/hero-bg-mobile.png') !important;
     background-position: right !important;
   }
+
   .eximchain-bg-image {
     background-image: url('../img/eximchain/hero-bg-mobile.svg') !important;
     // background-position: right !important;
@@ -2018,10 +2057,13 @@ h2 .project {
 
 .caption {
   p {
-    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
+    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
     font-size: 12px;
     line-height: 1.6em;
-    color: #454c4a;
+    color: $caption-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
   }
 }
 
@@ -2150,7 +2192,7 @@ h2 .project {
       width: 100%;
       opacity: 1;
       transition: all .2s ease-in-out;
-      background: rgba(39,62,84,0.82);
+      background: rgba(39, 62, 84, 0.82);
 
 
 
