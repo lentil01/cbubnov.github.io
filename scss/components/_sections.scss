@@ -506,8 +506,8 @@ li:hover {
   font-size: 18px;
   color: $heading-color;
   z-index: 1000;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid #d7dcda;
+  // padding-bottom: 1rem;
+  // border-bottom: 1px solid #d7dcda;
 
   &-border {
     margin: 0 auto;
@@ -2258,18 +2258,10 @@ h2 .project {
     top: 0;
     left: 0;
     margin-right: 0;
-
-    // &-heading {
-    //   padding-right: 5rem;
-    // }
   }
 }
 
 @media (min-width: 1335px) and (max-width: 1430px) {
-  // .homeSummary {
-  //   margin-right: 9rem;
-  // }
-
   .aboutSummary {
     margin-right: 16rem;
   }
@@ -2277,9 +2269,6 @@ h2 .project {
 
 @media (min-width: 992px) and (max-width: 1335px) {
 
-  // .homeSummary {
-  //   margin-right: 4rem;
-  // }
   .aboutSummary {
     margin-right: 8rem;
   }
@@ -2293,10 +2282,6 @@ h2 .project {
   .aboutSummary {
     left: 0;
   }
-
-  // .home-project-text {
-  //   max-width: 418px;
-  // }
 }
 
 
