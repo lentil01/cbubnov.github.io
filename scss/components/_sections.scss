@@ -491,10 +491,6 @@ li:hover {
   }
 }
 
-.home-links {
-  padding-top: 1rem;
-}
-
 .aboutSummary {
   position: absolute;
   margin-right: 22rem;
@@ -584,15 +580,6 @@ li:hover {
       margin: 0;
       width: 100%;
     }
-  }
-}
-
-@media (max-width: 512px) {
-  .home-links {
-    position: relative;
-    display: flex;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 }
 
@@ -727,60 +714,6 @@ li:hover {
 @media (max-width: 512px) {
   .home-summary {
     font-size: 18px;
-  }
-}
-
-.home-link {
-  font-family: "IBMPlexSans-Text", "Courier New", Courier, monospace;
-  margin-right: 1.5rem;
-  letter-spacing: 0.01em;
-  font-size: 16px;
-  text-decoration: none;
-  border-bottom: 1px solid $heading-color;
-  transition: border-bottom ease-in-out 0.2s;
-  color: $heading-color;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &-light {
-    color: $bg-color;
-
-    &:hover {
-      color: $bg-color;
-      border-color: $bg-color;
-    }
-  }
-
-  &-dark {
-    color: $heading-color;
-
-    &:hover {
-      color: $heading-color;
-      border-color: $heading-color;
-    }
-
-    &-selected {
-      color: $yellow;
-      border-color: $yellow;
-
-      &:hover {
-        color: $yellow;
-        border-color: $yellow;
-      }
-    }
-  }
-
-  &-right {
-    text-align: right;
-  }
-}
-
-@media (max-width: 512px) {
-  .home-link {
-    font-family: "IBMPlexMono-TextItalic", "Courier New", Courier, monospace;
-    font-size: 16px;
   }
 }
 
