@@ -1644,12 +1644,19 @@ h2 .project {
   &-dropcap {
     font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
     color: $yellow;
-    font-size: 80px;
-    margin-right: 1rem;
-    line-height: 1;
+    font-size: 86px;
+    margin-right: .6rem;
+    line-height: .97;
     position: relative;
     float: left;
     margin-top: -0.2rem;
+  }
+  &-leading-words {
+    letter-spacing: 1.7px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-family: "IBMPlexSerif-Text", "Palatino Linotype", Palatino, serif;
+
   }
 }
 
@@ -2170,10 +2177,9 @@ h2 .project {
 
     &:hover {
       .home-project-thumbnail {
-        opacity: .95;
+        opacity: .9;
         box-shadow: 0 10px 14px rgba(0, 0, 0, 0.10), 0 3px 5px rgba(0, 0, 0, 0.08);
         border-radius: 8px;
-        // transition: border-radius 0.2s ease-in-out;
       }
     }
 
@@ -2198,6 +2204,8 @@ h2 .project {
       width: 100%;
       opacity: 1;
       transition: all .2s ease-in-out;
+      background: rgba(39,62,84,0.82);
+
 
 
       &-padding {
