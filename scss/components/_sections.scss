@@ -920,7 +920,7 @@ li:hover {
 }
 
 .tools-used {
-  font-family: IBMPlexMono-Regular, monospace;
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   padding-left: 0;
   padding-right: 0;
   color: #949391;
@@ -1010,8 +1010,8 @@ li:hover {
 .project-subheading {
   font-family: "IBMPlexSans-Text", "Courier New", Courier, monospace;
   color: $heading-color;
-  font-size: 24px;
-  margin-bottom: 2rem;
+  font-size: 22px;
+  margin-bottom: 1.2rem;
 }
 
 @media (max-width: 512px) {
@@ -1426,6 +1426,10 @@ h2 .project {
   padding: 1rem;
 }
 
+.project-row-text {
+  padding: 1rem 8rem;
+}
+
 .project-padding {
 
   &-top {
@@ -1465,8 +1469,17 @@ h2 .project {
   }
 }
 
+@media (min-width: 512px) and (max-width: 1000px) {
+  .project-row-text {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 512px) {
   .project-row-element {
+    padding: 0.75rem 0;
+  }
+  .project-row-text {
     padding: 0.75rem 0;
   }
 }
@@ -2005,8 +2018,8 @@ h2 .project {
 
 .caption {
   p {
-    font-family: "IBMPlexMono-Italic", "Courier New", Courier, monospace;
-    font-size: 13px;
+    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
+    font-size: 12px;
     line-height: 1.6em;
     color: #454c4a;
   }
