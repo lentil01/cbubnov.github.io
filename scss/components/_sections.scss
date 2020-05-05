@@ -908,7 +908,10 @@ li:hover {
 
       &:hover {
         color: $yellow;
-        border-color: transparent;
+        a {
+          border-color: transparent !important;
+
+        }
       }
     }
   }
