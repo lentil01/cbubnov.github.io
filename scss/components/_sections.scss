@@ -110,6 +110,9 @@ li:hover {
 .home-footer-text {
   font-size: 18px;
   text-align: right;
+  span {
+    letter-spacing: -.7px;
+  }
 }
 
 // @media (max-width: 991px) {
