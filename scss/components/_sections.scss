@@ -140,6 +140,7 @@ li:hover {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: .3rem;
 
 
   span {
@@ -219,6 +220,7 @@ li:hover {
   .project-footer-text {
     text-align: left;
     padding-top: 2rem;
+    margin-top: 0;
   }
   .socialLink-last {
     margin-right: 0;
@@ -241,6 +243,7 @@ li:hover {
     text-align: left;
     padding-top: 2rem;
     font-size: 12px;
+    margin-top: 0;
 
   }
   .socialLink-last {
@@ -1215,13 +1218,20 @@ li:hover {
 @media (max-width: 512px) {
   .photo-container {
     padding-top: .5rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     background: $bg-color;
   }
 }
 
-@media (min-width: 512px) and (max-width: 1400px) {
+@media (min-width: 512px) and (max-width: 768px) {
+  .photo-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
   .photo-container {
     padding-left: 0;
     padding-right: 0;
