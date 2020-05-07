@@ -125,17 +125,28 @@ li:hover {
 .home-footer-text {
   font-size: 16px;
   text-align: right;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.project-footer-text {
+  text-align: right;
+  color: $grey30;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
   span {
     letter-spacing: -.7px;
   }
 }
-
-// @media (max-width: 991px) {
-//   .home-footer-text {
-//     text-align: center;
-//     padding-top: 2rem;
-//   }
-// }
 
 .aboutpagelink {
   margin-right: 1rem;
@@ -147,7 +158,23 @@ li:hover {
 
 
   &-border {
-    border-top: 1px solid #d7dcda;
+    border-top: 1px solid $grey20;
+    width: 100%;
+    padding-top: 4rem;
+  }
+}
+
+.projectpagelink {
+  margin-right: 1rem;
+}
+
+.projectpagelinks {
+  font-size: 18px;
+  padding: 4rem 1rem 4rem;
+
+
+  &-border {
+    border-top: 1px solid $grey80;
     width: 100%;
     padding-top: 4rem;
   }
@@ -160,9 +187,23 @@ li:hover {
     padding-right: 1.5rem;
     font-size: 18px;
   }
- 
 
   .aboutpagelink {
+    margin-right: 1.3rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .projectpagelinks {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 18px;
+  }
+
+  .projectpagelink {
     margin-right: 1.3rem;
 
     &:last-child {
@@ -176,26 +217,44 @@ li:hover {
     text-align: center;
     padding-top: 2rem;
   }
+  .project-footer-text {
+    text-align: center;
+    padding-top: 2rem;
+  }
   .socialLink-last {
     margin-right: 0;
 }
 
   .aboutpagelinks {
     text-align: center;
-
+  }
+  .projectpagelinks {
+    text-align: center;
   }
 }
 
 @media (min-width: 512px) and (max-width: 891px) {
-  .home-footer-text {
-    font-size: 16px;
-  }
+  // .home-footer-text {
+  //   font-size: 16px;
+  // }
+  // .project-footer-text {
+  //   font-size: 16px;
+  // }
 
-  .aboutpagelinks {
-    font-size: 16px;
-  }
+  // .aboutpagelinks {
+  //   font-size: 16px;
+  // }
 
   .aboutpagelink {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+    .projectpagelinks {
+    font-size: 16px;
+  }
+
+  .projectpagelink {
     &:last-child {
       margin-right: 0;
     }
@@ -213,6 +272,9 @@ li:hover {
 
 @media (max-width: 512px) {
   .aboutpagelinks {
+    font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+  }
+  .projectpagelinks {
     font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
   }
 }
@@ -256,9 +318,17 @@ li:hover {
 }
 
 .thumb-heading {
+  color: $grey40;
   font-family: "IBMPlexSans-Semibold", Arial, Helvetica, sans-serif;
   letter-spacing: .1px;
   margin-bottom: 5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color .15s ease-in-out;
+
+  &-active {
+    color: $n57;
+  }
 }
 
 .thumb-padding {
@@ -314,7 +384,7 @@ li:hover {
   height: 54px;
   position: relative;
   width: 100%;
-  border-left: 1px solid $n60;
+  // border-left: 1px solid $n60;
   margin: 1rem 0;
 }
 
@@ -330,8 +400,8 @@ li:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.2rem;
+  // padding-left: 2rem;
   color: $n50;
 
   h2 {
@@ -364,20 +434,20 @@ li:hover {
 
 .box-text-active p {
   color: #d7dcda;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 .box-footer {
   height: 54px;
   position: relative;
   width: 100%;
-  border-left: 1px solid #4D4C4C;
-  transition: border-left-color .3s ease-in-out;
+  // border-left: 1px solid $grey80;
+  // transition: border-left-color .15s ease-in-out;
   margin: 1rem 0;
 
   &:hover {
-    border-left: 1px solid $n50;
-    transition: border-left-color .3s ease-in-out;
+    // border-left: 1px solid $n50;
+    // transition: border-left-color .15s ease-in-out;
   }
 
   h2 {
@@ -398,12 +468,54 @@ li:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.2rem;
+  // padding-left: 2rem;
   color: #d7dcda;
 
   p {
     margin-bottom: 0;
+    color: $grey30;
+    line-height: 1.4em;
+  }
+  h2 {
+    color: $bg-color;
+  }
+  div {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    color: $bg-color;
+    transition: color .15s ease-in-out;
+
+    :hover {
+      cursor: url('../img/pointer.svg'), auto;
+    
+      p {
+        transition: color .15s ease-in-out;
+        color: $n50;
+      }
+    }
+  
+    p {
+      transition: color .15s ease-in-out;
+    }
+  }
+  &:hover span {
+    // color: $n57;
+    .thumb-heading {
+        color: $n57;
+        transition: color .15s ease-in-out;
+    }
+    .footer-project-subheader {
+      color: $n50;
+      transition: color .15s ease-in-out;
+
+  }
+  
   }
 }
 
@@ -416,44 +528,8 @@ li:hover {
   margin-right: 0;
 }
 
-.box-footer-text p {
-  color: #C5C4C2;
-  line-height: 1.2em;
-}
 
-.box-footer-text h2 {
-  color: $bg-color;
-}
 
-.box-footer-text div {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
-.box-footer-text span {
-  display: table-cell;
-  vertical-align: middle;
-  color: $bg-color;
-  transition: color .3s ease-in-out;
-
-  p {
-    transition: color .3s ease-in-out;
-  }
-}
-
-.box-footer-text:hover span {
-  color: $n60;
-}
-
-.box-footer-text span:hover {
-  cursor: url('../img/pointer.svg'), auto;
-
-  p {
-    transition: color .3s ease-in-out;
-    color: $n50;
-  }
-}
 
 @media (max-width: 512px) {
   .box-footer-text:hover span {
@@ -1465,8 +1541,8 @@ li:hover {
 }
 
 .project-footer {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+  // padding-top: 4rem;
+  // padding-bottom: 6rem;
   background-color: #272928;
   z-index: 101;
   position: relative;
@@ -2561,5 +2637,6 @@ h2 .project {
 }
 
 .footer-project-subheader {
-  text-transform: capitalize;
+  // text-transform: capitalize;
+  font-size: 16px;
 }
