@@ -82,11 +82,26 @@ li:hover {
 .socialLink {
   max-height: 21px;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
+  margin-right: 1.9rem;
+
+  &-padding {
+    padding-top: 2rem;
+  }
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.socialLink-footer {
+  max-height: 17px;
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
   margin-right: 1.9rem;
 
   &:hover {
-    opacity: .7;
+    opacity: .6;
   }
 }
 
@@ -108,7 +123,7 @@ li:hover {
 }
 
 .home-footer-text {
-  font-size: 18px;
+  font-size: 16px;
   text-align: right;
   span {
     letter-spacing: -.7px;
@@ -130,11 +145,11 @@ li:hover {
   font-size: 18px;
   padding: 2rem 2rem 4rem;
 
+
   &-border {
     border-top: 1px solid #d7dcda;
     width: 100%;
     padding-top: 4rem;
-
   }
 }
 
@@ -592,7 +607,7 @@ li:hover {
 @media (min-width: 512px) {
   .homeSummary {
     &-heading {
-      line-height: 68px;
+      line-height: 67px;
     }
   }
 }
@@ -2282,7 +2297,7 @@ h2 .project {
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     color: $heading-color;
     margin-bottom: 0.5rem;
-    line-height: 1.3em;
+    line-height: 1.4em;
     transition: color 0.1s ease-in-out;
     max-width: 522px;
   }
@@ -2291,6 +2306,7 @@ h2 .project {
     font-family: "IBMPlexSans-Semibold", Arial, Helvetica, sans-serif;
     color: $heading-color;
     transition: color 0.1s ease-in-out;
+    margin-bottom: 0.3rem;
 
     span {
       font-family: "IBMPlexSans-Light", Arial, Helvetica, sans-serif;
