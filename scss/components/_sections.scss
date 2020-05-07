@@ -445,10 +445,10 @@ li:hover {
   // transition: border-left-color .15s ease-in-out;
   margin: 1rem 0;
 
-  &:hover {
-    // border-left: 1px solid $n50;
-    // transition: border-left-color .15s ease-in-out;
-  }
+  // &:hover {
+  //   border-left: 1px solid $n50;
+  //   transition: border-left-color .15s ease-in-out;
+  // }
 
   h2 {
     font-size: 16px;
@@ -2375,14 +2375,14 @@ h2 .project {
     margin-bottom: 0.5rem;
     line-height: 1.4em;
     transition: color 0.1s ease-in-out;
-    max-width: 522px;
+    // max-width: 522px;
   }
 
   &-project-title {
     font-family: "IBMPlexSans-Semibold", Arial, Helvetica, sans-serif;
     color: $heading-color;
     transition: color 0.1s ease-in-out;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 
     span {
       font-family: "IBMPlexSans-Light", Arial, Helvetica, sans-serif;
