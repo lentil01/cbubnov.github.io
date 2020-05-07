@@ -130,6 +130,7 @@ li:hover {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: .3rem;
 }
 .project-footer-text {
   text-align: right;
@@ -216,6 +217,7 @@ li:hover {
   .home-footer-text {
     text-align: left;
     padding-top: 2rem;
+    margin-top: 0;
   }
   .project-footer-text {
     text-align: left;
@@ -238,6 +240,10 @@ li:hover {
   .home-footer-text {
     text-align: left;
     padding-top: 2rem;
+    font-size: 12px;
+    margin-top: 0;
+
+
   }
   .project-footer-text {
     text-align: left;
