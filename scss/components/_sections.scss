@@ -632,16 +632,16 @@ li:hover {
     font-size: 54px;
     padding-bottom: 2.5rem;
     font-family: "IBMPlexSans-Light", Arial, Helvetica, sans-serif;
-    padding-right: 12rem;
+    // padding-right: 9rem;
     letter-spacing: -0.4px;
   }
 
   &-subheading {
-    max-width: 38rem;
+    max-width: 40rem;
     letter-spacing: -0.1px;
 
     p {
-      font-size: 18px;
+      font-size: 19px;
       padding-bottom: 1rem;
     }
   }
@@ -704,7 +704,7 @@ li:hover {
 }
 
 .project-nav {
-  padding: 2rem 8rem;
+  padding: 2rem 13rem;
   // z-index: 1000;
   // height: 100%;
 
@@ -2271,7 +2271,7 @@ h2 .project {
 
 
 .home {
-  padding: 0 6rem;
+  padding: 0 11rem;
 
   &-eye {
     width: 36px;
