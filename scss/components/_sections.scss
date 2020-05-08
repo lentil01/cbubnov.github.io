@@ -2590,18 +2590,12 @@ h2 .project {
   }
 }
 
-// @media (min-width: 992px) and (max-width: 1335px) {
-//   .home-projects {
-//     top: 32rem;
-//   }
-// }
-
 @media (max-width: 512px) {
   .home-project {
     width: 100%;
     padding-right: 0;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     margin-left: 0;
 
     &:first-child {
