@@ -1826,7 +1826,7 @@ h2 .project {
     &::after {
       content: "";
       position: absolute;
-      height: 220px;
+      height: 240px;
       left: 0;
       right: 0;
       bottom: 0;
@@ -1835,12 +1835,12 @@ h2 .project {
           transparent 0,
           rgba(37, 43, 53, 0.05) 22%,
           rgba(37, 43, 53, 0.17) 38%,
-          rgba(37, 43, 53, 0.31) 49%,
-          rgba(37, 43, 53, 0.65) 67%,
-          rgba(37, 43, 53, 0.81) 77%,
-          rgba(37, 43, 53, 0.85) 85%,
-          rgba(37, 43, 53, 0.91) 91%,
-          #252b35);
+          rgba(37, 43, 53, 0.28) 49%,
+          rgba(37, 43, 53, 0.45) 67%,
+          rgba(37, 43, 53, 0.64) 77%,
+          rgba(37, 43, 53, 0.75) 85%,
+          rgba(37, 43, 53, 0.82) 91%,
+          );
       pointer-events: none;
     }
   }
