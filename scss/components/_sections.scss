@@ -2402,7 +2402,7 @@ h2 .project {
     }
 
     &-thumbnail-wrapper {
-      padding-right: 1.5rem;
+      padding-right: 3rem;
     }
 
     &-thumbnail {
@@ -2412,7 +2412,7 @@ h2 .project {
       width: 100%;
       opacity: 1;
       transition: all .2s ease-in-out;
-      background: rgba(39, 62, 84, 0.82);
+      background: $bg-color;
 
       &:hover {
         opacity: .9;
