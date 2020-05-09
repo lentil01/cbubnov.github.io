@@ -2376,13 +2376,13 @@ h2 .project {
       display: block;
     }
 
-    // &:hover {
-    //   .home-project-thumbnail {
-    //     opacity: .9;
-    //     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 3px 8px rgba(0, 0, 0, 0.07);
-    //     border-radius: 8px;
-    //   }
-    // }
+    &:hover {
+      .home-project-thumbnail {
+        opacity: .9;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 3px 8px rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
+      }
+    }
 
     &-text {
       margin: auto;
