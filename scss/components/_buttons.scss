@@ -155,21 +155,12 @@ button {
     background-color: #EBEDED;
     color: $n57;
     transition: color 0.4s ease-in-out;
-    // transition: background-color 0.25s ease, box-shadow 0.25s ease;
-    // -webkit-transition: background-color 0.25s ease, 0.25s ease;
-    // -moz-transition: background-color 0.25s ease, box-shadow 0.25s ease;
-    // -o-transition: background-color 0.25s ease, box-shadow 0.25s ease;
 
     &:hover {
       background-color: #DFE2E2;
       color: $n60;
       text-decoration: none;
       transition: color 0.4s ease-in-out;
-
-      // transition: background-color 0.25s ease, box-shadow 0.25s ease;
-      // -webkit-transition: background-color 0.25s ease, box-shadow 0.25s ease;
-      // -moz-transition: background-color 0.25s ease, box-shadow 0.25s ease;
-      // -o-transition: background-color 0.25s ease, box-shadow 0.25s ease;
     }
   }
 

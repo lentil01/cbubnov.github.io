@@ -272,17 +272,6 @@ li:hover {
 }
 
 @media (min-width: 512px) and (max-width: 891px) {
-  // .home-footer-text {
-  //   font-size: 16px;
-  // }
-  // .project-footer-text {
-  //   font-size: 16px;
-  // }
-
-  // .aboutpagelinks {
-  //   font-size: 16px;
-  // }
-
   .aboutpagelink {
     &:last-child {
       margin-right: 0;
@@ -424,7 +413,6 @@ li:hover {
   height: 54px;
   position: relative;
   width: 100%;
-  // border-left: 1px solid $n60;
   margin: 1rem 0;
 }
 
@@ -441,7 +429,6 @@ li:hover {
   bottom: 0;
   right: 0;
   padding-right: 1.2rem;
-  // padding-left: 2rem;
   color: $n50;
 
   h2 {
@@ -481,14 +468,7 @@ li:hover {
   height: 54px;
   position: relative;
   width: 100%;
-  // border-left: 1px solid $grey80;
-  // transition: border-left-color .15s ease-in-out;
   margin: 1rem 0;
-
-  // &:hover {
-  //   border-left: 1px solid $n50;
-  //   transition: border-left-color .15s ease-in-out;
-  // }
 
   h2 {
     font-size: 16px;
@@ -509,7 +489,6 @@ li:hover {
   bottom: 0;
   right: 0;
   padding-right: 1.1rem;
-  // padding-left: 2rem;
   color: #d7dcda;
 
   p {
@@ -549,8 +528,6 @@ li:hover {
   }
 
   &:hover span {
-
-    // color: $n57;
     .thumb-heading {
       color: $n57;
       transition: color .15s ease-in-out;
@@ -613,9 +590,6 @@ li:hover {
       text-decoration: underline;
       text-decoration-color: #68A5D2;
       text-decoration-thickness: 1.5px;
-      // border-color: $blue;
-      // transition: all 0.1s ease-in-out, color 0.1s ease-in-out;
-
     }
   }
 
@@ -672,8 +646,6 @@ li:hover {
   font-size: 18px;
   color: $heading-color;
   z-index: 1000;
-  // padding-bottom: 1rem;
-  // border-bottom: 1px solid #d7dcda;
 
   &-border {
     margin: 0 auto;
@@ -685,7 +657,6 @@ li:hover {
     font-size: 54px;
     padding-bottom: 2.5rem;
     font-family: "IBMPlexSans-Light", Arial, Helvetica, sans-serif;
-    // padding-right: 9rem;
     letter-spacing: -0.4px;
   }
 
@@ -719,7 +690,6 @@ li:hover {
     padding-top: 1.5rem 0 3rem;
     top: 0;
     left: 0;
-    // margin-right: 0;
 
     &-border {
       padding: 2rem 1.5rem 0;
@@ -758,8 +728,6 @@ li:hover {
 
 .project-nav {
   padding: 2rem 13rem;
-  // z-index: 1000;
-  // height: 100%;
 
   &-logo {
     width: 42px;
@@ -778,26 +746,11 @@ li:hover {
     top: 0;
     max-width: 100%;
     background: none;
-    // top: 0;
-    // left: 0;
-    // height: 100%;
-    // width: 6rem;
-    // background: $bg-color;
-    // z-index: 1000;
   }
 
   &-links {
-    // position: fixed;
-    // top: 270px;
-    // left: -3px;
-    // width: 100%;
-    // transform-origin: 0% 0%;
-    // transform: rotate(-90deg);
     display: flex;
 
-    // text-align: center;
-    // align-items: center;
-    // justify-content: center;
     &-right {
       text-align: right;
       margin-top: auto;
@@ -848,7 +801,6 @@ li:hover {
     top: 0;
     bottom: 0;
     width: inherit;
-    // left: 90px;
   }
 
   .project-nav-fixed {
@@ -872,16 +824,6 @@ li:hover {
     z-index: 0;
   }
 }
-
-// @media (min-width: 512px) {
-//   .project-nav {
-//     &-logo {
-//       &-light {
-//         display: none;
-//       }
-//     }
-//   }
-// }
 
 .photo-nav {
   padding: 2rem 13rem 1rem 13rem;
@@ -945,7 +887,6 @@ li:hover {
   transition: border-bottom ease-in-out 0.1s, opacity ease-in-out 0.1s, color 0.1s ease-in-out;
   list-style: none;
   display: inline-block;
-  // padding-top: 2rem;
   text-transform: capitalize;
 
   a {
@@ -997,7 +938,6 @@ li:hover {
     &:hover {
       opacity: 1;
       color: $bg-color;
-      // border-color: $bg-color;
     }
   }
 
@@ -1084,10 +1024,8 @@ li:hover {
 
 .hero-item {
   &-light {
-    // opacity: 1;
 
     a {
-      // color: $heading-color;
       border-bottom: 2px solid transparent;
     }
 
@@ -1191,7 +1129,6 @@ li:hover {
 .footer-item:hover {
   color: #a4a5a2;
   border-color: #a4a5a2;
-  // text-decoration: none;
 }
 
 @media (max-width: 767px) {
@@ -1293,25 +1230,17 @@ li:hover {
 
 .fadein {
   -webkit-animation: fadein 0.65s;
-  /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 0.65s;
-  /* Firefox < 16 */
   -ms-animation: fadein 0.65s;
-  /* Internet Explorer */
   -o-animation: fadein 0.65s;
-  /* Opera < 12.1 */
   animation: fadein 0.65s;
 }
 
 .fadein-long {
   -webkit-animation: fadein 1.5s;
-  /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1.5s;
-  /* Firefox < 16 */
   -ms-animation: fadein 1.5s;
-  /* Internet Explorer */
   -o-animation: fadein 1.5s;
-  /* Opera < 12.1 */
   animation: fadein 1.5s;
 }
 
@@ -1371,13 +1300,9 @@ li:hover {
 
 .fadeout {
   -webkit-animation: fadeout 0.65s;
-  /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadeout 0.65s;
-  /* Firefox < 16 */
   -ms-animation: fadeout 0.65s;
-  /* Internet Explorer */
   -o-animation: fadeout 0.65s;
-  /* Opera < 12.1 */
   animation: fadeout 0.65s;
 }
 
@@ -1437,13 +1362,9 @@ li:hover {
 
 .fadeinslow {
   -webkit-animation: fadein 1.3s;
-  /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1.3s;
-  /* Firefox < 16 */
   -ms-animation: fadein 1.3s;
-  /* Internet Explorer */
   -o-animation: fadein 1.3s;
-  /* Opera < 12.1 */
   animation: fadein 1.3s;
 }
 
@@ -1603,12 +1524,9 @@ li:hover {
 }
 
 .project-footer {
-  // padding-top: 4rem;
-  // padding-bottom: 6rem;
   background-color: #272928;
   z-index: 101;
   position: relative;
-  // margin-left: 6rem;
 }
 
 .project-footer-projects {
@@ -1660,7 +1578,6 @@ h2 .project {
 
 .project-row-caption {
   padding: 0 1rem 1rem 1rem;
-  // max-width: 600px;
 }
 
 .project-padding {
@@ -1719,7 +1636,6 @@ h2 .project {
 
   .project-row-caption {
     padding: .5rem 0;
-    // max-width: 100%;
   }
 }
 
@@ -1852,7 +1768,6 @@ h2 .project {
     margin-top: 550px;
     margin-left: 0;
     margin-right: 0;
-    // z-index: 101;
   }
 }
 
@@ -2111,7 +2026,6 @@ h2 .project {
 
   .eximchain-bg-image {
     background-image: url('../img/eximchain/hero-bg-mobile.svg') !important;
-    // background-position: right !important;
   }
 }
 
@@ -2365,6 +2279,7 @@ h2 .project {
   &-project {
     margin-bottom: 5.5rem;
     margin-top: 2rem;
+    transition: color 0.1s ease-in-out;
 
 
     &-wrapper {
@@ -2420,28 +2335,11 @@ h2 .project {
         border-radius: 8px;
       }
 
-
       &-padding {
         padding-right: 1.5rem;
       }
     }
 
-    transition: color 0.1s ease-in-out;
-
-    // &:hover {
-
-    //   .home-project-text .home-project-title {
-    //     color: $yellow;
-    //   }
-
-    //   .home-project-text .home-project-title span {
-    //     color: $yellow;
-    //   }
-
-    //   .home-project-text .home-project-subtitle {
-    //     color: $yellow;
-    //   }
-    // }
   }
 
   &-project-logo {
@@ -2457,7 +2355,6 @@ h2 .project {
     margin-bottom: 1.5rem;
     line-height: 1.5em;
     transition: color 0.1s ease-in-out;
-    // max-width: 522px;
   }
 
   &-project-bullet {
@@ -2638,12 +2535,6 @@ h2 .project {
   }
 }
 
-// @media (max-width: 512px) {
-//   .home-project-text {
-//     padding: 1rem 0 0 0;
-//   }
-// }
-
 @media (max-width: 512px) {
   .home-project-thumbnail {
     height: auto;
@@ -2656,11 +2547,6 @@ h2 .project {
   }
 }
 
-// @media (min-width: 992px) and (max-width: 1200px) {
-//   .home-project-thumbnail {
-//     max-height: 270px;
-//   }
-// }
 
 @media (min-width: 512px) and (max-width: 992px) {
   .home-project-thumbnail {
