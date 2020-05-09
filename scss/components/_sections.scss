@@ -2371,14 +2371,6 @@ h2 .project {
       display: block;
     }
 
-    &:hover {
-      .home-project-thumbnail {
-        opacity: .9;
-        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 3px 8px rgba(0, 0, 0, 0.07);
-        border-radius: 8px;
-      }
-    }
-
     &-text {
       margin: auto;
       padding-left: 1.5rem;
@@ -2391,7 +2383,7 @@ h2 .project {
       background: none !important;
 
       &:hover {
-        transform: translate(6px,0px);
+        transform: translate(6px, 0px);
         transition: transform 0.1s ease-in-out;
         -webkit-transition: transform 0.1s ease-in-out;
         -moz-transition: transform 0.1s ease-in-out;
@@ -2421,6 +2413,12 @@ h2 .project {
       opacity: 1;
       transition: all .2s ease-in-out;
       background: rgba(39, 62, 84, 0.82);
+
+      &:hover {
+        opacity: .9;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 3px 8px rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
+      }
 
 
       &-padding {
@@ -2496,6 +2494,7 @@ h2 .project {
   .home-project {
     margin-bottom: 4rem;
   }
+
   .home-project-button {
     margin-top: 0;
   }
@@ -2633,6 +2632,7 @@ h2 .project {
   .home-project-text {
     padding: 1.5rem 0 0 0;
   }
+
   .home-project-thumbnail-wrapper {
     padding-right: 0;
   }
