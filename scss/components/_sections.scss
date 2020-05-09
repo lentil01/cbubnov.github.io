@@ -2365,14 +2365,9 @@ h2 .project {
   &-project {
     margin-bottom: 5.5rem;
     margin-top: 2rem;
-    // flex: 0 0 auto;
-    // margin-right: 2rem;
-    // margin-left: 2rem;
-    // display: block;
 
 
     &-wrapper {
-      // flex: 0 0 auto;
       display: block;
     }
 
@@ -2386,7 +2381,6 @@ h2 .project {
 
     &-text {
       margin: auto;
-      // padding-top: 1rem;
       padding-left: 1.5rem;
     }
 
@@ -2399,6 +2393,10 @@ h2 .project {
       &:hover {
         transform: translate(6px,0px);
         transition: transform 0.1s ease-in-out;
+        -webkit-transition: transform 0.1s ease-in-out;
+        -moz-transition: transform 0.1s ease-in-out;
+        -o-transition: transform 0.1s ease-in-out;
+        -ms-transition: transform 0.1s ease-in-out;
       }
     }
 
@@ -2476,9 +2474,7 @@ h2 .project {
   &-project-title {
     font-family: "IBMPlexSans-Semibold", Arial, Helvetica, sans-serif;
     color: $heading-color;
-    // text-transform: uppercase;
     font-size: 24px;
-    // letter-spacing: 1px;
     transition: color 0.4s ease-in-out;
     margin-bottom: 0.2rem;
     -webkit-font-smoothing: antialiased;
@@ -2606,7 +2602,6 @@ h2 .project {
 
 @media (min-width: 512px) and (max-width: 992px) {
   .home-project {
-    // margin-right: 2rem;
     max-width: 100%;
 
     &-subtitle {
@@ -2621,21 +2616,6 @@ h2 .project {
     margin-bottom: .3rem;
   }
 }
-
-// @media (min-width: 512px) and (max-width: 992px) {
-//   .home-projects {
-//     position: relative;
-//     padding-left: 0;
-//     padding-right: 0;
-//     padding-top: 2rem;
-//     position: relative;
-//     flex-wrap: wrap;
-//     top: 0;
-//     left: 0;
-//     margin-right: 0;
-//     margin-left: 0;
-//   }
-// }
 
 @media (min-width: 512px) and (max-width: 1200px) {
   .home-project-thumbnail-padding {
@@ -2742,6 +2722,5 @@ h2 .project {
 }
 
 .footer-project-subheader {
-  // text-transform: capitalize;
   font-size: 16px;
 }
