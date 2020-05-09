@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 #photos {
   line-height: 0;
   -webkit-column-count: 3;
@@ -6,57 +10,18 @@
   -moz-column-gap: 0px;
   column-count: 3;
   column-gap: 0px;
-}
 
-#photos img {
-  // width: 100% !important;
-  // height: auto;
-  width: auto;
-  max-height: 100vh;
-  // height: 100%;
-  margin: auto;
-  max-width: 100% !important;
-  // padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: RGBA(255, 255, 255, 0.01);
-}
-
-@media (max-width: 1200px) {
-  #photos {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
+  img {
+    width: auto;
+    max-height: 100vh;
+    margin: auto;
+    max-width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: RGBA(255, 255, 255, 0.01);
   }
-}
 
-@media (max-width: 1000px) {
-  #photos {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-}
-
-@media (max-width: 720px) {
-  #photos {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
-  }
-}
-
-@media (max-width: 512px) {
-  #photos {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
-  }
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .modal {
@@ -79,15 +44,6 @@
 }
 
 .modal-content {
-  // margin: auto;
-  // display: block;
-  // width: auto;
-  // padding: 30px;
-  // max-width: 600px;
-  // max-height: 100%;
-  // position: relative;
-  // top: 50%;
-  // transform: translateY(-50%);
   display: grid;
   height: 100%;
 }
@@ -118,17 +74,8 @@
   }
 }
 
-@media (max-width: 512px) {
-  .mySlides {
-    // position: relative;
-    img {
-      padding: 0;
-    }
-  }
-}
-
 .cursor {
-  cursor: url('../img/pointer.svg'), auto;	
+  cursor: url('../img/pointer.svg'), auto;
   opacity: 1;
 }
 
@@ -143,14 +90,28 @@
   z-index: -1;
   display: block;
   position: relative;
-  -webkit-transition: all 0.45s ease-in-out;
-  -moz-transition: all 0.45s ease-in-out;
-  -o-transition: all 0.45s ease-in-out;
-  -ms-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
 }
+
 .photo-padding {
   padding: 10px;
+}
+
+.photo-box {
+  overflow: hidden;
+  mask-image: radial-gradient(circle, white, black);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+
+
+.hover-shadow {
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 @media (max-width: 512px) {
@@ -158,50 +119,55 @@
     padding-left: 0;
     padding-right: 0;
   }
-}
 
-.photo-box {
-  // width: 210px;
-  // height: 210px;
-  overflow: hidden;
-  mask-image: radial-gradient(circle, white, black);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-  // padding: 10px;
+  .hover-shadow:hover {
+    opacity: 1;
+  }
 
-  // &:hover img {
+  .mySlides {
+    img {
+      padding: 0;
+    }
+  }
 
-  // }
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
 }
 
 @media (min-width: 512px) {
   .photo-box:hover img {
-    transform: scale(0.9);
-    -webkit-transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    -ms-transform: scale(1.04);
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
   }
 }
 
-.hover-shadow {
-  // transition: opacity 0.5s ease-in-out;
-  // -webkit-transition: opacity 0.5s ease-in-out;
-  // -moz-transition: opacity 0.5s ease-in-out;
-  // -o-transition: opacity 0.5s ease-in-out;
-  // -ms-transition: opacity 0.5s ease-in-out;
-  // transition: transform 0.5s ease;
-  // -webkit-transition: transform 05s ease;
-  // -moz-transition: transform 0.5s ease;
-  // -o-transition: transform 0.5s ease;
-  // -ms-transition: transform 0.5s ease;
 
-  &:hover {
-    opacity: 0.9;
+@media (max-width: 1200px) {
+  #photos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
   }
 }
 
-@media (max-width: 512px) {
-  .hover-shadow:hover {
-    opacity: 1;
+@media (max-width: 1000px) {
+  #photos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 720px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
 }
