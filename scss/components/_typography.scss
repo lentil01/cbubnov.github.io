@@ -14,7 +14,12 @@
   font-family: "IBMPlexSans-SemiBold";
   src: url("fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff") format("woff"),
     url("fonts/IBMPlexSans/IBMPlexSans-SemiBold.otf") format("opentype");
-  font-weight: bold;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Medium";
+  src: url("fonts/IBMPlexSans/IBMPlexSans-Medium.woff") format("woff"),
+    url("fonts/IBMPlexSans/IBMPlexSans-Medium.otf") format("opentype");
 }
 
 @font-face {
@@ -117,26 +122,26 @@ h3 {
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
 
-  span {
-    background: $bg-color;
-    padding: 0 1rem;
-    margin-left: 12rem;
-    margin-right: 12rem;
+  // span {
+  //   background: $bg-color;
+  //   padding: 0 1rem;
+  //   margin-left: 12rem;
+  //   margin-right: 12rem;
 
-    position: relative;
-    z-index: 1;
-  }
+  //   position: relative;
+  //   z-index: 1;
+  // }
 
-  &:before {
-    background: #d7dcda;
-    content: "";
-    display: block;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    left: 0;
-  }
+  // &:before {
+  //   background: #d7dcda;
+  //   content: "";
+  //   display: block;
+  //   height: 1px;
+  //   position: absolute;
+  //   top: 50%;
+  //   width: 100%;
+  //   left: 0;
+  // }
 }
 
 @media (max-width: 512px) {

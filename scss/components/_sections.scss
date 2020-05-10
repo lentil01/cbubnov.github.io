@@ -1165,7 +1165,7 @@ li:hover {
 }
 
 .project-subheading {
-  font-family: "IBMPlexSans-Text", "Courier New", Courier, monospace;
+  font-family: "IBMPlexSans-Medium", "Courier New", Courier, monospace;
   color: $heading-color;
   font-size: 22px;
   margin-bottom: 1.2rem;
@@ -1740,13 +1740,14 @@ h2 .project {
 }
 
 .project-summary {
-  font-size: 18px;
-  line-height: 1.5em;
-  background: $bg-color;
+  font-size: 19px;
+  // line-height: 1.5em;
+  // background: $bg-color;
+  padding-right: 1rem;
 
   &-dropcap {
     font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
-    color: $yellow;
+    color: $n60;
     font-size: 86px;
     margin-right: .6rem;
     line-height: .97;
@@ -1760,6 +1761,7 @@ h2 .project {
     text-transform: lowercase;
     font-variant: small-caps;
     font-family: "IBMPlexSerif-Text", "Palatino Linotype", Palatino, serif;
+    font-size: 21px;
   }
 }
 
@@ -1773,7 +1775,9 @@ h2 .project {
 
 .project {
   &-row {
-    padding: 2.5rem 12rem;
+    padding: 2.5rem 0;
+    margin-left: 12rem;
+    margin-right: 12rem;
   }
 
   &-hero-image {
@@ -1911,10 +1915,10 @@ h2 .project {
     }
 
     &-title {
-      text-align: center;
-      padding-top: 10rem;
-      font-size: 80px;
-      padding-bottom: 10rem;
+      text-align: left;
+      padding-top: 8rem;
+      font-size: 48px;
+      padding-bottom: 8rem;
       background: $bg-color;
     }
   }
@@ -2084,9 +2088,11 @@ h2 .project {
   }
 
   .project-hero-title {
-    font-size: 50px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    font-size: 36px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    // padding-left: 2rem;
+    // padding-right: 2rem;
   }
 }
 
@@ -2104,7 +2110,7 @@ h2 .project {
   }
 
   .project-hero-title {
-    font-size: 70px;
+    font-size: 44px;
   }
 
   h3 span {
@@ -2152,8 +2158,8 @@ h2 .project {
 }
 
 .subfooter {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   &-border {
     border-top: 1px solid #d7dcda;
@@ -2193,6 +2199,58 @@ h2 .project {
 @media (min-width: 992px) {
   .caption span {
     display: none;
+  }
+}
+
+.project-section {
+  padding: 2.5rem 0 4rem;
+  margin: auto 12rem;
+  border-bottom: solid 1px #d7dcda;
+  &:last-child {
+    border: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .project-section {
+    margin: auto 6rem;
+  }
+}
+@media (min-width: 512px) and (max-width: 768px) {
+  .project-section {
+    margin: auto 4rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .project-section {
+    margin: auto 1.5rem;
+  }
+}
+
+.stat {
+  padding-top: 1rem;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #d7dcda;
+  &-heading {
+    font-family: "IBMPlexSans-SemiBold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $grey50;
+    font-size: 16px;
+  }
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .stat {
+    margin-left: 0;
   }
 }
 
@@ -2591,7 +2649,7 @@ h2 .project {
 
 @media (max-width: 768px) {
   .project-ending-button {
-    text-align: left;
+    text-align: center;
   }
 }
 
