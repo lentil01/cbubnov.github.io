@@ -1722,7 +1722,7 @@ h2 .project {
 .project-meat {
   margin-right: 0;
   margin-left: 0;
-  margin-top: 550px;
+  margin-top: 510px;
   background: $bg-color;
   position: relative;
   z-index: 1111;
@@ -1745,12 +1745,16 @@ h2 .project {
   // background: $bg-color;
   padding-right: 1rem;
 
+  &-paragraph {
+    margin-bottom: 1rem !important;
+  }
+
   &-dropcap {
     font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
     color: $n60;
-    font-size: 86px;
+    font-size: 56px;
     margin-right: .6rem;
-    line-height: .97;
+    line-height: 1.15;
     position: relative;
     float: left;
     margin-top: -0.2rem;
@@ -1761,13 +1765,13 @@ h2 .project {
     text-transform: lowercase;
     font-variant: small-caps;
     font-family: "IBMPlexSerif-Text", "Palatino Linotype", Palatino, serif;
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 1100px) {
   .project-meat {
-    margin-top: 550px;
+    margin-top: 510px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -1800,7 +1804,7 @@ h2 .project {
     width: 100%;
     padding: 1rem 13rem;
     background: $bg-color;
-    height: 550px;
+    height: 510px;
     z-index: -1;
     overflow: hidden;
 
@@ -1938,7 +1942,7 @@ h2 .project {
 
 .hero-logo {
   position: absolute;
-  bottom: 4rem;
+  bottom: 2rem;
   z-index: 4;
   width: 200px;
 }
@@ -1950,19 +1954,19 @@ h2 .project {
 
 @media (max-width: 512px) {
   .hero-logo {
-    bottom: 5rem;
+    bottom: 2rem;
   }
 }
 
 @media (min-width: 1240px) {
   .project-hero-container {
-    height: 550px;
+    height: 510px;
   }
 }
 
 @media (max-width: 512px) {
   .project-hero-container {
-    height: 550px;
+    height: 510px;
     left: 0;
 
   }
@@ -2238,13 +2242,16 @@ h2 .project {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: $grey50;
-    font-size: 16px;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   &:first-child {
     padding-top: 0;
   }
   &:last-child {
     border-bottom: none;
+    padding-top: .4rem;
   }
 }
 
@@ -2269,6 +2276,20 @@ h2 .project {
       opacity: 0.8;
     }
   }
+}
+
+.badge {
+  font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 4px 6px 3px 6px;
+  background: #E7EAE9;
+  color: $grey80;
+  border-radius: 4px;
+  margin-top: .6rem;
+  letter-spacing: 0.07em;
+  display: inline-block;
+  margin-right: .6rem;
 }
 
 .tag {
