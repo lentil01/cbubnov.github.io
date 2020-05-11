@@ -114,34 +114,13 @@ p {
 
 h3 {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   position: relative;
   color: $heading-color;
   font-size: 2em;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-
-  // span {
-  //   background: $bg-color;
-  //   padding: 0 1rem;
-  //   margin-left: 12rem;
-  //   margin-right: 12rem;
-
-  //   position: relative;
-  //   z-index: 1;
-  // }
-
-  // &:before {
-  //   background: #d7dcda;
-  //   content: "";
-  //   display: block;
-  //   height: 1px;
-  //   position: absolute;
-  //   top: 50%;
-  //   width: 100%;
-  //   left: 0;
-  // }
 }
 
 @media (max-width: 512px) {
