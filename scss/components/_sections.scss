@@ -126,9 +126,11 @@ li:hover {
   text-align: right;
   font-size: 13px;
   letter-spacing: 0.7px;
-  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
+  font-family: "IBMPlexMono-SemiBold", "Courier New", Courier, monospace;
   text-transform: uppercase;
   margin-top: .3rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .project-footer-text {
@@ -136,9 +138,11 @@ li:hover {
   color: $grey30;
   font-size: 13px;
   letter-spacing: 0.7px;
-  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
+  font-family: "IBMPlexMono-SemiBold", "Courier New", Courier, monospace;
   text-transform: uppercase;
   margin-top: .3rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
 
   span {
@@ -1037,45 +1041,8 @@ li:hover {
   }
 }
 
-.link-dark {
-  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-  padding-left: 0;
-  padding-right: 1rem;
-  color: #868886;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-.link-dark:hover {
-  color: #a4a5a2;
-}
-
-@media (max-width: 767px) {
-  .link-dark {
-    padding-right: 1rem;
-  }
-}
-
-.link-prominent {
-  font-family: IBMPlexMono-Regular, monospace;
-  font-weight: 600;
-  padding-left: 0;
-  padding-right: 1rem;
-  color: #4b4a4a;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-@media (max-width: 767px) {
-  .link-prominent {
-    padding-right: 1rem;
-  }
-}
-
 .tools-used {
-  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
+  font-family: "IBMPlexMono-SemiBold", "Courier New", Courier, monospace;
   padding-left: 0;
   padding-right: 0;
   color: $caption-color;
@@ -1083,6 +1050,8 @@ li:hover {
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (max-width: 768px) {
@@ -1107,37 +1076,6 @@ li:hover {
   .footer-top-section {
     display: none;
 
-  }
-}
-
-
-.footer-item {
-  font-family: IBMPlexMono-Regular, monospace;
-  padding-left: 0;
-  padding-right: 0;
-  color: #949391;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  font-size: 12px;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom ease-in-out 0.2s, color ease-in-out 0.2s;
-}
-
-.footer-item:hover {
-  color: #a4a5a2;
-  border-color: #a4a5a2;
-}
-
-@media (max-width: 767px) {
-  .footer-item {
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 512px) {
-  .footer-item {
-    padding-right: 0;
   }
 }
 
@@ -1551,16 +1489,6 @@ li:hover {
   }
 }
 
-.description {
-  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-  color: #949391;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .center-text {
   text-align: center;
 }
@@ -1924,7 +1852,6 @@ h2 .project {
     }
 
     &-tag {
-      font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
       letter-spacing: 0.07em;
       font-size: 12px;
       text-transform: uppercase;
@@ -2016,30 +1943,6 @@ h2 .project {
   }
 }
 
-@media (max-width: 375px) {
-  .project-hero-tags {
-    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-    max-width: 310px;
-    bottom: 1.5rem;
-  }
-
-  .project-hero-tag {
-    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 512px) {
-  .project-hero-tags {
-    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-    max-width: 410px;
-    bottom: 1.5rem;
-  }
-
-  .project-hero-tag {
-    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-  }
-}
-
 @media (max-width: 512px) {
   .project-hero-container {
     padding-left: 1.5rem;
@@ -2085,12 +1988,6 @@ h2 .project {
   }
 }
 
-@media (max-width: 768px) {
-  .project-hero-tags {
-    padding-top: 1rem;
-  }
-}
-
 @media (min-width: 512px) and (max-width: 768px) {
   .project-row {
     padding: 1rem;
@@ -2107,16 +2004,10 @@ h2 .project {
     padding-right: 5rem;
   }
 
-  .project-hero-tags {
-    max-width: 500px;
-  }
-
   .project-hero-title {
     font-size: 36px;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    // padding-left: 2rem;
-    // padding-right: 2rem;
   }
 }
 
@@ -2146,10 +2037,6 @@ h2 .project {
     left: 0;
     padding-left: 7rem;
     padding-right: 7rem;
-  }
-
-  .project-hero-tags {
-    max-width: 700px;
   }
 }
 
@@ -2211,8 +2098,8 @@ h2 .project {
 
 .caption {
   p {
-    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
-    font-size: 12px;
+    font-family: "IBMPlexSans-Regular", "Courier New", Courier, monospace;
+    font-size: 13px;
     line-height: 1.6em;
     color: $caption-color;
   }
