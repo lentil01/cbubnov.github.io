@@ -1165,10 +1165,13 @@ li:hover {
 }
 
 .project-subheading {
-  font-family: "IBMPlexSans-Medium", "Courier New", Courier, monospace;
+  font-family: "IBMPlexSans-SemiBold", 'Helvetica Neue', Arial, sans-serif;
   color: $heading-color;
   font-size: 22px;
   margin-bottom: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
 @media (max-width: 512px) {
@@ -1764,8 +1767,9 @@ h2 .project {
     letter-spacing: 1.7px;
     text-transform: lowercase;
     font-variant: small-caps;
-    font-family: "IBMPlexSerif-Text", "Palatino Linotype", Palatino, serif;
+    font-family: "IBMPlexSans-SemiBold", 'Helvetica Neue', Arial, sans-serif;
     font-size: 19px;
+    // color: $n60;
   }
 }
 
