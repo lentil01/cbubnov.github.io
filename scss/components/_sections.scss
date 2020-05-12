@@ -656,8 +656,10 @@ li:hover {
   &-heading {
     font-size: 54px;
     padding-bottom: 2.5rem;
-    font-family: "IBMPlexSans-Light", Arial, Helvetica, sans-serif;
+    font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     letter-spacing: -0.4px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   &-subheading {
@@ -1364,11 +1366,11 @@ li:hover {
 }
 
 .fadeinslow {
-  -webkit-animation: fadein .8s;
-  -moz-animation: fadein .8s;
-  -ms-animation: fadein .8s;
-  -o-animation: fadein .8s;
-  animation: fadein .8s;
+  -webkit-animation: fadein .65s;
+  -moz-animation: fadein .65s;
+  -ms-animation: fadein .65s;
+  -o-animation: fadein .65s;
+  animation: fadein .65s;
 }
 
 @keyframes fadeinslow {
@@ -2480,11 +2482,6 @@ h2 .project {
     margin-bottom: 0.2rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    span {
-      font-family: "IBMPlexSans-Light", Arial, Helvetica, sans-serif;
-      transition: color 0.4s ease-in-out;
-    }
 
   }
 }
