@@ -126,10 +126,8 @@ li:hover {
   text-align: right;
   font-size: 13px;
   letter-spacing: 0.7px;
-  font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin-top: .3rem;
 }
 
@@ -138,10 +136,8 @@ li:hover {
   color: $grey30;
   font-size: 13px;
   letter-spacing: 0.7px;
-  font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+  font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin-top: .3rem;
 
 
@@ -2022,25 +2018,25 @@ h2 .project {
 
 @media (max-width: 375px) {
   .project-hero-tags {
-    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
     max-width: 310px;
     bottom: 1.5rem;
   }
 
   .project-hero-tag {
-    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   }
 }
 
 @media (min-width: 375px) and (max-width: 512px) {
   .project-hero-tags {
-    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
     max-width: 410px;
     bottom: 1.5rem;
   }
 
   .project-hero-tag {
-    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
   }
 }
 
@@ -2215,12 +2211,10 @@ h2 .project {
 
 .caption {
   p {
-    font-family: "IBMPlexMono-Text", "Courier New", Courier, monospace;
+    font-family: "IBMPlexMono-Regular", "Courier New", Courier, monospace;
     font-size: 12px;
     line-height: 1.6em;
     color: $caption-color;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
 }
 
