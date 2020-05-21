@@ -583,20 +583,24 @@ li:hover {
 }
 
 .about-link {
-  font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+  font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
   border-bottom: 1.5px solid transparent;
   transition: text-decoration-color, text-decoration-thickness, text-decoration-width 0.3s ease-in-out, color 0.3s ease-in-out;
 
 
   &-dark {
     color: $blue;
-    border-color: transparent;
+    // border-color: transparent;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: #68A5D2;
+
+
+
 
     &:hover {
       color: $blue;
-      text-decoration: underline;
-      text-decoration-color: #68A5D2;
-      text-decoration-thickness: 1.5px;
+      text-decoration: none;
     }
   }
 
@@ -653,6 +657,9 @@ li:hover {
   font-size: 18px;
   color: $heading-color;
   z-index: 1000;
+  padding-bottom: 3rem;
+  border-bottom: solid 1px #d7dcda;
+
 
   &-border {
     margin: 0 auto;
@@ -670,11 +677,11 @@ li:hover {
   }
 
   &-subheading {
-    max-width: 40rem;
+    max-width: 43rem;
     letter-spacing: -0.1px;
 
     p {
-      font-size: 19px;
+      font-size: 20px;
       padding-bottom: 1rem;
     }
   }
@@ -694,7 +701,7 @@ li:hover {
   }
 
   .homeSummary {
-    font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
+    font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     position: relative;
     padding-top: 1.5rem 0 3rem;
     top: 0;
@@ -2288,13 +2295,23 @@ h2 .project {
     }
 
     &-button {
-      margin-top: 1.5rem;
+      margin-top: .9rem;
       transition: transform 0.1s ease-in-out;
+      -webkit-transition: transform 0.1s ease-in-out;
+      -moz-transition: transform 0.1s ease-in-out;
+      -o-transition: transform 0.1s ease-in-out;
+      -ms-transition: transform 0.1s ease-in-out;
       padding: .5rem .5rem .5rem 0 !important;
       background: none !important;
+      font-size: 15px;
+      letter-spacing: .1em;
+
+      span {
+        font-size: 18px;
+      }
 
       &:hover {
-        transform: translate(6px, 0px);
+        transform: translate(6px, 0);
         transition: transform 0.1s ease-in-out;
         -webkit-transition: transform 0.1s ease-in-out;
         -moz-transition: transform 0.1s ease-in-out;
@@ -2345,8 +2362,8 @@ h2 .project {
 
   &-project-subtitle {
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-top: .7rem;
+    font-size: 19px;
+    margin-top: 1rem;
     color: $heading-color;
     margin-bottom: 1.5rem;
     line-height: 1.5em;
@@ -2431,6 +2448,7 @@ h2 .project {
     top: 0;
     left: 0;
     margin-right: 0;
+
   }
 }
 
