@@ -657,7 +657,7 @@ li:hover {
   font-size: 18px;
   color: $heading-color;
   z-index: 1000;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   border-bottom: solid 1px #d7dcda;
 
 
@@ -668,8 +668,8 @@ li:hover {
   }
 
   &-heading {
-    font-size: 54px;
-    padding-bottom: 2.5rem;
+    font-size: 50px;
+    padding-bottom: 2rem;
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     letter-spacing: -0.4px;
     -webkit-font-smoothing: antialiased;
@@ -681,7 +681,7 @@ li:hover {
     letter-spacing: -0.1px;
 
     p {
-      font-size: 20px;
+      font-size: 21px;
       padding-bottom: 1rem;
     }
   }
@@ -722,7 +722,15 @@ li:hover {
 @media (min-width: 512px) {
   .homeSummary {
     &-heading {
-      line-height: 67px;
+      line-height: 63px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .homeSummary {
+    &-heading {
+      padding-right: 5rem;
     }
   }
 }
@@ -2273,7 +2281,7 @@ h2 .project {
 
   &-projects {
     background: $bg-color;
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
 
