@@ -52,13 +52,14 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  cursor: url('../img/zoom-out.svg'), auto;
+
 }
 
 .close:hover,
 .close:focus {
   opacity: 1;
   text-decoration: none;
-  cursor: url(img/close-cursor.png), auto;
 }
 
 .mySlides {
@@ -76,6 +77,11 @@
 
 .cursor {
   cursor: url('../img/pointer.svg'), auto;
+  opacity: 1;
+}
+
+.zoom-in {
+  cursor: url('../img/zoom-in.svg'), auto;
   opacity: 1;
 }
 
@@ -144,6 +150,10 @@
     -moz-transform: scale(1.03);
     -o-transform: scale(1.03);
     -ms-transform: scale(1.03);
+  }
+
+  #photos {
+    padding-bottom: 2rem;
   }
 }
 
