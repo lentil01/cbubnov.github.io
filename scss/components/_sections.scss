@@ -2276,7 +2276,7 @@ h2 .project {
 
 .home {
   // padding: 0 16rem;
-  max-width: 820px;
+  max-width: 760px;
 
   &-eye {
     width: 36px;
@@ -2316,8 +2316,13 @@ h2 .project {
       margin-bottom: 4rem;
     }
 
+
+    // &:first-child {
+    //   padding-top: 2rem;
+    // }
+
     &-modal {
-      padding: 2rem;
+      padding: 2.5rem 2rem;
       transition: all 0.2s ease-in-out;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease-in-out;
