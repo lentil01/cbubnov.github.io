@@ -10,6 +10,13 @@
   -moz-column-gap: 0px;
   column-count: 3;
   column-gap: 0px;
+  margin: 0 -0.5rem;
+
+  .close {
+    img {
+      border-radius: 67px;
+    }
+  }
 
   img {
     width: auto;
@@ -96,11 +103,11 @@
   z-index: -1;
   display: block;
   position: relative;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
 }
 
 .photo-padding {
@@ -111,6 +118,7 @@
   overflow: hidden;
   mask-image: radial-gradient(circle, white, black);
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+  border-radius: 2px;
 }
 
 
@@ -140,16 +148,17 @@
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
+    margin: 0;
   }
 }
 
 @media (min-width: 512px) {
   .photo-box:hover img {
-    transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    -ms-transform: scale(1.03);
+    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    -ms-transform: scale(1.06);
   }
 
   #photos {
