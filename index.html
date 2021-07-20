@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-  <link rel="preload" href="/css/fonts/BluuNext/bluunext-bold-webfont.woff2" as="font" type="font/woff2" crossorigin> 
-  <link rel="preload" href="/css/fonts/IBMPlexSans/IBMPlexSans-Regular-Latin1.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/css/fonts/BluuNext/bluunext-bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/css/fonts/IBMPlexSans/IBMPlexSans-Regular-Latin1.woff2" as="font" type="font/woff2"
+    crossorigin>
   <link rel="preload" href="/css/fonts/IBMPlexMono/IBMPlexMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <title>Chris Bubnov</title>
   <meta charset="UTF-8">
@@ -22,11 +23,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body class="fadeinslow">
+<body>
   <div class="container">
     <div class="project-center home row">
 
@@ -34,20 +35,20 @@
 
       <div class="design-nav-fixed override-pos-relative">
         <div class="design-nav design-nav-links row">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 design-nav-left">
-            <a href="#"><img src="img/logo-symbol-primary.svg" class="home-logoSymbol"></a>
+          <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 design-nav-left">
+            <a href="#"><img src="img/logo-symbol.svg" class="home-logoSymbol"></a>
           </div>
-          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 design-nav-right">
+          <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 design-nav-right">
             <li class="hero-item hero-item-dark hero-item-dark-selected">
               <a href="#" class="no-margin-left">Work</a>
             </li>
             <li class="hero-item hero-item-dark">
-              <a href="photography.html">Photo</a>
+              <a href="about.html">About</a>
             </li>
-            <li class="hero-item hero-item-dark">
+            <!-- <li class="hero-item hero-item-dark">
               <a type="application/pdf" class="no-margin-right" href="chris_bubnov_resume.pdf"
                 target="_blank">Résumé</a>
-            </li>
+            </li> -->
           </div>
         </div>
       </div>
@@ -57,146 +58,248 @@
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 homeSummary-border">
         <div class="homeSummary">
           <div class="homeSummary-heading">
-            <span class="logo logo-dark">I'm Chris.</span> I use design + development to make the world a little
-            better.
+            <p class="homeSummary-heading"><span class="logo logo-dark">Hi, I'm Chris.</span></p>
+            <p class="homeSummary-heading">I design digital products that leave the world a little brighter.
+            </p>
           </div>
           <div class="homeSummary-subheading">
-            <p>Currently building things at <a class="about-link about-link-dark"
-                href="https://twobulls.com" target="_blank">Two Bulls</a>. Before,
-              I built brands and products at <a class="about-link about-link-dark" href="https://barkgrr.com"
-              target="_blank">BarkGrr</a>, Eximchain, and <a class="about-link about-link-dark" href="https://tulip.co"
-                target="_blank">Tulip</a>. I'm a firm believer in
-              making things used by people, not the other way around.
-            </p>
-            <p class="socialLink-padding">
-              <a href="mailto:loverly@protonmail.com">
-                <img src="img/socials/Email.svg" class="socialLink">
-              </a>
-              <a href="https://dribbble.com/chrisdega">
-                <img src="img/socials/Dribbble.svg" class="socialLink">
-              </a>
-              <a href="https://github.com/lentil01">
-                <img src="img/socials/Github.svg" class="socialLink">
-              </a>
-              <a href="https://www.linkedin.com/in/chrisbubnov">
-                <img src="img/socials/LinkedIn.svg" class="socialLink">
-              </a>
-            </p>
           </div>
         </div>
       </div>
 
       <!-- PROJECTS -->
 
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-projects">
 
-        <div class="row home-project">
-          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
-            <a href="eximchain.html"><img src="img/eximchain/home-project-thumb.svg" class="home-project-thumbnail"></a>
-          </div>
-          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-text">
-            <h1 class="home-project-title">Eximchain</h1>
-            <p class="home-project-subtitle">Ethereum-based governance network
-              mobile app, desktop cryptocurrency wallet, and design system for a blockchain startup building supply chain apps.</p>
-            <a class="button button-light home-project-button" href="eximchain.html"><span>▸</span> View project
-              </a>
-          </div>
-        </div>
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-projects fadeinslow">
 
-        <div class="row home-project">
-          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
-            <a href="tulip.html"><img src="img/tulip/home-project-thumb.png" class="home-project-thumbnail"></a>
-          </div>
-          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-text">
-            <h1 class="home-project-title">Tulip Interfaces
-            </h1>
-            <p class="home-project-subtitle">Go-to-market website redesign, <a href="https://tulip.co/factory-kit/" target="_blank"
-              class="about-link about-link-dark">Factory Kit</a> offering, and interaction design of <a
-              href="https://tulip.co/platform/app-builder/" target="_blank" class="about-link about-link-dark">App
-              Builder</a> at a digital manufacturing app platform.</p>
+        <!-- MODAL TO CUSTOMIZE -->
 
-            <a class="button button-light home-project-button" href="tulip.html"><span>▸</span> View project
-              </a>
-          </div>
-        </div>
+        <section class="cd-section">
+          <div class="cd-modal-action row home-project">
+            <a href="#0" class="home-project-modal" data-type="modal-trigger">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
+                <img src="img/eximchain/home-project-thumb-2.png" class="home-project-thumbnail">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-text">
+                <div class="home-project-title-box row">
+                  <h1 class="home-project-title">Eximchain</h1>
+                  <h1 class="home-project-category">May 2018 - May 2019</h1>
+                </div>
+                <p class="home-project-subtitle">Eximchain builds blockchain applications for supply chain companies. I
+                  led
+                  the design of their design system, crytocurrency wallet, and governance network app.</p>
+              </div>
+            </a>
+            <span class="cd-modal-bg"></span>
+          </div> <!-- cd-modal-action -->
 
-        <div class="row home-project">
-          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
-            <a href="interventions.html"><img src="img/interventions/home-project-thumb.png" class="home-project-thumbnail"></a>
-          </div>
-          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-text">
-            <h1 class="home-project-title">Interventions</h1>
-            <p class="home-project-subtitle">Brand identity, conference <a href="https://2018.interventions.design" target="_blank" class="about-link about-link-dark">website</a>, and experience design for the first student-led design conference, hosted at Northeastern University.
-            </p>
-            <a class="button button-light home-project-button" href="interventions.html"><span>▸</span> View project
-              </a>
-          </div>
-        </div>
+          <div class="cd-modal">
+            <div class="cd-modal-content">
+              <div class="row modal-content-open">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-modalWrapper">
+                  <a href="#0" class="cd-modal-close">Close</a>
 
-        <div class="row home-project">
-          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
-            <a href="project-access.html"><img src="img/project-access/home-project-thumb.png" class="home-project-thumbnail"></a>
-          </div>
-          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-text">
-            <h1 class="home-project-title">Project Access</h1>
-            <p class="home-project-subtitle">Brand overhaul, website redesign, and marketing collateral for a non-profit providing resources to top-tier university applicants.
-            </p>
-            <a class="button button-light home-project-button" href="project-access.html"><span>▸</span> View project
-              </a>
-          </div>
-        </div>
+                  <img src="img/eximchain/home-project-modalThumb.png" class="home-project-modalThumbnail">
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-modalText">
+                  <div class="home-project-modalTitle-box row">
+                      <h1 class="home-project-modalCompany">Eximchain</h1>
+                  </div>
 
-        <div class="row home-project">
-          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
-            <a href="matebros.html"><img src="img/matebros/home-project-thumb.png" class="home-project-thumbnail"></a>
-          </div>
-          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-text">
-            <h1 class="home-project-title">Maté Bros</h1>
-            <p class="home-project-subtitle">Creative direction, marketing strategy, packaging redesign, and print + digital advertising for a yerba maté energy tea company.
-            </p>
-            <a class="button button-light home-project-button" href="matebros.html"><span>▸</span> View project
-              </a>
-          </div>
-        </div>
+                  <div class="row">
+                    <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="home-project-modalRole row">
+                        <h1 class="home-project-modalTitle">Lead UI/UX Designer</h1>
+                        <h1 class="home-project-modalCategory">May 2018 - May 2019</h1>
+                      </div>
+                      <p class="project-summary-paragraph">
+                        Eximchain is a Singapore-based company building blockchain applications for the supply chain
+                        space. Supply chains are global by nature; to ensure the legal compliance and integrity of our
+                        network, a comprehensive identity validation process was implemented.
+                      </p>
+                      <p class="project-summary-paragraph">
+                        After user testing many prototypes, we released a mobile app to securely create a wallet,
+                        validate user identities, and view network members. A complementary desktop app was created to
+                        send and sign transactions, view token balances, and interact with smart contracts. By balancing
+                        ease of use with security through the native mobile app and desktop app combination, we
+                        increased our member network base and provided a trusted system to them.
+                      </p>
+                      <div class="row">
+                        <p><a class="about-link about-link-dark" href="https://github.com/eximchain" target="_blank"
+                            style="margin-right: 12px">Github</a></p>
+                        <p><a class="about-link about-link-dark" href="https://medium.com/eximchain"
+                            target="_blank">Medium</a></p>
+                      </div>
 
-        <div class="row home-project">
-          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
-            <a href="character.html"><img src="img/character/home-project-thumb.png" class="home-project-thumbnail"></a>
-          </div>
-          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 home-project-text">
-            <h1 class="home-project-title">Character Skin Care</h1>
-            <p class="home-project-subtitle">Brand identity, packaging, and web development for a skincare company that nourishes body and soul.
-            </p>
-            <a class="button button-light home-project-button" href="character.html"><span>▸</span> View project
-              </a>
-          </div>
-        </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div> <!-- cd-modal-content -->
+          </div> <!-- cd-modal -->
+
+        </section> <!-- .cd-section -->
+
+        <section class="cd-section">
+          <div class="cd-modal-action row home-project">
+            <a href="#1" class="home-project-modal" data-type="modal-trigger">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
+                <img src="img/tulip/home-project-thumb-2.png" class="home-project-thumbnail">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-text">
+                <div class="home-project-title-box row">
+                  <h1 class="home-project-title">Tulip Interfaces</h1>
+                  <h1 class="home-project-category">May 2017 - Apr 2018</h1>
+                </div>
+                <p class="home-project-subtitle">At Tulip, a platform for creating digital manufacturing applications, I
+                  was responsible for a
+                  go-to-market website redesign, spearheaded our starter kit offering, and introduced several new
+                  features for our main product, the App Builder.</p>
+              </div>
+            </a>
+            <span class="cd-modal-bg"></span>
+
+
+          </div> <!-- cd-modal-action -->
+
+          <div class="cd-modal">
+            <div class="cd-modal-content">
+              <div class="row modal-content-open">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-modalWrapper">
+                  <a href="#1" class="cd-modal-close">Close</a>
+
+                  <img src="img/tulip/home-project-thumb-2.png" class="home-project-modalThumbnail">
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-modalText">
+                  <div class="home-project-modalTitle-box row">
+                      <h1 class="home-project-modalCompany">Tulip Interfaces</h1>
+                  </div>
+
+                  <div class="row">
+                    <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="home-project-modalRole row">
+                        <h1 class="home-project-modalTitle">Marketing & Product Designer</h1>
+                        <h1 class="home-project-modalCategory">May 2017 - Apr 2018</h1>
+                      </div>
+                      <p class="project-summary-paragraph">
+                        Tulip Interfaces is a Boston-based company building softwar and hardware solutions for
+                        manufacturers. Their digital app platform encompasses work instructions, analytics, lean
+                        manufacturing, machine monitoring, quality assurance, training, and visibility for operators on
+                        the shop floor.
+                      </p>
+                      <p class="project-summary-paragraph">
+                        I was responsible for the marketing and complete redesign of the website, hardware packaging,
+                        and creating a design system to easily track and update UI elements. I also worked on onboarding
+                        and bringing new features to life on the App Builder platform.
+                      </p>
+                      <div class="row">
+                        <p><a class="about-link about-link-dark" href="https://tulip.co/products/factory-kit/"
+                            target="_blank" style="margin-right: 12px">Factory Kit</a></p>
+                        <p><a class="about-link about-link-dark" href="https://tulip.co/platform/app-editor/"
+                            target="_blank">App Builder</a></p>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div> <!-- cd-modal-content -->
+          </div> <!-- cd-modal -->
+
+        </section> <!-- .cd-section -->
+
+        <section class="cd-section">
+          <div class="cd-modal-action row home-project home-project-last">
+            <a href="#3" class="home-project-modal" data-type="modal-trigger">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-wrapper">
+                <img src="img/interventions/home-project-thumb-2.png" class="home-project-thumbnail">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-text">
+                <div class="home-project-title-box row">
+                  <h1 class="home-project-title">Interventions Conference</h1>
+                  <h1 class="home-project-category">Apr 2017 - Apr 2018</h1>
+                </div>
+                <p class="home-project-subtitle">I led the team of the first annual student-led Interventions Conference
+                  at Northeastern University, where we created its brand identity, website, signage, and established
+                  guidelines for future conferences.</p>
+              </div>
+            </a>
+            <span class="cd-modal-bg"></span>
+
+
+          </div> <!-- cd-modal-action -->
+
+          <div class="cd-modal">
+            <div class="cd-modal-content">
+              <div class="row modal-content-open">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-thumbnail-modalWrapper">
+                  <a href="#3" class="cd-modal-close">Close</a>
+
+                  <img src="img/interventions/home-project-thumb-2.png" class="home-project-modalThumbnail">
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 home-project-modalText">
+                  <div class="home-project-modalTitle-box row">
+                    <div class="row">
+                      <h1 class="home-project-modalCompany">Interventions Conference</h1>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="project-row-element col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="home-project-modalRole row">
+                        <h1 class="home-project-modalTitle">Project Lead</h1>
+                        <h1 class="home-project-modalCategory">Apr 2017 - Apr 2018</h1>
+                      </div>
+                      <p class="project-summary-paragraph">
+                        Interventions is an annual conference in its third year that takes place in April at
+                        Northeastern University. I led a team of five talented people to create the concept and identity
+                        of the conference, and assure its continuation as an annual event.
+                      </p>
+                      <p class="project-summary-paragraph">
+                        The conference is comprised of speakers, panels, and workshops, and discusses the role of
+                        creative thinkers in developing brands, products, and services in an age of rapid technological
+                        advancement. There are appearances from companies such as Github, Dribbble, Airbnb, and Netflix.
+                      </p>
+                      <div class="row">
+                        <p><a class="about-link about-link-dark" href="https://2018.interventions.design/"
+                            target="_blank" style="margin-right: 12px">Conference Website</a></p>
+                        <p><a class="about-link about-link-dark" href="img/interventions/Brand Guidelines.pdf"
+                            target="_blank">Brand Guidelines</a></p>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div> <!-- cd-modal-content -->
+          </div> <!-- cd-modal -->
+
+        </section> <!-- .cd-section -->
       </div>
 
       <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 aboutpagelinks">
-        <div class="aboutpagelinks-border row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class=" col-xl-6 col-lg-5 col-md-4 col-sm-12 col-xs-12">
-            <a href="mailto:loverly@protonmail.com">
-              <img src="img/socials/Email.svg" class="socialLink-footer">
-            </a>
-            <a href="https://dribbble.com/chrisdega">
-              <img src="img/socials/Dribbble.svg" class="socialLink-footer">
-            </a>
-            <a href="https://github.com/lentil01">
-              <img src="img/socials/Github.svg" class="socialLink-footer">
-            </a>
-            <a href="https://www.linkedin.com/in/chrisbubnov">
-              <img src="img/socials/LinkedIn.svg" class="socialLink-footer socialLink-last">
-            </a>
-          </div>
-          <div class="col-xl-6 col-lg-7 col-md-8 col-sm-12 col-xs-12">
-            <p class="home-footer-text">© 2021 Chris Bubnov • Built with HTML + SCSS + JS</p>
+        <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="home-footer-text">Find me on <a href="https://www.linkedin.com/in/chrisbubnov"
+                class="about-link-dark">Linkedin</a> and <a href="https://github.com/lentil01"
+                class="about-link-dark">Github</a>, or email me at <a href="mailto:loverly@protonmail.com"
+                class="about-link-dark">chrisbubnov@protonmail.com</a>. <br>© 2021 Chris Bubnov • Built with HTML + SCSS
+              + JS</p>
           </div>
         </div>
       </div>
     </div>
   </div>
   </div>
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/velocity.min.js"></script>
+  <script src="js/modal.js"></script> <!-- Resource jQuery -->
 </body>
 
 </html>

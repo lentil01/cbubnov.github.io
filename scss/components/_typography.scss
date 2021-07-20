@@ -8,6 +8,44 @@
     font-display: swap;
 }
 
+// SOHNE --------------------------------------------------------------------
+
+
+
+@font-face {
+  font-family: "Sohne-Light";
+  src: url("fonts/Sohne/soehne-web-leicht.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+
+// MIGRA --------------------------------------------------------------------
+
+@font-face {
+  font-family: "Migra-Extralight";
+  src: url("fonts/Migra/Migra-Extralight.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Migra-Extrabold";
+  src: url("fonts/Migra/Migra-Extrabold.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "MigraItalic-Extralight";
+  src: url("fonts/Migra/MigraItalic-ExtralightItalic.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "MigraItalic-Extrabold";
+  src: url("fonts/Migra/MigraItalic-Extrabold.woff2") format("woff2");
+    font-display: swap;
+}
+
 // IBM PLEX SANS --------------------------------------------------------------------
 
 @font-face {
@@ -47,6 +85,7 @@ h4 {
   font-size: 16px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+  cursor: url('../img/text.svg'), auto;
 }
 
 h5 {
@@ -54,6 +93,7 @@ h5 {
   color: $heading-color;
   font-size: 48px;
   line-height: 1.15em;
+  cursor: url('../img/text.svg'), auto;
 }
 
 @media (max-width: 675px) {
@@ -74,12 +114,14 @@ h6 {
   font-size: 64px;
   letter-spacing: -0.05em;
   text-align: center;
+  cursor: url('../img/text.svg'), auto;
 }
 
 p {
   font-size: 17px;
   line-height: 1.6em;
   margin-bottom: 0;
+  cursor: url('../img/text.svg'), auto;
 }
 
 // @media (max-width: 512px) {
@@ -101,6 +143,7 @@ h3 {
   font-size: 2em;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
+  cursor: url('../img/text.svg'), auto;
 }
 
 @media (max-width: 512px) {
@@ -117,6 +160,8 @@ h3 {
 
 h1 {
   font-size: 22px;
+  cursor: url('../img/text.svg'), auto;
+
 
   span {
     font-family: "IBMPlexSans-Regular", 'Helvetica Neue', Arial, sans-serif;
@@ -131,6 +176,8 @@ h2 {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: $heading-color;
   font-size: 18px;
+  cursor: url('../img/text.svg'), auto;
+
 
   span {
     font-family: "IBMPlexSans-Regular", 'Helvetica Neue', Arial, sans-serif;

@@ -96,15 +96,15 @@ button {
 }
 
 .button {
-  font-family: "IBMPlexMono-Semibold", "Courier New", Courier, monospace;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-family: "Migra-Extralight", "Courier New", Courier, monospace;
+  letter-spacing: 0 !important;
+  // text-transform: uppercase;
   border-radius: 3px;
   padding: 12px 28px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 22px;
   margin: auto;
 
   &-icon {
@@ -153,12 +153,12 @@ button {
 
   &-light {
     background-color: #EBEDED;
-    color: $n57;
+    color: $blue;
     transition: color 0.4s ease-in-out;
 
     &:hover {
       background-color: #DFE2E2;
-      color: $n58;
+      color: $blue;
       text-decoration: none;
       transition: color 0.4s ease-in-out;
     }
@@ -223,3 +223,4 @@ button {
     }
   }
 }
+
