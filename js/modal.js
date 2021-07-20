@@ -14,12 +14,13 @@ jQuery(document).ready(function($){
 	});
 
 	//trigger the animation - close modal window
-	$('.cd-section .cd-modal-close').on('click', function(){
+	$('.cd-section .cd-modal-close .cd-modal').on('click', function(){
 		closeModal();
 	});
 	$(document).keyup(function(event){
 		if(event.which=='27') closeModal();
 	});
+	
 
 	$(window).on('resize', function(){
 		//on window resize - update cover layer dimention and position
@@ -78,4 +79,6 @@ jQuery(document).ready(function($){
 		//if browser doesn't support transitions...
 		if(section.parents('.no-csstransitions').length > 0 ) animateLayer(section.find('.cd-modal-bg'), 1, false);
 	}
+
+	
 });
