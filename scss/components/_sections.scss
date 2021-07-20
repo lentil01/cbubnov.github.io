@@ -2487,7 +2487,7 @@ h2 .project {
       // transform: translateY(-50%);
       height: 100%;
       width: 100%;
-      object-fit: contain;
+      // object-fit: contain;
 
       &-padding {
         padding-right: 1.5rem;
@@ -3049,6 +3049,7 @@ header {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   overflow-y: scroll;
+  height: 90%;
 }
 
 @media (max-width: 512px) {
@@ -3068,6 +3069,22 @@ header {
     border-radius: 0;
   }
 }
+
+// .modal-content-open {
+//   margin: 0 !important;
+//   height: 100%;
+// }
+// .cd-modal .cd-modal-content {
+//   padding: 0;
+// }
+// .home-project-modalText {
+//   padding-top: 1rem;
+//   padding-bottom: 1rem;
+// }
+// .home-project-modalThumbnail {
+//   height: auto;
+//   border-radius: 0;
+// }
 
 
 
