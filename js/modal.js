@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 	});
 
 	//trigger the animation - close modal window
-	$('.cd-section .cd-modal-close .cd-modal').on('click', function(){
+	$('.cd-section .cd-modal-close').on('click', function(){
 		closeModal();
 	});
 	$(document).keyup(function(event){
