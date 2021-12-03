@@ -139,8 +139,6 @@ li:hover {
   font-family: "Sohne-Light", "Courier New", Courier, monospace;
   // text-transform: uppercase;
   margin-top: .3rem;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
 }
 
 .project-footer-text {
@@ -148,11 +146,9 @@ li:hover {
   color: $grey30;
   font-size: 13px;
   letter-spacing: 0.7px;
-  font-family: "IBMPlexMono-SemiBold", "Courier New", Courier, monospace;
+  font-family: "Sohne-Light", "Courier New", Courier, monospace;
   text-transform: uppercase;
   margin-top: .3rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
 
   span {
@@ -355,15 +351,13 @@ li:hover {
 
 .thumb-heading {
   color: #B4B3B3;
-  font-family: "IBMPlexSans-Semibold", Arial, Helvetica, sans-serif;
   letter-spacing: .1px;
   margin-bottom: 5px;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   transition: color .15s ease-in-out;
 
   &-active {
-    color: $n57;
+    color: $blue;
   }
 }
 
@@ -452,10 +446,10 @@ li:hover {
 .box-text-active span {
   display: table-cell;
   vertical-align: middle;
-  color: $n60;
+  color: $blue;
 
   p {
-    color: $n50;
+    color: $blue;
   }
 }
 
@@ -489,7 +483,7 @@ li:hover {
 }
 
 .box-footer-text {
-  font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
+  // font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -536,12 +530,12 @@ li:hover {
 
   &:hover span {
     .thumb-heading {
-      color: $n57;
+      color: $blue;
       transition: color .15s ease-in-out;
     }
 
     .footer-project-subheader {
-      color: $n50;
+      color: $blue;
       transition: color .15s ease-in-out;
 
     }
@@ -1077,7 +1071,6 @@ li:hover {
 }
 
 .tools-used {
-  font-family: "IBMPlexMono-SemiBold", "Courier New", Courier, monospace;
   padding-left: 0;
   padding-right: 0;
   color: $caption-color;
@@ -1086,7 +1079,6 @@ li:hover {
   font-size: 12px;
   margin-bottom: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (max-width: 768px) {
@@ -1136,12 +1128,10 @@ li:hover {
 }
 
 .project-subheading {
-  font-family: "IBMPlexSans-SemiBold", 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Migra-Extralight", 'Helvetica Neue', Arial, sans-serif;
   color: $heading-color;
   font-size: 22px;
   margin-bottom: 1.2rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -1715,21 +1705,20 @@ h2 .project {
   }
 
   &-dropcap {
-    font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
-    color: $n60;
+    font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
+    color: $blue;
     font-size: 56px;
     margin-right: .6rem;
     line-height: 1.15;
     position: relative;
     float: left;
-    margin-top: -0.2rem;
   }
 
   &-leading-words {
     letter-spacing: 1.7px;
     text-transform: lowercase;
     font-variant: small-caps;
-    font-family: "IBMPlexSans-SemiBold", 'Helvetica Neue', Arial, sans-serif;
+    // font-family: "IBMPlexSans-SemiBold", 'Helvetica Neue', Arial, sans-serif;
     font-size: 19px;
     // color: $n60;
   }
@@ -2135,7 +2124,6 @@ h2 .project {
 
 .caption {
   p {
-    font-family: "IBMPlexSans-Regular", "Courier New", Courier, monospace;
     font-size: 13px;
     line-height: 1.6em;
     color: $caption-color;
@@ -2226,7 +2214,6 @@ h2 .project {
 }
 
 .badge {
-  font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   padding: 4px 6px 3px 6px;
@@ -2365,20 +2352,6 @@ h2 .project {
       display: block;
     }
 
-    // &-modalWrapper {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   overflow: hidden
-    //   max-width: 100%;
-    //   max-height: 100%;
-    // }
-    // &-modalWrapper img {
-    //   flex-shrink: 0;
-    //   min-width: 100%;
-    //   min-height: 100%
-    // }
-
     &-text {
       margin: auto;
       padding-top: 1.5rem;
@@ -2391,16 +2364,12 @@ h2 .project {
 
 
     &-category {
-      // text-align: right;
       color: $grey50;
       font-family: "Migra-Extralight", Arial, Helvetica, sans-serif;
       font-size: 18px;
       margin-bottom: 0.2rem;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       cursor: url('../img/pointer.svg'), auto;
-      // position: relative;
-      // top: 3px;
+
     }
 
     &-modalCategory {
@@ -2408,8 +2377,6 @@ h2 .project {
       font-family: "Migra-Extralight", Arial, Helvetica, sans-serif;
       font-size: 18px;
       margin-bottom: 0.2rem;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       cursor: url('../img/text.svg'), auto;
 
     }
@@ -2462,12 +2429,6 @@ h2 .project {
       transition: all .2s ease-in-out;
       background: $bg-color;
 
-      // &:hover {
-      //   opacity: .9;
-      //   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07), 0 3px 8px rgba(0, 0, 0, 0.07);
-      //   border-radius: 8px;
-      // }
-
       &-padding {
         padding-right: 1.5rem;
       }
@@ -2475,19 +2436,10 @@ h2 .project {
 
     &-modalThumbnail {
       border-radius: 4px 4px 0 0;
-      // display: block;
-      // height: auto;
-      // width: 100%;
-      // opacity: 1;
       transition: all .2s ease-in-out;
       background: $bg-color;
-      // position: absolute;
-      // top: 50%;
-      // -ms-transform: translateY(-50%);
-      // transform: translateY(-50%);
       height: 100%;
       width: 100%;
-      // object-fit: contain;
 
       &-padding {
         padding-right: 1.5rem;
@@ -2506,7 +2458,6 @@ h2 .project {
     font-size: 18px;
     margin-top: .3rem;
     color: $heading-color;
-    // margin-bottom: 1.5rem;
     line-height: 1.5em;
     transition: color 0.1s ease-in-out;
     cursor: url('../img/pointer.svg'), auto;
@@ -2517,7 +2468,6 @@ h2 .project {
     font-size: 18px;
     margin-top: .3rem;
     color: $heading-color;
-    // margin-bottom: 1.5rem;
     line-height: 1.5em;
     transition: color 0.1s ease-in-out;
     cursor: url('../img/text.svg'), auto;
@@ -2566,8 +2516,6 @@ h2 .project {
     transition: color 0.4s ease-in-out;
     margin-bottom: 0.2rem;
     margin-right: 12px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     cursor: url('../img/text.svg'), auto;
 
 
@@ -2584,8 +2532,6 @@ h2 .project {
     transition: color 0.4s ease-in-out;
     margin-bottom: 0.2rem;
     margin-right: 12px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     cursor: url('../img/text.svg'), auto;
 
 
@@ -2605,7 +2551,6 @@ h2 .project {
     padding: 0;
 
     &:hover {
-      // opacity: 1;
       box-shadow: none;
     }
   }
