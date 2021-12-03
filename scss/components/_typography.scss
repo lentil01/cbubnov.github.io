@@ -124,7 +124,7 @@ p {
   cursor: url('../img/text.svg'), auto;
 }
 
-// @media (max-width: 512px) {
+// @media (max-width: 576px) {
 //   p {
 //     font-family: "IBMPlexSans-Text", 'Helvetica Neue', Arial, sans-serif;
 //   }
@@ -146,7 +146,7 @@ h3 {
   cursor: url('../img/text.svg'), auto;
 }
 
-@media (max-width: 512px) {
+@media (max-width: 576px) {
   h3 {
     padding-left: 0;
 
@@ -188,7 +188,7 @@ h2 {
   }
 }
 
-@media (max-width: 512px) {
+@media (max-width: 576px) {
   h2 {
     span {
       font-family: "IBMPlexSans-Text", 'Helvetica Neue', Arial, sans-serif;
