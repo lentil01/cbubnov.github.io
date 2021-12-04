@@ -800,8 +800,8 @@ li:hover {
     height: auto;
 
     &-links-right {
-      text-align: left;
-      padding-top: 1.5rem;
+      // text-align: left;
+      // padding-top: 1.5rem;
 
       li a {
         margin-left: 0;
@@ -931,7 +931,7 @@ li:hover {
 @media (max-width: 576px) {
   .proj-hero-item {
     padding-top: 0;
-    font-size: 17px;
+    // font-size: 17px;
   }
 }
 
