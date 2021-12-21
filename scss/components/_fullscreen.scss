@@ -140,7 +140,8 @@
 
   .mySlides {
     img {
-      padding: 0;
+      padding: 1.5rem;
+      border-radius: 26px !important;
     }
   }
 
@@ -163,6 +164,7 @@
 
   #photos {
     padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 }
 
