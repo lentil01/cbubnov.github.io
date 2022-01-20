@@ -59,8 +59,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  cursor: url('../img/zoom-out.svg'), auto;
-
+  cursor: url('../img/zoom-out.svg'), url('../img/zoom-out.png'), zoom-in;
 }
 
 .close:hover,
@@ -83,12 +82,12 @@
 }
 
 .cursor {
-  cursor: url('../img/pointer.svg'), auto;
+  cursor: url("../img/pointer.svg"), url("../img/pointer.png"), pointer;
   opacity: 1;
 }
 
 .zoom-in {
-  cursor: url('../img/zoom-in.svg'), auto;
+  cursor: url('../img/zoom-in.svg'), url('../img/zoom-in.png'), zoom-in;
   opacity: 1;
 }
 
