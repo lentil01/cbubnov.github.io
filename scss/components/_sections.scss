@@ -25,7 +25,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
-  cursor: url("../img/cursor.svg"), url("../img/cursor.png"), default;
+    cursor: url("../img/pointer.svg"), url("../img/pointer.png"), pointer;
 }
 
 ::selection {
@@ -2354,7 +2354,7 @@ h2 .project {
       font-family: "Migra-Extralight", Arial, Helvetica, sans-serif;
       font-size: 18px;
       margin-bottom: 0.2rem;
-      cursor: url("../img/text.svg"), url("../img/text.png"), text;
+    cursor: url("../img/text.svg"), url("../img/text.png"), text;
 
     }
 
