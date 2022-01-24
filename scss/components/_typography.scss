@@ -14,7 +14,13 @@
 
 @font-face {
   font-family: "Sohne-Light";
-  src: url("fonts/Sohne/soehne-web-leicht.woff2") format("woff2");
+  src: url("fonts/Sohne/soehne-leicht.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Sohne-Kraftig";
+  src: url("fonts/Sohne/soehne-kraftig.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -136,10 +142,10 @@ p {
 }
 
 h3 {
-  font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
+  font-family: "Sohne-Kraftig", "Palatino Linotype", Palatino, serif;
   position: relative;
   color: $heading-color;
-  font-size: 2em;
+  font-size: 18px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   cursor: url("../img/text.svg"), url("../img/text.png"), text;

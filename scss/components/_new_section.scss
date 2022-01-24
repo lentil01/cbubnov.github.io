@@ -47,6 +47,7 @@
 
 .project-stat {
  color: white;
+ font-family: "Sohne-Kraftig", Arial, Helvetica, sans-serif;
 }
 
 .project-stat-header {
@@ -56,6 +57,15 @@
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
 }
+
+.project-stat-link {
+  color: white;
+  font-family: "Sohne-Kraftig", Arial, Helvetica, sans-serif;
+
+  &:hover {
+    text-decoration: underline;
+  }
+ }
 
 
 .project-content {
