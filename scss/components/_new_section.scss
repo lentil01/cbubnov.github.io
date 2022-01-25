@@ -72,3 +72,51 @@
   max-width: 768px;
   margin: auto;
 }
+
+.project-images {
+  max-width: 1040px;
+  margin: auto;
+}
+
+.project-footer-list {
+  font-family: "Sohne-Kraftig", Arial, Helvetica, sans-serif;
+
+  .project-row-element {
+    padding: .5rem 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-footer-list {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.project-footer-category-link {
+  font-size: 16px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.external-link-button {
+  display: flex;
+
+  &:hover {
+    .external-link-icon {
+      opacity: 1;
+    }
+  }
+
+}
+.external-link-icon {
+  margin-top: -1px;
+  margin-left: 8px;
+  opacity: 0;
+
+  img {
+    width: 11px;
+  }
+}

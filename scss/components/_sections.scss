@@ -25,7 +25,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
-  cursor: url("../img/pointer.svg"), url("../img/pointer.png"), pointer;
+  cursor: url('../img/cursor.svg'), url('../img/cursor.png'), default;
 }
 
 ::selection {
@@ -41,7 +41,7 @@ body {
 }
 
 a {
-  color: #595958;
+  color: $bg-dark;
   text-decoration: none;
   display: inline;
 
@@ -138,13 +138,17 @@ li:hover {
 }
 
 .project-footer-text {
-  text-align: right;
-  color: $grey30;
-  font-size: 13px;
-  letter-spacing: 0.7px;
-  font-family: "Sohne-Light", "Courier New", Courier, monospace;
-  text-transform: uppercase;
-  margin-top: .3rem;
+  // text-align: right;
+  // color: $grey30;
+  font-size: 16px;
+  // letter-spacing: 0.7px;
+  font-family: "Sohne-Kraftig", "Courier New", Courier, monospace;
+  // text-transform: uppercase;
+  // margin-top: .3rem;
+
+  a:hover {
+    text-decoration: underline;
+  }
 
 
   span {
@@ -174,13 +178,21 @@ li:hover {
 
 .projectpagelinks {
   font-size: 18px;
-  padding: 4rem 1rem 4rem;
+  padding: 2rem 0;
 
 
   &-border {
-    border-top: 1px solid $grey80;
+    // border-top: 1px solid $grey20;
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 2rem;
+
+    @media (max-width: 576px) {
+      
+      .project-row-element {
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+    }
   }
 }
 
@@ -224,8 +236,8 @@ li:hover {
   }
 
   .project-footer-text {
-    text-align: left;
-    padding-top: 2rem;
+    // text-align: left;
+    // padding-top: 2rem;
     margin-top: 0;
   }
 
@@ -250,9 +262,9 @@ li:hover {
   // }
 
   .project-footer-text {
-    text-align: left;
-    padding-top: 2rem;
-    font-size: 12px;
+    // text-align: left;
+    // padding-top: 2rem;
+    // font-size: 12px;
     margin-top: 0;
 
   }
@@ -346,14 +358,26 @@ li:hover {
 }
 
 .thumb-heading {
-  color: #B4B3B3;
-  letter-spacing: .1px;
   margin-bottom: 5px;
   -webkit-font-smoothing: antialiased;
   transition: color .15s ease-in-out;
+  font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+  }
 
   &-active {
-    color: $blue;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+
+    &:hover {
+      text-decoration: line-through !important;
+      text-decoration-thickness: 2px !important;
+
+    }
   }
 }
 
@@ -442,7 +466,7 @@ li:hover {
 .box-text-active span {
   display: table-cell;
   vertical-align: middle;
-  color: $blue;
+  color: $bg-dark;
 
   p {
     color: $blue;
@@ -1469,19 +1493,28 @@ li:hover {
 }
 
 .project-footer {
-  background-color: #272928;
+  background-color: $bg-color;
   z-index: 101;
   position: relative;
+  max-width: 100%;
 }
 
-.project-footer-projects {
-  padding: 4.5rem 12rem 0 12rem;
+.project-footer-container {
+  // padding: 4.5rem 12rem 0 12rem;
+  max-width: 1040px;
+  margin: auto;
+  // border-top: 1px solid $grey20;
+  padding-top: 2rem;
+}
+
+.project-footer-border {
+  border-top: 1px solid $grey20;
 }
 
 @media (max-width: 576px) {
-  .project-footer-projects {
-    padding: 2.5rem 1.5rem .5rem 1.5rem;
-  }
+  // .project-footer-projects {
+  //   padding: 2.5rem 1.5rem .5rem 1.5rem;
+  // }
 
   .project-footer {
     margin-left: 0;
@@ -1489,10 +1522,10 @@ li:hover {
 }
 
 @media (min-width: 576px) and (max-width: 1200px) {
-  .project-footer-projects {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+  // .project-footer-projects {
+  //   padding-left: 3rem;
+  //   padding-right: 3rem;
+  // }
 }
 
 .center-text {
@@ -1505,6 +1538,10 @@ h2 .project {
 
 .project-row-element {
   padding: 1rem 2rem;
+}
+
+.project-row-image {
+  padding: 1rem 1rem;
 }
 
 .project-row-text {
@@ -1562,6 +1599,9 @@ h2 .project {
 
 @media (max-width: 576px) {
   .project-row-element {
+    padding: 0.75rem 0;
+  }
+  .project-row-image {
     padding: 0.75rem 0;
   }
 
@@ -1682,7 +1722,7 @@ h2 .project {
 
   &-paragraph {
     margin-bottom: 1rem !important;
-    font-size: 16px;
+    // font-size: 16px;
   }
 
   &-dropcap {
@@ -1697,9 +1737,8 @@ h2 .project {
 
   &-leading-words {
     letter-spacing: 1.7px;
-    text-transform: lowercase;
     font-variant: small-caps;
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -1794,7 +1833,7 @@ h2 .project {
     }
 
     &::after {
-      content: "";
+      // content: "";
       position: absolute;
       height: 240px;
       left: 0;
