@@ -5,8 +5,21 @@
   color: white;
 }
 
+@media (max-width: 576px) {
+  .project-title {
+    padding-top: 8rem;
+  }
+}
+
 .project-subtitle {
   color: white;
+}
+
+@media (max-width: 576px) {
+  .project-subtitle {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
 }
 
 .project-hero-image {
@@ -21,7 +34,7 @@
 
 .project-hero-content {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 1040px;
   padding: 0 2rem;
 }
 
@@ -45,17 +58,45 @@
   margin-top: 2rem;
 }
 
+@media (max-width: 576px) {
+  .project-stats {
+    margin-top: 1rem;
+  }
+}
+
 .project-stat {
- color: white;
- font-family: "Sohne-Kraftig", Arial, Helvetica, sans-serif;
+  color: white;
+  font-family: "Sohne-Kraftig", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 576px) {
+  .project-stat {
+    font-size: 16px;
+  }
 }
 
 .project-stat-header {
- color: white;
- font-family: "Sohne-Light", Arial, Helvetica, sans-serif;
- font-size: 17px;
- -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
+  color: white;
+  font-family: "Sohne-Light", Arial, Helvetica, sans-serif;
+  //  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 576px) {
+  .project-stat-header {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-stat-container {
+    padding-bottom: 1rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .project-stat-link {
@@ -65,11 +106,11 @@
   &:hover {
     text-decoration: underline;
   }
- }
+}
 
 
 .project-content {
-  max-width: 768px;
+  max-width: 1040px;
   margin: auto;
 }
 
@@ -84,12 +125,25 @@
   .project-row-element {
     padding: .5rem 2rem;
   }
+
+  @media (max-width: 576px) {
+    .project-row-element {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  // .project-footer-mobile-adjustment {
+  //   padding-left: 1.5rem;
+  //   padding-right: 1.5rem;
+  // }
 }
 
 @media (max-width: 576px) {
   .project-footer-list {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    // padding-left: 1.5rem;
+    // padding-right: 1.5rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -99,6 +153,10 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.project-footer-category-link-active {
+  text-decoration: line-through;
 }
 
 .external-link-button {
@@ -111,6 +169,7 @@
   }
 
 }
+
 .external-link-icon {
   margin-top: -1px;
   margin-left: 8px;

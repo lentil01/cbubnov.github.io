@@ -9,8 +9,8 @@
 
   &-right {
     text-align: right;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
   }
 
   &-fixed {
@@ -53,12 +53,12 @@
     }
   }
 
-  .project-nav {
+  // .project-nav {
 
-    &-fixed {
-      z-index: 0;
-    }
-  }
+  //   &-fixed {
+  //     z-index: 0;
+  //   }
+  // }
 }
 
 @media (max-width: 576px) {
@@ -83,11 +83,11 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 1200px) {
-  .design-nav {
-    padding: 2rem .5rem 5.5rem .5rem;
-  }
-}
+// @media (min-width: 576px) and (max-width: 1200px) {
+//   .design-nav {
+//     padding: 2rem .5rem 5.5rem .5rem;
+//   }
+// }
 
 
 
