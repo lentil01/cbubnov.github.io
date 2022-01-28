@@ -942,7 +942,7 @@ li:hover {
   font-size: 18px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-bottom ease-in-out 0.1s, opacity ease-in-out 0.1s, color 0.1s ease-in-out;
+  transition: border-bottom ease-in-out 0.18s, opacity ease-in-out 0.18s, color 0.18s ease-in-out;
   list-style: none;
   display: inline-block;
   text-transform: capitalize;
@@ -974,7 +974,7 @@ li:hover {
   font-size: 18px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-bottom ease-in-out 0.1s, opacity ease-in-out 0.1s, color 0.1s ease-in-out;
+  transition: border-bottom ease-in-out 0.18s, opacity ease-in-out 0.18s, color 0.18s ease-in-out;
   list-style: none;
   display: inline-block;
   // padding-top: .2rem;
@@ -985,7 +985,7 @@ li:hover {
     display: inline-block;
     white-space: nowrap;
     margin: 0 0.5em;
-    transition: border .1s ease-in-out;
+    transition: all ease-in-out .18s;
   }
 
   &:last-child {
@@ -999,6 +999,7 @@ li:hover {
   &-light {
     color: $bg-color;
     opacity: .7;
+    transition: all ease-in-out 0.18s;
 
     a {
       color: $bg-color;
@@ -1048,8 +1049,8 @@ li:hover {
   }
 
   &-dark {
-    color: $grey40;
-
+    // color: $grey40;
+    transition: all ease-in-out 0.18s;
 
     a {
       color: $grey40;

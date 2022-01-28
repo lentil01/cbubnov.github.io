@@ -150,9 +150,9 @@
 .project-footer-category-link {
   font-size: 16px;
 
-  &:hover {
-    text-decoration: underline;
-  }
+  // &:hover {
+  //   text-decoration: underline;
+  // }
 }
 
 .project-footer-category-link-active {
@@ -193,5 +193,38 @@
 
   img {
     width: 13px;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  text-decoration-thickness: .5px;
+  text-underline-offset: .2em;
+  transition: all ease-in-out .18s;
+
+  &:hover {
+    text-decoration-thickness: auto;
+  }
+
+}
+
+
+.link-selected {
+  text-decoration: line-through;
+}
+
+.link-dark {
+  text-decoration-color: $link-underline-color;
+
+  &:hover {
+    text-decoration-color: $heading-color;
+  }
+}
+
+.link-light {
+  text-decoration-color: rgba(255, 255, 255, .4);
+
+  &:hover {
+    text-decoration-color: #fff;
   }
 }
