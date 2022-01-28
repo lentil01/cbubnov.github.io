@@ -364,21 +364,19 @@ li:hover {
   transition: color .15s ease-in-out;
   font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
 
-  &:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-
-  }
+  // &:hover {
+  //   text-decoration: underline;
+  //   text-decoration-thickness: 2px;
+  // }
 
   &-active {
     text-decoration: line-through;
     text-decoration-thickness: 2px;
 
-    &:hover {
-      text-decoration: line-through !important;
-      text-decoration-thickness: 2px !important;
-
-    }
+    // &:hover {
+    //   text-decoration: line-through !important;
+    //   text-decoration-thickness: 2px !important;
+    // }
   }
 }
 
@@ -854,7 +852,7 @@ li:hover {
 
   .project-nav-fixed {
     position: fixed;
-    // background: 0 0;
+    background: 0 0;
     // z-index: 0;
   }
 }
@@ -1502,7 +1500,7 @@ li:hover {
 
 .project-footer {
   background-color: $bg-color;
-  z-index: 101;
+  z-index: 1200;
   position: relative;
   max-width: 100%;
 }
