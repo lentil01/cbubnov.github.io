@@ -230,3 +230,37 @@
     text-decoration-color: #fff;
   }
 }
+
+.casestudy-row-bg {
+  background-color: $bg-frame;
+  border-radius: 6px;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .casestudy-row-bg {
+    padding: 1rem 1rem;
+  }
+}
+
+.casestudy-row-container {
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 576px) {
+  .casestudy-row-container {
+    padding: 1rem 0;
+  }
+}
+
+.casestudy-row-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .casestudy-row-padding {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
