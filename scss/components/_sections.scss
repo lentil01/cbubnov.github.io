@@ -2190,6 +2190,16 @@ h2 .project {
   }
 }
 
+@media (max-width: 576px) {
+  .project-section {
+    padding-bottom: 1rem;
+
+    &:last-child {
+      padding-bottom: 4rem;
+    }
+  }
+}
+
 // @media (min-width: 768px) and (max-width: 1200px) {
 //   .project-section {
 //     margin: auto 6rem;
