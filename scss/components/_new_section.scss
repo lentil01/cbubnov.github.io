@@ -49,9 +49,15 @@
 
 @media (max-width: 576px) {
   .project-hero-image {
-    margin-top: -8rem;
+    margin-top: -6rem;
   }
 }
+
+// @media (max-width: 400px) {
+//   .project-hero-image {
+//     margin-top: -6rem;
+//   }
+// }
 
 .project-hero-content {
   margin: 0 auto;
