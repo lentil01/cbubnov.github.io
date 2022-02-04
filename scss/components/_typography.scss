@@ -14,7 +14,13 @@
 
 @font-face {
   font-family: "Sohne-Light";
-  src: url("fonts/Sohne/soehne-web-leicht.woff2") format("woff2");
+  src: url("fonts/Sohne/soehne-leicht.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Sohne-Kraftig";
+  src: url("fonts/Sohne/soehne-kraftig.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -80,12 +86,11 @@
 
 
 h4 {
-  font-family: "IBMPlexSans-SemiBold", 'Helvetica Neue', Arial, sans-serif;
-  color: #797979;
-  font-size: 16px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  cursor: url('../img/text.svg'), auto;
+  font-family: "Sohne-Light", 'Helvetica Neue', Arial, sans-serif;
+  font-size: 28px;
+  // letter-spacing: 0.07em;
+  // text-transform: uppercase;
+  cursor: url("../img/text.svg"), url("../img/text.png"), text;
 }
 
 h5 {
@@ -93,7 +98,7 @@ h5 {
   color: $heading-color;
   font-size: 48px;
   line-height: 1.15em;
-  cursor: url('../img/text.svg'), auto;
+  cursor: url("../img/text.svg"), url("../img/text.png"), text;
 }
 
 @media (max-width: 675px) {
@@ -114,14 +119,14 @@ h6 {
   font-size: 64px;
   letter-spacing: -0.05em;
   text-align: center;
-  cursor: url('../img/text.svg'), auto;
+  cursor: url("../img/text.svg"), url("../img/text.png"), text;
 }
 
 p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.6em;
   margin-bottom: 0;
-  cursor: url('../img/text.svg'), auto;
+  cursor: url("../img/text.svg"), url("../img/text.png"), text;
 }
 
 // @media (max-width: 576px) {
@@ -137,13 +142,13 @@ p {
 }
 
 h3 {
-  font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
+  font-family: "Sohne-Kraftig", "Palatino Linotype", Palatino, serif;
   position: relative;
   color: $heading-color;
-  font-size: 2em;
+  font-size: 18px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  cursor: url('../img/text.svg'), auto;
+  cursor: url("../img/text.svg"), url("../img/text.png"), text;
 }
 
 @media (max-width: 576px) {
@@ -160,7 +165,7 @@ h3 {
 
 h1 {
   font-size: 22px;
-  cursor: url('../img/text.svg'), auto;
+  // cursor: url("../img/text.svg"), url("../img/text.png"), text;
 
 
   span {
@@ -176,7 +181,7 @@ h2 {
   font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
   color: $heading-color;
   font-size: 18px;
-  cursor: url('../img/text.svg'), auto;
+  cursor: url("../img/text.svg"), url("../img/text.png"), text;
 
 
   span {
