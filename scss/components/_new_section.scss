@@ -5,6 +5,7 @@
   color: white;
 }
 
+
 @media (max-width: 576px) {
   .project-title {
     padding-top: 8rem;
@@ -185,6 +186,22 @@
 
 .project-footer-category-link-active {
   text-decoration: line-through;
+}
+
+// .project-thumb-mobile {
+
+// }
+
+@media (min-width: 577px) {
+  .project-thumb-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-thumb-desktop {
+    display: none;
+  }
 }
 
 .external-link-button {
