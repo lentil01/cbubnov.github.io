@@ -120,7 +120,7 @@ h1 {
 
 
   span {
-    font-family: "IBMPlexSans-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Sohne-Light", 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     text-transform: none;
     line-height: 1.5em;
@@ -129,14 +129,14 @@ h1 {
 }
 
 h2 {
-  font-family: "BluuNext-Bold", "Palatino Linotype", Palatino, serif;
+  font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
   color: $heading-color;
   font-size: 18px;
   cursor: url("../img/text.svg"), url("../img/text.png"), text;
 
 
   span {
-    font-family: "IBMPlexSans-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Sohne-Light", 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     text-transform: none;
     font-size: 18px;
@@ -147,7 +147,7 @@ h2 {
 @media (max-width: 576px) {
   h2 {
     span {
-      font-family: "IBMPlexSans-Text", 'Helvetica Neue', Arial, sans-serif;
+      font-family: "Sohne-Light", 'Helvetica Neue', Arial, sans-serif;
       font-size: 17px;
     }
   }
