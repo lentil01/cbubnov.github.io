@@ -1,13 +1,3 @@
-// BLUU NEXT --------------------------------------------------------------------
-
-
-@font-face {
-  font-family: "BluuNext-Bold";
-  src: url("fonts/BluuNext/bluunext-bold-webfont.woff2") format("woff2"),
-    url("fonts/BluuNext/BluuNext-Bold.woff") format("woff");
-    font-display: swap;
-}
-
 // SOHNE --------------------------------------------------------------------
 
 
@@ -16,12 +6,14 @@
   font-family: "Sohne-Light";
   src: url("fonts/Sohne/soehne-leicht.woff2") format("woff2");
     font-display: swap;
+    unicode-range: U+000-5FF;
 }
 
 @font-face {
   font-family: "Sohne-Kraftig";
   src: url("fonts/Sohne/soehne-kraftig.woff2") format("woff2");
     font-display: swap;
+    unicode-range: U+000-5FF;
 }
 
 
@@ -32,57 +24,16 @@
   font-family: "Migra-Extralight";
   src: url("fonts/Migra/Migra-Extralight.woff2") format("woff2");
     font-display: swap;
+    unicode-range: U+000-5FF;
 }
 
 @font-face {
   font-family: "Migra-Extrabold";
   src: url("fonts/Migra/Migra-Extrabold.woff2") format("woff2");
     font-display: swap;
+    unicode-range: U+000-5FF;
 }
 
-@font-face {
-  font-family: "MigraItalic-Extralight";
-  src: url("fonts/Migra/MigraItalic-ExtralightItalic.woff2") format("woff2");
-    font-display: swap;
-}
-
-@font-face {
-  font-family: "MigraItalic-Extrabold";
-  src: url("fonts/Migra/MigraItalic-Extrabold.woff2") format("woff2");
-    font-display: swap;
-}
-
-// IBM PLEX SANS --------------------------------------------------------------------
-
-@font-face {
-  font-family: "IBMPlexSans-Regular";
-  src: url("fonts/IBMPlexSans/IBMPlexSans-Regular-Latin1.woff2") format("woff2"),
-  url("fonts/IBMPlexSans/IBMPlexSans-Regular-Latin1.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "IBMPlexSans-Text";
-  src: url("fonts/IBMPlexSans/IBMPlexSans-Text-Latin1.woff2") format("woff2"),
-  url("fonts/IBMPlexSans/IBMPlexSans-Text-Latin1.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "IBMPlexSans-SemiBold";
-  src: url("fonts/IBMPlexSans/IBMPlexSans-SemiBold-Latin1.woff2") format("woff2"),
-  url("fonts/IBMPlexSans/IBMPlexSans-SemiBold-Latin1.woff") format("woff");
-  font-display: swap;
-}
-
-// IBM PLEX MONO --------------------------------------------------------------------
-
-@font-face {
-  font-family: "IBMPlexMono-SemiBold";
-  src: url("fonts/IBMPlexMono/IBMPlexMono-SemiBold.woff2") format("woff2"),
-  url("fonts/IBMPlexMono/IBMPlexMono-SemiBold.woff") format("woff");
-  font-display: swap;
-}
 
 
 h4 {
