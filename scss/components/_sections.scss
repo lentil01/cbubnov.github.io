@@ -370,8 +370,12 @@ li:hover {
   // }
 
   &-active {
-    text-decoration: line-through;
-    text-decoration-thickness: 2px;
+    // text-decoration: line-through;
+    // text-decoration-thickness: 2px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: .25em;
+    color: $blue;
 
     // &:hover {
     //   text-decoration: line-through !important;
@@ -1057,13 +1061,13 @@ li:hover {
 
     }
 
-    &:hover {
-      color: $heading-color;
+    // &:hover {
+    //   color: $heading-color;
 
-      a {
-        color: $heading-color;
-      }
-    }
+    //   a {
+    //     color: $heading-color;
+    //   }
+    // }
 
     &-selected {
       color: $heading-color;
@@ -1072,9 +1076,9 @@ li:hover {
         color: $heading-color;
       }
 
-      &:hover {
-        color: $heading-color;
-      }
+      // &:hover {
+      //   color: $heading-color;
+      // }
     }
   }
 
