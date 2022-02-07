@@ -257,7 +257,12 @@
 
 
 .link-selected {
-  text-decoration: line-through;
+  // text-decoration: line-through;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: .25em;
+  color: $blue;
+
 }
 
 .link-dark {
