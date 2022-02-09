@@ -1,5 +1,8 @@
 ## EXPIRES CACHING ##
 <FilesMatch "\.(html|ttf|otf|eot|woff|woff2)$">
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self';"
+    Header set Access-Control-Allow-Origin "https://chrisbubnov.com"
+    Header set X-Frame-Options "DENY"
     <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresByType image/jpg "access 1 year"
@@ -13,8 +16,6 @@
     ExpiresByType application/x-shockwave-flash "access 1 month"
     ExpiresByType image/x-icon "access 1 year"
     ExpiresDefault "access 1 month"
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self';"
-    Header set Access-Control-Allow-Origin "https://chrisbubnov.com"
     </IfModule>
 </FilesMatch>
 ## EXPIRES CACHING ##
