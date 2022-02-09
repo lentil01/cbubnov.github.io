@@ -255,6 +255,10 @@
 
 }
 
+.zindex-override-0 {
+  z-index: 0 !important;
+}
+
 
 .link-selected {
   // text-decoration: line-through;
@@ -295,7 +299,7 @@
 }
 @media (max-width: 576px) {
   .casestudy-row-bg {
-    padding: .5rem;
+    padding: .4rem;
   }
 }
 
@@ -315,7 +319,7 @@
 
 @media (max-width: 576px) {
   .casestudy-row-container {
-    padding: .5rem 0;
+    padding: .4rem 0;
   }
 }
 
@@ -335,6 +339,6 @@
 
 @media (max-width: 576px) {
   .casestudy-row-padding {
-    padding: .5rem;
+    padding: .4rem;
   }
 }
