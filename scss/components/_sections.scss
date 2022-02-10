@@ -1157,7 +1157,6 @@ li:hover {
 }
 
 .project-subheading {
-  font-family: "Migra-Extralight", 'Helvetica Neue', Arial, sans-serif;
   color: $heading-color;
   font-size: 22px;
   margin-bottom: 1.2rem;
@@ -2418,7 +2417,6 @@ h2 .project {
 
     &-category {
       color: $grey50;
-      font-family: "Migra-Extralight", Arial, Helvetica, sans-serif;
       font-size: 18px;
       margin-bottom: 0.2rem;
       cursor: url("../img/pointer.svg"), url("../img/pointer.png"), pointer;
@@ -2427,7 +2425,6 @@ h2 .project {
 
     &-modalCategory {
       color: $grey50;
-      font-family: "Migra-Extralight", Arial, Helvetica, sans-serif;
       font-size: 18px;
       margin-bottom: 0.2rem;
     cursor: url("../img/text.svg"), url("../img/text.png"), text;
