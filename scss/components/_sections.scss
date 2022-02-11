@@ -2324,6 +2324,7 @@ h2 .project {
 
   &-projects {
     background: $bg-color;
+    // padding: 0 1rem;
     // max-width: 768px;
     margin: auto;
     // padding-top: 4rem;
@@ -2351,7 +2352,7 @@ h2 .project {
     // }
 
     &-modal {
-      padding: 2.5rem 2rem;
+      padding: 2rem;
       transition: all 0.2s ease-in-out;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease-in-out;
@@ -2581,15 +2582,20 @@ h2 .project {
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .home-projects {
     margin: 0;
+    padding: 0 1rem;
   }
 
   .home-project-button {
     margin-top: 0;
   }
+  .home-project-modal {
+    padding: 1rem;
+  }
 }
+
 
 // @media (min-width: 768px) and (max-width: 1200px) {
 //   .home {
