@@ -61,7 +61,7 @@ a {
 }
 
 li:hover {
-    cursor: url("../img/pointer.svg"), url("../img/pointer.png"), pointer;
+  cursor: url("../img/pointer.svg"), url("../img/pointer.png"), pointer;
 }
 
 @media (max-width: 576px) {
@@ -184,7 +184,8 @@ li:hover {
     padding-top: 2rem;
 
     @media (max-width: 576px) {
-      
+      padding-top: 0;
+
       .project-row-element {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -214,6 +215,16 @@ li:hover {
     padding-left: 0;
     padding-right: 0;
     font-size: 18px;
+  }
+
+  @media (max-width: 576px) {
+    .projectpagelinks {
+      .project-row-element {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+      }
+    }
   }
 
   .projectpagelink {
@@ -354,6 +365,7 @@ li:hover {
   }
 }
 
+
 .thumb-heading {
   margin-bottom: 5px;
   -webkit-font-smoothing: antialiased;
@@ -361,23 +373,17 @@ li:hover {
   transition: color .15s ease-in-out;
   font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
 
-  // &:hover {
-  //   text-decoration: underline;
-  //   text-decoration-thickness: 2px;
-  // }
-
   &-active {
-    // text-decoration: line-through;
-    // text-decoration-thickness: 2px;
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: .25em;
     color: $blue;
+  }
+}
 
-    // &:hover {
-    //   text-decoration: line-through !important;
-    //   text-decoration-thickness: 2px !important;
-    // }
+@media (max-width: 576px) {
+  .thumb-heading {
+    font-size: 20px;
   }
 }
 
@@ -1591,6 +1597,7 @@ h2 .project {
   .project-row-element {
     padding: 0.75rem 0;
   }
+
   .project-row-image {
     padding: 0.75rem 0;
   }
@@ -1802,13 +1809,13 @@ h2 .project {
     overflow: hidden;
 
 
-  ::selection {
-    background: rgba(165, 214, 181, 0.4);
-  }
+    ::selection {
+      background: rgba(165, 214, 181, 0.4);
+    }
 
-  ::-moz-selection {
-    background: rgba(165, 214, 181, 0.4);
-  }
+    ::-moz-selection {
+      background: rgba(165, 214, 181, 0.4);
+    }
 
 
     &::before {
@@ -2395,7 +2402,7 @@ h2 .project {
     &-modalCategory {
       font-size: 18px;
       margin-bottom: 0.2rem;
-    cursor: url("../img/text.svg"), url("../img/text.png"), text;
+      cursor: url("../img/text.svg"), url("../img/text.png"), text;
 
     }
 
@@ -2961,13 +2968,16 @@ header {
     margin: 0 !important;
     height: 100%;
   }
+
   .cd-modal .cd-modal-content {
     padding: 0;
   }
+
   .home-project-modalText {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
   .home-project-modalThumbnail {
     height: auto;
     border-radius: 0;
