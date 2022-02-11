@@ -2446,7 +2446,7 @@ h2 .project {
       width: 100%;
       opacity: 1;
       transition: all .2s ease-in-out;
-      background: $bg-color;
+      // background: $bg-color;
 
       &-padding {
         padding-right: 1.5rem;
@@ -2563,6 +2563,12 @@ h2 .project {
   &-project-modalRole {
     padding-bottom: .2rem;
   }
+}
+
+.home-project-thumbnail-wrapper {
+  background-color: $bg-frame;
+  border-radius: 6px;
+  padding: 1rem;
 }
 
 @media (max-width: 576px) {
@@ -2715,9 +2721,9 @@ h2 .project {
     padding: 1.5rem 0 0 0;
   }
 
-  .home-project-thumbnail-wrapper {
-    padding-right: 0;
-  }
+  // .home-project-thumbnail-wrapper {
+  //   padding-right: 0;
+  // }
 }
 
 @media (max-width: 576px) {
