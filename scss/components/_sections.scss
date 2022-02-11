@@ -46,7 +46,6 @@ a {
   display: inline;
 
   &:hover {
-    // color: $yellow;
     cursor: url("../img/pointer.svg"), url("../img/pointer.png"), pointer;
 
   }
@@ -130,7 +129,6 @@ li:hover {
 
 .home-footer-text {
   // text-align: center;
-  color: $grey50;
   // letter-spacing: 0.7px;
   font-family: "Sohne-Light", "Courier New", Courier, monospace;
   // text-transform: uppercase;
@@ -139,7 +137,6 @@ li:hover {
 
 .project-footer-text {
   // text-align: right;
-  // color: $grey30;
   font-size: 16px;
   // letter-spacing: 0.7px;
   font-family: "Sohne-Kraftig", "Courier New", Courier, monospace;
@@ -454,11 +451,6 @@ li:hover {
   bottom: 0;
   right: 0;
   padding-right: 1.2rem;
-  color: $n50;
-
-  h2 {
-    color: $n60;
-  }
 }
 
 .box-text-active div {
@@ -470,7 +462,6 @@ li:hover {
 .box-text-active span {
   display: table-cell;
   vertical-align: middle;
-  color: $bg-dark;
 
   p {
     color: $blue;
@@ -518,7 +509,6 @@ li:hover {
 
   p {
     margin-bottom: 0;
-    color: $grey30;
     line-height: 1.4em;
   }
 
@@ -543,7 +533,6 @@ li:hover {
 
       p {
         transition: color .15s ease-in-out;
-        color: $n50;
       }
     }
 
@@ -614,18 +603,14 @@ li:hover {
 
 
     &:hover {
-      // color: $blue;
       text-decoration: underline;
 
     }
   }
 
   &-primary {
-    color: $yellow;
-    border-color: $yellow;
 
     &:hover {
-      color: $yellow;
       border-color: transparent;
       text-decoration: none;
     }
@@ -706,6 +691,12 @@ li:hover {
 }
 
 @media (max-width: 576px) {
+  .homeSummary-heading {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 576px) {
   .aboutSummary {
     font-family: "IBMPlexSans-Text", Arial, Helvetica, sans-serif;
     position: relative;
@@ -723,7 +714,7 @@ li:hover {
   .homeSummary {
     font-family: "IBMPlexSans-Regular", Arial, Helvetica, sans-serif;
     position: relative;
-    padding: 1.5rem 0 3rem;
+    padding: 1.5rem 0 .5rem;
     top: 0;
     left: 0;
 
@@ -1035,27 +1026,19 @@ li:hover {
       }
 
       &-is-selected {
-        color: $n60;
 
         &:hover {
           border-color: transparent !important;
         }
-      }
-
-      &:hover {
-        color: $n60;
-        border-color: $n60;
       }
     }
 
   }
 
   &-dark {
-    // color: $grey40;
     transition: all ease-in-out 0.18s;
 
     a {
-      color: $grey40;
       // border-bottom: 2px solid transparent;
       transition: all ease-in-out 0.18s;
 
@@ -1103,7 +1086,6 @@ li:hover {
 .tools-used {
   padding-left: 0;
   padding-right: 0;
-  color: $caption-color;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-size: 12px;
@@ -1409,7 +1391,6 @@ li:hover {
 .frame-bg {
   // box-shadow: 0 3px 8px rgba(0, 0, 0, 0.01), 0 3px 8px rgba(0, 0, 0, 0.01);
   border-radius: 4px;
-  // background-color: $bg-image;
   // padding: 2rem;
 
 }
@@ -1450,10 +1431,6 @@ li:hover {
   }
 
   &-home {
-
-    &:hover {
-      color: $yellow !important;
-    }
 
     &:hover:after {
       content: url("../img/hero-bg.png");
@@ -1779,7 +1756,6 @@ h2 .project {
   }
 
   &-subheading {
-    color: $grey50;
     padding-bottom: .5rem;
   }
 }
@@ -1934,10 +1910,6 @@ h2 .project {
       letter-spacing: 0.07em;
       font-size: 12px;
       text-transform: uppercase;
-
-      &-light {
-        color: $n55;
-      }
 
       &-dark {
         color: $heading-color;
@@ -2173,7 +2145,6 @@ h2 .project {
   p {
     font-size: 13px;
     line-height: 1.6em;
-    color: $caption-color;
   }
 }
 
@@ -2282,7 +2253,6 @@ h2 .project {
   font-size: 13px;
   padding: 4px 6px 3px 6px;
   background: #E7EAE9;
-  color: $grey80;
   border-radius: 4px;
   margin-top: .6rem;
   letter-spacing: 0.07em;
@@ -2416,7 +2386,6 @@ h2 .project {
 
 
     &-category {
-      color: $grey50;
       font-size: 18px;
       margin-bottom: 0.2rem;
       cursor: url("../img/pointer.svg"), url("../img/pointer.png"), pointer;
@@ -2424,7 +2393,6 @@ h2 .project {
     }
 
     &-modalCategory {
-      color: $grey50;
       font-size: 18px;
       margin-bottom: 0.2rem;
     cursor: url("../img/text.svg"), url("../img/text.png"), text;

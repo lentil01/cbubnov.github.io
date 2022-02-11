@@ -130,7 +130,7 @@ button {
   }
 
   &-dark {
-    background-color: $bg-dark;
+    background-color: $heading-color;
     color: $bg-color;
     transition: background-color 0.25s ease, box-shadow 0.25s ease;
     -webkit-transition: background-color 0.25s ease, box-shadow 0.25s ease;
@@ -174,7 +174,6 @@ button {
     -o-transition: background-color 0.2s ease, color 0.2s ease;
 
     &:hover {
-      color: $yellow;
       background: $bg-color;
       text-decoration: none;
       transition: background-color 0.25s ease, color 0.2s ease;
