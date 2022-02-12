@@ -249,6 +249,22 @@
   }
 }
 
+.project-button {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .project-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .project-button {
+    display: none;
+  }
+}
+
 .link {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;

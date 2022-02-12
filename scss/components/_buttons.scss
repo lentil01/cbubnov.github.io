@@ -5,21 +5,21 @@ button {
   box-shadow: inset 0 0 0 0px $bg-color;
   position: relative;
   vertical-align: middle;
-  // cursor: url("../img/cursor.svg"), url("../img/cursor.png"), default;
-  padding-left: 18px !important;
-  padding-right: 18px !important;
+  cursor: url("../img/pointer.svg"), url("../img/pointer.png"), default;
+  // padding-left: 18px !important;
+  // padding-right: 18px !important;
 
-  &::before,
-  &::after {
-    box-sizing: inherit;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
+  // &::before,
+  // &::after {
+  //   box-sizing: inherit;
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   -webkit-border-radius: 3px;
+  //   -moz-border-radius: 3px;
+  //   border-radius: 3px;
+  // }
 }
 
 .draw {
@@ -97,14 +97,14 @@ button {
 
 .button {
   font-family: "Sohne-Kraftig", "Courier New", Courier, monospace;
-  letter-spacing: 0 !important;
+  // letter-spacing: 0 !important;
   // text-transform: uppercase;
-  border-radius: 3px;
-  padding: 12px 28px 10px;
+  border-radius: 100px;
+  padding: 8px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 22px;
+  font-size: 18px;
   margin: auto;
 
   &-icon {
@@ -140,14 +140,14 @@ button {
     -moz-osx-font-smoothing: grayscale;
 
     &:hover {
-      background-color: #434745;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-      color: $bg-color;
-      text-decoration: none;
-      transition: background-color 0.25s ease, box-shadow 0.25s ease;
-      -webkit-transition: background-color 0.25s ease, box-shadow 0.25s ease;
-      -moz-transition: background-color 0.25s ease, box-shadow 0.25s ease;
-      -o-transition: background-color 0.25s ease, box-shadow 0.25s ease;
+      background-color: #25211F;
+      // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+      // color: $bg-color;
+      // text-decoration: none;
+      transition: background-color 0.18s ease;
+      -webkit-transition: background-color 0.18s ease;
+      -moz-transition: background-color 0.18s ease;
+      -o-transition: background-color 0.18s ease;
     }
   }
 
