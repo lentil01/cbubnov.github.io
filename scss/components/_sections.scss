@@ -2283,6 +2283,7 @@ h2 .project {
 @media (max-width: 570px) {
   .tag {
     display: none !important;
+    appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
   }
@@ -2291,6 +2292,7 @@ h2 .project {
 @media (min-width: 992px) and (max-width: 1167px) {
   .tag {
     display: none !important;
+    appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
   }
