@@ -1171,7 +1171,7 @@ li:hover {
     padding-top: .5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    background: $bg-color;
+    // background: $bg-color;
   }
 }
 
@@ -1489,7 +1489,7 @@ li:hover {
 }
 
 .project-footer {
-  background-color: $bg-color;
+  background: $bg-color;
   z-index: 1200;
   position: relative;
   max-width: 100%;
@@ -2325,7 +2325,7 @@ h2 .project {
   }
 
   &-projects {
-    background: $bg-color;
+    // background: $bg-color;
     padding: 0 2rem;
     // max-width: 768px;
     margin: auto;
@@ -2355,7 +2355,7 @@ h2 .project {
 
     &-modal {
       padding: 2rem;
-      background-color: $bg-frame;
+      background: $bg-frame;
       border-radius: 6px;
       transition: all 0.2s ease-in-out;
       -webkit-transition: all 0.2s ease;
@@ -2366,16 +2366,12 @@ h2 .project {
 
       &:hover {
         opacity: .9;
-
-        // background-color: $bg-color;
         box-shadow: 0 3px 8px 0 rgba(67, 63, 61, 0.15), 0 4px 20px 0 rgba(67, 63, 61, 0.14);
         border-radius: 4px;
-        // padding: 2rem;
       }
     }
 
     &-modalOpen {
-
       background-color: $bg-color;
       padding: 2rem;
       margin: 2rem;
@@ -2389,7 +2385,7 @@ h2 .project {
     &-text {
       margin: auto;
       padding: 1rem;
-      background-color: $bg-color;
+      background: $bg-color;
       border-radius: 6px;
     }
 
@@ -2574,9 +2570,7 @@ h2 .project {
 }
 
 .home-project-thumbnail-wrapper {
-  // background-color: $bg-frame;
   border-radius: 6px;
-  // padding: 1rem;
 }
 
 @media (max-width: 576px) {

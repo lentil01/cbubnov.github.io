@@ -300,10 +300,10 @@
 }
 
 .link-light {
-  text-decoration-color: rgba(255, 255, 255, .2);
+  text-decoration-color: $link-light-underline-color;
 
   &:hover {
-    text-decoration-color: #fff;
+    text-decoration-color: $bg-color;
   }
 }
 
