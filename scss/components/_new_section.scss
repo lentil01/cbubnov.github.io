@@ -131,10 +131,15 @@
   color: white;
   font-family: "Sohne-Kraftig", Arial, Helvetica, sans-serif;
   transition: all ease-in-out .18s;
+  font-size: 18px;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+.project-stat-link-margin {
+  margin-top: -2px !important;
 }
 
 
