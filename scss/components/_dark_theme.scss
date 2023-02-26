@@ -26,6 +26,9 @@
       box-shadow: 0 3px 8px 0 rgba(20, 19, 18, 0.15), 0 4px 20px 0 rgba(18, 17, 17, 0.14);
       opacity: .8;
     }
+    &:active {
+      opacity: .7;
+    }
   }
 
   .home-project-text {
