@@ -21,9 +21,10 @@
 
   .home-project-modal {
     background: $bg-frame-dark;
+
     &:hover {
       box-shadow: 0 3px 8px 0 rgba(20, 19, 18, 0.15), 0 4px 20px 0 rgba(18, 17, 17, 0.14);
-
+      opacity: .8;
     }
   }
 
@@ -76,11 +77,10 @@
     color: $text-color-dark;
   }
   .button-dark {
-    color: $bg-color-dark;
-    background-color: $bg-color;
-
+  //   color: $bg-color-dark;
+  //   background-color: $bg-color;
     &:hover {
-      background-color: $bg-frame;
+      background-color: $bg-frame-dark;
     }
   }
 

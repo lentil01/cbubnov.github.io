@@ -2369,6 +2369,9 @@ h2 .project {
         box-shadow: 0 3px 8px 0 rgba(67, 63, 61, 0.15), 0 4px 20px 0 rgba(67, 63, 61, 0.14);
         // border-radius: 4px;
       }
+      &:active {
+        opacity: .7;
+      }
     }
 
     &-modalOpen {
