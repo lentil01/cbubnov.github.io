@@ -139,7 +139,7 @@ li:hover {
   // text-align: right;
   font-size: 16px;
   // letter-spacing: 0.7px;
-  font-family: "Sohne-Kraftig", "Courier New", Courier, monospace;
+  // font-family: "Sohne-Kraftig", "Courier New", Courier, monospace;
   // text-transform: uppercase;
   // margin-top: .3rem;
 
@@ -374,9 +374,9 @@ li:hover {
   font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
 
   &-active {
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: .25em;
+    // text-decoration: underline;
+    // text-decoration-thickness: 1px;
+    // text-underline-offset: .25em;
     color: $blue;
   }
 }
@@ -1739,6 +1739,7 @@ h2 .project {
     // font-variant: small-caps;
     // font-size: 17px;
     font-family: "Migra-Extrabold", "Palatino Linotype", Palatino, serif;
+    // font-family: "Sohne-Kraftig",Arial,Helvetica,sans-serif;
     font-size: 24px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

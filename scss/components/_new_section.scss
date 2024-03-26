@@ -129,7 +129,7 @@
 
 .project-stat-link {
   color: white;
-  font-family: "Sohne-Kraftig", Arial, Helvetica, sans-serif;
+  font-family: "Sohne-Kraftig", Arial, Helvetica, sans-serif !important;
   transition: all ease-in-out .18s;
   font-size: 18px;
 
@@ -272,7 +272,7 @@
 
 .link {
   text-decoration: underline;
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: 1px;
   text-underline-offset: .25em;
   transition: all ease-in-out .18s;
 
@@ -289,15 +289,16 @@
 
 .link-selected {
   // text-decoration: line-through;
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: .25em;
+  text-decoration: none;
+  // text-decoration-thickness: 1.5px;
+  // text-underline-offset: .25em;
   color: $blue;
 
 }
 
 .link-dark {
   text-decoration-color: $link-underline-color;
+  font-family: "Sohne-Light",Arial,Helvetica,sans-serif;
 
   &:hover {
     text-decoration-color: $heading-color;
@@ -306,6 +307,7 @@
 
 .link-light {
   text-decoration-color: $link-light-underline-color;
+  font-family: "Sohne-Light",Arial,Helvetica,sans-serif;
 
   &:hover {
     text-decoration-color: $bg-color;
